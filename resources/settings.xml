@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category label="32000">
+	<setting label="32031" type="bool"	 id="firstrun" default="true" visible="false"/>
+	<setting label="32020" type="text" id="LIVE_USERNAME" default=""/>
+    <setting label="32030" type="text" id="LIVE_PASSWORD" option="hidden"  enable="!eq(-1,)" default=""/>
+    <setting label="32002" type="lsep"/>
+    <setting label="32032" type="action" action="RunPlugin(plugin://plugin.video.netball-live/?action=clearticket)"/>
+  </category>
+  <category label="32001">
+    <setting id="LIVEQUALITY" type="enum" label="32043" values="Lowest (420k/s)|Low (640k/s) |Medium (900k/s) |Medium High (1.1Mb/s) |High (1.6Mb/s)" default="4" />
+	<setting id="REPLAYQUALITY" type="enum" label="32044" values="Audio Only (32k/s)|330k/s - 320x180 (Lowest)|400k/s - 320x180|600k/s - 480x270|950k/s - 640x360|1.4MB/s - 720x406|2.2MB/s - 720x406|3MB/s - 1280x720 (Highest)" default="7" />
+  </category> 
+</settings>

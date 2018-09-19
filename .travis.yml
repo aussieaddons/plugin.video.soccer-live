@@ -1,0 +1,33 @@
+language: python
+env:
+  global:
+    - secure: C0Tqtj3OeCT25kIRhSw57eMMjaNn5vFbTqmpj6pvHlObDLqjliv8nbQXQvIZc5jxFhyiGfj+Ym0YNO3NnOk7yiOvHtpqyj0Q3tkev0GdECU7jszJg3FzYqTQ5PmJF1o++ecO9hDRgK2vtvg4lwFtovEj7BHr9Q+/Wph9KoymSTzT2Ufsg+8wQ3mqfC43FdEuiyZxAjbI/jVugs3jafC/7UmV9WlCMqJLebhB+lRLRTqesDOccO1aOwIO7nmWuqWnMX18se9J93aALMAp5rXH7r6LM5h6T/T6FyaZSacIwO+Mx/xYkB8n+b7rSc3eyGcks4wncuGYxBIjVNtLsmlTpr1E9YacQuzCPq4D2ktzEcBlBLJWpabruhetW1w4+tYI9MK8XTJhq1KWKukBjxJlELFReZWUvasQ4YrKox5mIgmCJ/1yiwLH2DkqX06W+Jqq2OHhNaFXcwwoEvMmoFgUtYyq2TOm1XmmV508sUd35gatmMTiT8eoD9zIusSx8NOCVUE91Zrt4j8kAcHipsHpcp1PbUV1jKPXEIeiYsALVd2rJqR1LJLAF6urdf1MVc40nVklBDYz7TjRNW/jesifVWvSeYYrI/LKUa3h86gay0n6ibsEBdoiDAtYhFh4sFSsF41dFbfMSd/tLG+vcf6L6go6yM5v9wGGYvZNaNXHv34=
+install:
+  - pip install GitPython
+  - export TRAVIS_COMMIT_MSG="$TRAVIS_REPO_SLUG - $(git log --format=%B --no-merges -n 1)"
+script:
+  - test "$TRAVIS_PULL_REQUEST" = "false" || travis_terminate 0
+  - test "$TRAVIS_BRANCH" = "$TRAVIS_TAG" -o "$TRAVIS_BRANCH" = "master" || travis_terminate 0
+  - git config --global user.email 'aussieaddons@aussieaddons.com'
+  - git config --global user.name 'Aussie Add-ons Bot'
+  - >
+    git clone https://github.com/xbmc-catchuptv-au/repo-devel.git $TRAVIS_BUILD_DIR/.deploy-devel &&
+    cd $TRAVIS_BUILD_DIR/.deploy-devel &&
+    ./manage_repo.py $TRAVIS_BUILD_DIR || travis_terminate 1
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - >
+    git add . &&
+    git commit --allow-empty -m "$TRAVIS_COMMIT_MSG" &&
+    git push || travis_terminate 1
+  - if [ -z "$TRAVIS_TAG" ]; then travis_terminate 0; fi
+  - >
+    git clone https://github.com/xbmc-catchuptv-au/repo.git $TRAVIS_BUILD_DIR/.deploy-prod &&
+    cd $TRAVIS_BUILD_DIR/.deploy-prod &&
+    ./manage_repo.py $TRAVIS_BUILD_DIR || travis_terminate 1
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - >
+    git add . &&
+    git commit --allow-empty -m "Update $(basename `git -C $TRAVIS_BUILD_DIR rev-parse --show-toplevel`) to $TRAVIS_TAG" &&
+    git push || travis_terminate 1
