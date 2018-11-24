@@ -149,7 +149,6 @@ def get_free_token(username, password):
     # 'Order' the subscription package to activate the service
     prog_dialog.update(66, 'Activating live pass on service')
     order_data = config.MEDIA_ORDER_JSON.format(ph_no, offer_id, userid)
-    print order_data
     order = session.post(config.MEDIA_ORDER_URL, data=order_data)
 
     # check to make sure order has been placed correctly
@@ -174,4 +173,4 @@ def get_free_token(username, password):
     session.close()
     prog_dialog.update(100, 'Finished!')
     prog_dialog.close()
-    return userid
+    return json.dumps({'pai': str(userid), 'bearer': access_token})

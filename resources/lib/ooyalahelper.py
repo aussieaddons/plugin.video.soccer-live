@@ -16,7 +16,8 @@ try:
 except:
     utils.log("script.common.plugin.cache not found!")
     import storageserverdummy as StorageServer
-cache = StorageServer.StorageServer(config.ADDON_ID, 1)
+cache = StorageServer.StorageServer(utils.get_addon_id(), 1)
+
 sess = session.Session(force_tlsv1=False)
 addon = xbmcaddon.Addon()
 username = addon.getSetting('LIVE_USERNAME')
@@ -41,34 +42,36 @@ def get_user_ticket():
         return stored_ticket
     else:
         ticket = telstra_auth.get_free_token(username, password)
-    cache.set('SOCCERTICKET', ticket)
+    cache.set('SOCCERTICKET', json.dumps(ticket))
     return ticket
 
 
-def get_embed_token(user_token, video_id):
+def get_embed_token(pai, bearer, video_id):
     """
     send our user token to get our embed token, including api key
     """
-    url = config.EMBED_TOKEN_URL.format(video_id)
-    sess.headers.update({'X-YinzCam-Ticket': user_token,
-                         'Accept': 'application/json'})
+    url = config.TELSTRA_AUTH_URL.format(code=video_id, pai=pai)
+    sess.headers = {}
+    sess.headers.update(
+        {'Authorization': 'Bearer {0}'.format(bearer)})
     try:
         req = sess.get(url)
         data = req.text
         json_data = json.loads(data)
         if json_data.get('ErrorCode') is not None:
             raise AussieAddonsException()
-        video_token = json_data.get('VideoToken')
+        embed_token = json_data.get('token')
     except requests.exceptions.HTTPError as e:
         utils.log('Error getting embed token. '
                   'Response: {0}'.format(e.response.text))
-        cache.delete('NETBALLTICKET')
+        cache.delete('SOCCERTICKET')
         if e.response.status_code == 401:
             raise AussieAddonsException('Login token has expired, '
                                         'please try again.')
         else:
             raise e
-    return urllib.quote(video_token)
+
+    return urllib.quote_plus(embed_token)
 
 
 def get_secure_token(secure_url, videoId):
@@ -169,11 +172,11 @@ def get_m3u8_playlist(video_id):
     """ Main function to call other functions that will return us our m3u8 HLS
         playlist as a string, which we can then write to a file for Kodi
         to use"""
-    #login_token = get_user_ticket()
-    #embed_token = get_embed_token(login_token, video_id)
-    get_user_ticket()
-    authorize_url = config.OOYALA_AUTH_URL.format(config.OOYALA_PCODE,
-                                                  video_id)
+    auth = json.loads(get_user_ticket())
+    embed_token = get_embed_token(auth.get('pai'), auth.get('bearer'), video_id)
+    authorize_url = config.OOYALA_AUTH_URL.format(pcode=config.OOYALA_PCODE,
+                                                  videoid=video_id,
+                                                  embedtoken=embed_token)
     secure_token_url = get_secure_token(authorize_url, video_id)
 
     if 'chunklist.m3u8' in secure_token_url:

@@ -39,8 +39,8 @@ def router(paramstring):
                 addon.openSettings()
         elif params['action'] == 'listvideos':
             play.play_video(params)
-        elif params['action'] == 'cleartoken':
-            ooyalahelper.clear_token()
+        elif params['action'] == 'clearticket':
+            ooyalahelper.clear_ticket()
     else:
         categories.list_categories()
 

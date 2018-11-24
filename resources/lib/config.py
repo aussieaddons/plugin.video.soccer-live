@@ -32,9 +32,11 @@ USER_AGENT = 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; m8 Build/MOB31K)'
 
 USER_AGENT_LONG = 'Mozilla/5.0 (Linux; Android 6.0; HTC One_M8 Build/MRA58K.H15; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36'
 
+TELSTRA_AUTH_URL = 'https://tapi.telstra.com/v1/media-stream/auth/token?code={code}&pai={pai}&provider=ooyala&partnerId=FFA'
+
 OOYALA_PCODE = 'xoNG0yOk4f4VR8pLKAKNukJ-gdEr'
 
-OOYALA_AUTH_URL = 'http://player.ooyala.com/sas/player_api/v1/authorization/embed_code/{0}/{1}?device=android_html&domain=http%3A%2F%2Fwww.ooyala.com&supportedFormats=dash%2Cakamai_hd2_vod_hls%2Cmp4%2Cm3u8%2Chls%2Cakamai_hd2_hls'
+OOYALA_AUTH_URL = 'http://player.ooyala.com/sas/player_api/v1/authorization/embed_code/{pcode}/{videoid}?device=android_html&domain=http%3A%2F%2Fwww.ooyala.com&embedToken={embedtoken}&supportedFormats=dash%2Cakamai_hd2_vod_hls%2Cmp4%2Cm3u8%2Chls%2Cakamai_hd2_hls'
 
 
 OAUTH_HEADERS = {'User-Agent': 'okhttp/3.10.0',
