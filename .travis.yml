@@ -1,7 +1,7 @@
 language: python
 env:
   global:
-    - secure: C0Tqtj3OeCT25kIRhSw57eMMjaNn5vFbTqmpj6pvHlObDLqjliv8nbQXQvIZc5jxFhyiGfj+Ym0YNO3NnOk7yiOvHtpqyj0Q3tkev0GdECU7jszJg3FzYqTQ5PmJF1o++ecO9hDRgK2vtvg4lwFtovEj7BHr9Q+/Wph9KoymSTzT2Ufsg+8wQ3mqfC43FdEuiyZxAjbI/jVugs3jafC/7UmV9WlCMqJLebhB+lRLRTqesDOccO1aOwIO7nmWuqWnMX18se9J93aALMAp5rXH7r6LM5h6T/T6FyaZSacIwO+Mx/xYkB8n+b7rSc3eyGcks4wncuGYxBIjVNtLsmlTpr1E9YacQuzCPq4D2ktzEcBlBLJWpabruhetW1w4+tYI9MK8XTJhq1KWKukBjxJlELFReZWUvasQ4YrKox5mIgmCJ/1yiwLH2DkqX06W+Jqq2OHhNaFXcwwoEvMmoFgUtYyq2TOm1XmmV508sUd35gatmMTiT8eoD9zIusSx8NOCVUE91Zrt4j8kAcHipsHpcp1PbUV1jKPXEIeiYsALVd2rJqR1LJLAF6urdf1MVc40nVklBDYz7TjRNW/jesifVWvSeYYrI/LKUa3h86gay0n6ibsEBdoiDAtYhFh4sFSsF41dFbfMSd/tLG+vcf6L6go6yM5v9wGGYvZNaNXHv34=
+    - secure: feElRCDOqujsB5RN2zyRazzyLeE8A6Zt+MCtqJHhCyq1WiW+viTQhpUtKfjOL6HHPoZYR0rFidEMXs9XtX91YDsYmhXoVaHMJt0VcB6V/NjEld5Ar8ZbsbmCqT0wyQaz6xOgP4RlbHtLpuoNX0S2FQisNyB6I36SrsPero7ZybuPCTkluE1eNNSObZI2GgxBl3Wit2X73E4jvplHDW47908y/gt1bDvbH6uDuXmXeQrZDHVwkxW5LSbHzOUXXU+A4558H5svTQq6pL51/inVpwZUTm3+0oOYu2ADlqdbWnS5HBXiPYkrb9jBLOrdFix05QDMBsvSADyaQMArWzxRqq51XYvXa5OGH6eRxoatUM2Em1gp1LqyKxh4HsST8xqtjH+l0oE/EGimz7g+YopnUd6vYTCEu12dO4edMamufflfYV09WNqny4YU+WIMuFW5FEVBNWGIjoj7Oh3d4Uusydcfy3YkGw3F3qR43zmTO0lY73l5OfsV8IEddd9+w6/U2oQZ0Wv7WZJpA/37jP7C3nK8WbYQq4Cu8a+xkyFsh2ZCrNx2E/h2/dNO/VZu3zd2g0TnHhN8HNdKqHKV0A+dMz92pY4CXYxIbILGrIfxFlmQg6xrPjNLT78oEzeB99FCzZG7T0L7R0fc74aLpwrXkL2frIv9rfQ1B6FWIehZWwc=
 install:
   - pip install GitPython
   - export TRAVIS_COMMIT_MSG="$TRAVIS_REPO_SLUG - $(git log --format=%B --no-merges -n 1)"
@@ -11,7 +11,7 @@ script:
   - git config --global user.email 'aussieaddons@aussieaddons.com'
   - git config --global user.name 'Aussie Add-ons Bot'
   - >
-    git clone https://github.com/xbmc-catchuptv-au/repo-devel.git $TRAVIS_BUILD_DIR/.deploy-devel &&
+    git clone https://github.com/aussieaddons/repo-devel.git $TRAVIS_BUILD_DIR/.deploy-devel &&
     cd $TRAVIS_BUILD_DIR/.deploy-devel &&
     ./manage_repo.py $TRAVIS_BUILD_DIR || travis_terminate 1
   - git config credential.helper "store --file=.git/credentials"
@@ -22,7 +22,7 @@ script:
     git push || travis_terminate 1
   - if [ -z "$TRAVIS_TAG" ]; then travis_terminate 0; fi
   - >
-    git clone https://github.com/xbmc-catchuptv-au/repo.git $TRAVIS_BUILD_DIR/.deploy-prod &&
+    git clone https://github.com/aussieaddons/repo.git $TRAVIS_BUILD_DIR/.deploy-prod &&
     cd $TRAVIS_BUILD_DIR/.deploy-prod &&
     ./manage_repo.py $TRAVIS_BUILD_DIR || travis_terminate 1
   - git config credential.helper "store --file=.git/credentials"
