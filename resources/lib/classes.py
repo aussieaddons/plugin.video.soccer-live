@@ -60,15 +60,7 @@ class Video():
             ts += datetime.timedelta(hours=delta)
             return ts.strftime("%A %d %b @ %I:%M %p").replace(' 0', ' ')
         except OverflowError:
-            return timestamp
-
-    def make_time_string(self):
-        try:
-            timestamp = time.mktime(time.strptime(self.start_date,
-                                                '%Y-%m-%dT%H:%M:%S+00:00'))
-            video.date = datetime.date.fromtimestamp(timestamp)
-        except Exception:
-            pass
+            return ts
 
     def get_upcoming_title(self):
         if self.home and self.away:

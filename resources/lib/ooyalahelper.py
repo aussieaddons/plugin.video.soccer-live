@@ -38,11 +38,12 @@ def get_user_ticket():
     """
     stored_ticket = cache.get('SOCCERTICKET')
     if stored_ticket != '':
-        utils.log('Using ticket: {0}******'.format(stored_ticket[:-6]))
+        utils.log('Using ticket: {0}******{1}******'.format(
+            stored_ticket[:8], stored_ticket[15:-6]))
         return stored_ticket
     else:
         ticket = telstra_auth.get_free_token(username, password)
-    cache.set('SOCCERTICKET', json.dumps(ticket))
+    cache.set('SOCCERTICKET', ticket)
     return ticket
 
 
@@ -173,7 +174,9 @@ def get_m3u8_playlist(video_id):
         playlist as a string, which we can then write to a file for Kodi
         to use"""
     auth = json.loads(get_user_ticket())
-    embed_token = get_embed_token(auth.get('pai'), auth.get('bearer'), video_id)
+    embed_token = get_embed_token(auth.get('pai'),
+                                  auth.get('bearer'),
+                                  video_id)
     authorize_url = config.OOYALA_AUTH_URL.format(pcode=config.OOYALA_PCODE,
                                                   videoid=video_id,
                                                   embedtoken=embed_token)

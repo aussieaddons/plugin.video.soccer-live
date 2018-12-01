@@ -2,7 +2,6 @@ import classes
 import config
 import json
 
-from aussieaddonscommon import utils
 from aussieaddonscommon import session
 
 
@@ -53,7 +52,6 @@ def list_live(params):
             for broadcast in broadcasters:
                 if 'Telstra' in broadcast.get('name'):
                     v.ooyala_id = broadcast.get('stream_name')
-                    #v.thumb = broadcast.get('logo')
                     break
         else:
             v.dummy = True
