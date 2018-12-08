@@ -8,6 +8,12 @@ import urlparse
 import uuid
 import xbmcgui
 
+try:
+    import boto3
+    from warrant.aws_srp import AWSSRP
+except ImportError:
+    pass
+
 from aussieaddonscommon.exceptions import AussieAddonsException
 from aussieaddonscommon import session as custom_session
 from aussieaddonscommon import utils
@@ -20,6 +26,139 @@ class TelstraAuthException(AussieAddonsException):
     error report
     """
     pass
+
+
+def get_paid_token(username, password):
+    session = custom_session.Session(force_tlsv1=False)
+    prog_dialog = xbmcgui.DialogProgress()
+    prog_dialog.create('Logging in with mobile service')
+    prog_dialog.update(1, 'Obtaining user ID from AWS')
+    try:
+        client = boto3.client('cognito-idp',
+                              region_name=config.AWS_REGION,
+                              aws_access_key_id='',
+                              aws_secret_access_key='')
+        aws = AWSSRP(username=username,
+                     password=password,
+                     pool_id=config.AWS_POOL_ID,
+                     client_id=config.AWS_CLIENT_ID,
+                     client=client)
+    except NameError:
+        raise TelstraAuthException('Paid subscriptions not supported on some '
+                                   'platforms of Kodi < 18. Please upgrade to '
+                                   'Kodi 18 to resolve this.')
+    try:
+        tokens = aws.authenticate_user().get('AuthenticationResult')
+    except Exception as e:
+        raise TelstraAuthException(str(e))
+
+    response = client.get_user(AccessToken=tokens.get('AccessToken'))
+    userid = response.get('Username')
+
+    prog_dialog.update(20, 'Obtaining oauth token')
+    config.OAUTH_DATA.update({'x-user-id': userid})
+    oauth_resp = session.post(config.OAUTH_URL,
+                              data=config.OAUTH_DATA)
+    oauth_json = json.loads(oauth_resp.text)
+    access_token = oauth_json.get('access_token')
+    session.headers = {}
+    session.headers.update(
+        {'Authorization': 'Bearer {0}'.format(access_token)})
+
+    prog_dialog.update(40, 'Checking for valid subscription')
+    try:
+        purchase_resp = session.get(config.MEDIA_PURCHASE_URL.format(userid))
+
+    except requests.exceptions.HTTPError as e:
+        if e.response.status_code == 404:
+            message = json.loads(e.response.text).get('message')
+            raise TelstraAuthException(message)
+        else:
+            utils.log(json.loads(e.response.text).get('exception'))
+            raise TelstraAuthException('Unknown error. Please check the log '
+                                       'for more information.')
+    session.close()
+    prog_dialog.update(100, 'Finished!')
+    prog_dialog.close()
+    return json.dumps({'pai': str(userid), 'bearer': access_token})
+
+
+def get_mobile_token():
+    session = custom_session.Session(force_tlsv1=False)
+    prog_dialog = xbmcgui.DialogProgress()
+    prog_dialog.create('Logging in with mobile service')
+    prog_dialog.update(1, 'Obtaining oauth token')
+
+    userid = uuid.uuid4()
+    data = config.MOBILE_TOKEN_PARAMS.update({'x-user-id': userid})
+    mobile_token_resp = session.post(config.MOBILE_TOKEN_URL, data=data)
+    bearer_token = json.loads(mobile_token_resp.text).get('access_token')
+
+    # First check if there are any eligible services attached to the account
+    prog_dialog.update(50, 'Determining eligible services')
+    offer_id = dict(urlparse.parse_qsl(
+                    urlparse.urlsplit(spc_url)[3]))['offerId']
+    media_order_headers = config.MEDIA_ORDER_HEADERS
+    media_order_headers.update(
+        {'Authorization': 'Bearer {0}'.format(bearer_token)})
+    session.headers = media_order_headers
+    try:
+        offers = session.get(config.OFFERS_URL)
+    except requests.exceptions.HTTPError as e:
+        if e.response.status_code == 404:
+            message = json.loads(e.response.text).get('userMessage')
+            message += (' Please visit {0} '.format(config.HUB_URL) +
+                        'for further instructions to link your mobile '
+                        'service to the supplied Telstra ID')
+            raise TelstraAuthException(message)
+        else:
+            raise TelstraAuthException(e.response.status_code)
+    try:
+        offer_data = json.loads(offers.text)
+        offers_list = offer_data['data']['offers']
+        ph_no = None
+        for offer in offers_list:
+            if offer.get('name') != 'My Football Live Pass':
+                continue
+            data = offer.get('productOfferingAttributes')
+            ph_no = [x['value'] for x in data if x['name'] == 'ServiceId'][0]
+        if not ph_no:
+            raise TelstraAuthException(
+                'Unable to determine if you have any eligible services. '
+                'Please ensure there is an eligible service linked to '
+                'your Telstra ID to redeem the free offer. Please visit '
+                '{0} for further instructions'.format(config.HUB_URL))
+    except Exception as e:
+        raise e
+
+    # 'Order' the subscription package to activate the service
+    prog_dialog.update(66, 'Activating live pass on service')
+    order_data = config.MEDIA_ORDER_JSON.format(ph_no, offer_id, userid)
+    order = session.post(config.MEDIA_ORDER_URL, data=order_data)
+
+    # check to make sure order has been placed correctly
+    if order.status_code == 201:
+        try:
+            order_json = json.loads(order.text)
+            status = order_json['data'].get('status') == 'COMPLETE'
+            if status:
+                utils.log('Order status complete')
+        except:
+            utils.log('Unable to check status of order, continuing anyway')
+
+    # Confirm activation
+    prog_dialog.update(83, 'Confirming activation')
+    session.headers = {}
+    session.headers.update(
+        {'Authorization': 'Bearer {0}'.format(access_token)})
+    confirm = json.loads(session.get(config.ENTITLEMENTS_URL).text)
+    if len(confirm.get('entitlements')) < 1:
+        raise AussieAddonsException('Telstra ID activation failed')
+
+    session.close()
+    prog_dialog.update(100, 'Finished!')
+    prog_dialog.close()
+    return json.dumps({'pai': str(userid), 'bearer': access_token})
 
 
 def get_free_token(username, password):

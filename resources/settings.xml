@@ -2,8 +2,11 @@
 <settings>
   <category label="32000">
 	<setting label="32031" type="bool" id="firstrun" default="true" visible="false"/>
-	<setting label="32020" type="text" id="LIVE_USERNAME" default=""/>
-    <setting label="32030" type="text" id="LIVE_PASSWORD" option="hidden"  enable="!eq(-1,)" default=""/>
+    <setting label="31033" type="enum" id="SUBSCRIPTION_TYPE" values="Free offer (mobile network)|Free offer (Telstra ID)|Paid subscription" default="1" />
+	<setting label="32020" type="text" id="LIVE_USERNAME" default="" enable="lt(-1, 2)"/>
+    <setting label="32030" type="text" id="LIVE_PASSWORD" option="hidden" enable="lt(-2, 2)" default=""/>
+    <setting label="32021" type="text" id="PAID_USERNAME" default="" enable="gt(-3, 1)"/>
+    <setting label="32022" type="text" id="PAID_PASSWORD" option="hidden" enable="gt(-4, 1)" default=""/>
     <setting label="32002" type="lsep"/>
     <setting label="32032" type="action" action="RunPlugin(plugin://plugin.video.soccer-live/?action=clearticket)"/>
   </category>

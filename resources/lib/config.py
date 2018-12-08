@@ -67,8 +67,25 @@ SSO_PARAMS = {'redirect_uri': 'https://hub.telstra.com.au/offers/content/cached/
 
 SSO_URL = 'https://api.telstra.com/v1/sso/auth'
 
+MEDIA_PURCHASE_URL = 'https://tapi.telstra.com/v1/media-purchase/users/{0}/subscriptions/?partnerId=FFA'
 
+AWS_CLIENT_ID = '4rtrirgracuqrpn4fgaia0skc0'
 
+AWS_POOL_ID = 'ap-southeast-2_3RiyW2G3K'
+
+AWS_REGION = 'ap-southeast-2'
+
+MOBILE_TOKEN_URL = 'https://api.telstra.com/v1/media-entitlements/token'
+
+MOBILE_CLIENT_ID = 'yGQTEDLGiWeVBogNzKuZAAt6x1yVk3Ot'
+
+MOBILE_CLIENT_SECRET = 'zsbhQBtJ9Towbac7'
+
+MOBILE_TOKEN_PARAMS = {'client_id': MOBILE_CLIENT_ID,
+                      'client_secret': MOBILE_CLIENT_SECRET,
+                      'grant_type': 'client_credentials',
+                      'scope': 'MEDIA-ENTITLEMENTS-API MEDIA-PRODUCTS-API MEDIA-COMMERCE-API MY-OFFERS-BFF',
+                      'x-user-idp': 'ngp'}
 
 CATEGORIES = ['Live Matches',
               'Videos',

@@ -17,11 +17,8 @@ except:
     utils.log("script.common.plugin.cache not found!")
     import storageserverdummy as StorageServer
 cache = StorageServer.StorageServer(utils.get_addon_id(), 1)
-
 sess = session.Session(force_tlsv1=False)
 addon = xbmcaddon.Addon()
-username = addon.getSetting('LIVE_USERNAME')
-password = addon.getSetting('LIVE_PASSWORD')
 
 
 def clear_ticket():
@@ -42,7 +39,17 @@ def get_user_ticket():
             stored_ticket[:8], stored_ticket[15:-6]))
         return stored_ticket
     else:
-        ticket = telstra_auth.get_free_token(username, password)
+        subscription_type = int(addon.getSetting('SUBSCRIPTION_TYPE'))
+        if subscription_type == 1:
+            ticket = telstra_auth.get_free_token(
+                addon.getSetting('LIVE_USERNAME'),
+                addon.getSetting('LIVE_PASSWORD'))
+        elif subscription_type == 2:
+            ticket = telstra_auth.get_paid_token(
+                addon.getSetting('PAID_USERNAME'),
+                addon.getSetting('PAID_PASSWORD'))
+        else:
+            ticket = telstra_auth.get_mobile_token()
     cache.set('SOCCERTICKET', ticket)
     return ticket
 

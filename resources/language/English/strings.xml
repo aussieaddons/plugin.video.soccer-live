@@ -7,10 +7,13 @@
     <string id="32010">Settings</string>
     
 	<string id="32031">firstrun</string>
+    <string id="31033">Subscription Type</string>
     <string id="32032">Remove stored login ticket</string>
 	<string id="32043">Live Match Stream Quality</string>
 	<string id="32044">Replay Stream Quality</string>
 	<string id="32050">Soccer Live Login</string>
 	<string id="32020">Telstra ID Username</string>
     <string id="32030">Telstra ID Password</string>
+    <string id="32021">Football Account Username</string>
+    <string id="32022">Football Account Password</string>
 </strings>
