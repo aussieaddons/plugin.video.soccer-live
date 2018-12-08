@@ -46,7 +46,11 @@ def list_live(params):
         v = classes.Video()
         v.home = match_data.get('home_team').get('name')
         v.away = match_data.get('away_team').get('name')
-        if match_data.get('status') == 'Live':
+        v.start_date = match_data.get('start_date')
+        v.status = match_data.get('status')
+        if v.status == 'PreMatch' and v.is_near_live():
+            v.status == 'Live'
+        if v.status == 'Live':
             v.live = True
             v.title = v.get_live_title()
             for broadcast in broadcasters:
@@ -55,7 +59,6 @@ def list_live(params):
                     break
         else:
             v.dummy = True
-            v.start_date = match_data.get('start_date')
             v.title = v.get_upcoming_title()
         listing.append(v)
     return listing

@@ -20,6 +20,7 @@ class Video():
         self.away = None
         self.ooyala_id = None
         self.start_date = None
+        self.status = None
 
     def make_kodi_url(self):
         d = self.__dict__
@@ -66,3 +67,16 @@ class Video():
         if self.home and self.away:
             return '[COLOR red][Upcoming][/COLOR] {0} v {1} - {2}'.format(
                 self.home, self.away, self.get_airtime())
+
+    def is_near_live(self):
+        delta = ((time.mktime(time.localtime()) -
+                 time.mktime(time.gmtime())) / 3600)
+        if time.localtime().tm_isdst:
+            delta += 1
+        ts_format = "%Y-%m-%dT%H:%M:%S+00:00"
+        start_time = datetime.datetime.fromtimestamp(
+            time.mktime(time.strptime(self.start_date, ts_format)))
+        start_time += datetime.timedelta(hours=delta)
+        near_time = start_time - datetime.timedelta(minutes=10)
+        if datetime.datetime.now() > near_time:
+            return True
