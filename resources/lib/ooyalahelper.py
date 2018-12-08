@@ -40,7 +40,7 @@ def get_user_ticket():
         return stored_ticket
     else:
         subscription_type = int(addon.getSetting('SUBSCRIPTION_TYPE'))
-        if subscription_type == 1:
+        if subscription_type == 0:
             ticket = telstra_auth.get_free_token(
                 addon.getSetting('LIVE_USERNAME'),
                 addon.getSetting('LIVE_PASSWORD'))
