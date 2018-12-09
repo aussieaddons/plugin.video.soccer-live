@@ -49,7 +49,7 @@ def list_live(params):
         v.start_date = match_data.get('start_date')
         v.status = match_data.get('status')
         if v.status == 'PreMatch' and v.is_near_live():
-            v.status == 'Live'
+            v.status = 'Live'
         if v.status == 'Live':
             v.live = True
             v.title = v.get_live_title()
