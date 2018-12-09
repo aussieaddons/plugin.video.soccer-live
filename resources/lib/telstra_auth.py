@@ -55,7 +55,7 @@ def get_paid_token(username, password):
     response = client.get_user(AccessToken=tokens.get('AccessToken'))
     userid = response.get('Username')
 
-    prog_dialog.update(20, 'Obtaining oauth token')
+    prog_dialog.update(33, 'Obtaining oauth token')
     config.OAUTH_DATA.update({'x-user-id': userid})
     oauth_resp = session.post(config.OAUTH_URL,
                               data=config.OAUTH_DATA)
@@ -65,7 +65,7 @@ def get_paid_token(username, password):
     session.headers.update(
         {'Authorization': 'Bearer {0}'.format(access_token)})
 
-    prog_dialog.update(40, 'Checking for valid subscription')
+    prog_dialog.update(66, 'Checking for valid subscription')
     try:
         purchase_resp = session.get(config.MEDIA_PURCHASE_URL.format(userid))
 
@@ -88,22 +88,37 @@ def get_mobile_token():
     prog_dialog = xbmcgui.DialogProgress()
     prog_dialog.create('Logging in with mobile service')
     prog_dialog.update(1, 'Obtaining oauth token')
+    userid = str(uuid.uuid4())
+    config.OAUTH_DATA.update({'x-user-id': userid})
+    oauth_resp = session.post(config.OAUTH_URL,
+                              data=config.OAUTH_DATA)
+    oauth_json = json.loads(oauth_resp.text)
+    access_token = oauth_json.get('access_token')
 
-    userid = uuid.uuid4()
-    data = config.MOBILE_TOKEN_PARAMS.update({'x-user-id': userid})
-    mobile_token_resp = session.post(config.MOBILE_TOKEN_URL, data=data)
+    prog_dialog.update(20, 'Obtaining mobile token')
+    mobile_userid_cookies = session.get(
+        config.MOBILE_ID_URL).cookies.get_dict()
+    mobile_userid = mobile_userid_cookies.get('GUID_S')
+    if not mobile_userid or mobile_userid_cookies.get('nouid'):
+        raise TelstraAuthException('Not connected to Telstra Mobile network. '
+                                   'Please disable WiFi and enable mobile '
+                                   'data if on a Telstra mobile device, or '
+                                   "connect this device's WiFi to a device "
+                                   'that is on the Telstra Mobile network '
+                                   'and try again.')
+    data = config.OAUTH_DATA
+    data.update({'x-user-id': mobile_userid, 'x-user-idp': 'NGP'})
+    mobile_token_resp = session.post(config.OAUTH_URL, data=data)
     bearer_token = json.loads(mobile_token_resp.text).get('access_token')
 
     # First check if there are any eligible services attached to the account
-    prog_dialog.update(50, 'Determining eligible services')
-    offer_id = dict(urlparse.parse_qsl(
-                    urlparse.urlsplit(spc_url)[3]))['offerId']
-    media_order_headers = config.MEDIA_ORDER_HEADERS
+    prog_dialog.update(40, 'Determining eligible services')
+    media_order_headers = {}
     media_order_headers.update(
         {'Authorization': 'Bearer {0}'.format(bearer_token)})
     session.headers = media_order_headers
     try:
-        offers = session.get(config.OFFERS_URL)
+        offers = session.get(config.MOBILE_OFFERS_URL)
     except requests.exceptions.HTTPError as e:
         if e.response.status_code == 404:
             message = json.loads(e.response.text).get('userMessage')
@@ -112,7 +127,7 @@ def get_mobile_token():
                         'service to the supplied Telstra ID')
             raise TelstraAuthException(message)
         else:
-            raise TelstraAuthException(e.response.status_code)
+            raise TelstraAuthException(e)
     try:
         offer_data = json.loads(offers.text)
         offers_list = offer_data['data']['offers']
@@ -132,9 +147,18 @@ def get_mobile_token():
         raise e
 
     # 'Order' the subscription package to activate the service
-    prog_dialog.update(66, 'Activating live pass on service')
-    order_data = config.MEDIA_ORDER_JSON.format(ph_no, offer_id, userid)
-    order = session.post(config.MEDIA_ORDER_URL, data=order_data)
+    prog_dialog.update(60, 'Activating live pass on service')
+    #order_data = config.MEDIA_ORDER_JSON.format(ph_no, config.OFFER_ID, userid)
+    order_data = config.MOBILE_ORDER_JSON
+    order_data.update({'serviceId': ph_no, 'pai': userid})
+    utils.log(order_data)
+    utils.log(data)
+    utils.log(session.headers)
+    try:
+        order = session.post(config.MOBILE_ORDER_URL, json=order_data)
+    except requests.exceptions.HTTPError as e:
+        utils.log(e.response.text)
+        utils.log(e.r.headers)
 
     # check to make sure order has been placed correctly
     if order.status_code == 201:
@@ -147,7 +171,7 @@ def get_mobile_token():
             utils.log('Unable to check status of order, continuing anyway')
 
     # Confirm activation
-    prog_dialog.update(83, 'Confirming activation')
+    prog_dialog.update(80, 'Confirming activation')
     session.headers = {}
     session.headers.update(
         {'Authorization': 'Bearer {0}'.format(access_token)})
@@ -158,7 +182,7 @@ def get_mobile_token():
     session.close()
     prog_dialog.update(100, 'Finished!')
     prog_dialog.close()
-    return json.dumps({'pai': str(userid), 'bearer': access_token})
+    return json.dumps({'pai': userid, 'bearer': access_token})
 
 
 def get_free_token(username, password):
@@ -266,7 +290,7 @@ def get_free_token(username, password):
                         'service to the supplied Telstra ID')
             raise TelstraAuthException(message)
         else:
-            raise TelstraAuthException(e.response.status_code)
+            raise TelstraAuthException(e)
     try:
         offer_data = json.loads(offers.text)
         offers_list = offer_data['data']['offers']

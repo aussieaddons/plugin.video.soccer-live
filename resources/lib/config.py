@@ -11,6 +11,10 @@ GIST_API_URL = 'https://api.github.com/gists'
 MAX_LIVEQUAL = 4
 MAX_REPLAYQUAL = 7
 
+CATEGORIES = ['Live Matches',
+              'Videos',
+              'Settings']
+
 CONFIG_URL = 'https://gateway.ffa.football/mobile/hub/config'
 
 HOME_URL = 'https://gateway.ffa.football/mobile/hub/home?preferences=aleague,socceroos,matildas,wleague,yleague,ffacup,npl'
@@ -52,6 +56,16 @@ OAUTH_URL = 'https://tapi.telstra.com/v1/media-entitlements/oauth/token'
 
 ENTITLEMENTS_URL = 'https://tapi.telstra.com/v1/media-entitlements/entitlements?tenantid=ffa'
 
+#Paid auth
+MEDIA_PURCHASE_URL = 'https://tapi.telstra.com/v1/media-purchase/users/{0}/subscriptions/?partnerId=FFA'
+
+AWS_CLIENT_ID = '4rtrirgracuqrpn4fgaia0skc0'
+
+AWS_POOL_ID = 'ap-southeast-2_3RiyW2G3K'
+
+AWS_REGION = 'ap-southeast-2'
+
+#Free Auth
 SPC_HEADERS = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
                'Accept-Encoding': 'gzip, '
                                   'deflate',
@@ -67,30 +81,16 @@ SSO_PARAMS = {'redirect_uri': 'https://hub.telstra.com.au/offers/content/cached/
 
 SSO_URL = 'https://api.telstra.com/v1/sso/auth'
 
-MEDIA_PURCHASE_URL = 'https://tapi.telstra.com/v1/media-purchase/users/{0}/subscriptions/?partnerId=FFA'
-
-AWS_CLIENT_ID = '4rtrirgracuqrpn4fgaia0skc0'
-
-AWS_POOL_ID = 'ap-southeast-2_3RiyW2G3K'
-
-AWS_REGION = 'ap-southeast-2'
-
-MOBILE_TOKEN_URL = 'https://api.telstra.com/v1/media-entitlements/token'
-
-MOBILE_CLIENT_ID = 'yGQTEDLGiWeVBogNzKuZAAt6x1yVk3Ot'
-
-MOBILE_CLIENT_SECRET = 'zsbhQBtJ9Towbac7'
-
-MOBILE_TOKEN_PARAMS = {'client_id': MOBILE_CLIENT_ID,
-                      'client_secret': MOBILE_CLIENT_SECRET,
-                      'grant_type': 'client_credentials',
-                      'scope': 'MEDIA-ENTITLEMENTS-API MEDIA-PRODUCTS-API MEDIA-COMMERCE-API MY-OFFERS-BFF',
-                      'x-user-idp': 'ngp'}
-
-CATEGORIES = ['Live Matches',
-              'Videos',
-              'Settings']
-
+SSO_HEADERS = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+               'Accept-Encoding': 'gzip, '
+                                  'deflate',
+               'Accept-Language': 'en-AU,en-US;q=0.9',
+               'Cache-Control': 'max-age=0',
+               'Connection': 'keep-alive',
+               'Referer': 'https://signon.telstra.com.au/login?goto=https%3A%2F%2Fapi.telstra.com%2Fv1%2Fsso%2Fidpcallback%3Fcbs%3DeyJhbGciOiJIUzI1NiJ9.eyJjYWxsYmFja19zdGF0ZSI6IjEyMjcyMDQ3LWU3N2ItNGRiZC1hNGZiLTBlYTcwMDMyYmRlMSIsImF1ZCI6InJhYSIsImV4cCI6MTUyMDczNTMyMTk0OCwiaWF0IjoxNTIwNjQ4OTIxOTQ4fQ.-I05HQE9eIpRS0LLSYB_pJ4iVKZZzyziVYarvjCe_2o%26app_name%3DOne%20Place%20portal',
+               'Upgrade-Insecure-Requests': '1',
+               'User-Agent': USER_AGENT_LONG,
+               'X-Requested-With': 'com.ffa.hal'}
 
 SIGNON_HEADERS = {'Host': 'signon.telstra.com', 
                   'Connection': 'keep-alive', 
@@ -111,17 +111,6 @@ SIGNON_DATA = {'goto': 'https://signon.telstra.com/federation/saml2?SPID=telstra
 OFFERS_URL = 'https://api.telstra.com/v1/media-products/catalogues/media/offers?category=ffa'
 
 HUB_URL = 'http://hub.telstra.com.au/sp2017-netball-app'
-              
-SSO_HEADERS = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-               'Accept-Encoding': 'gzip, '
-                                  'deflate',
-               'Accept-Language': 'en-AU,en-US;q=0.9',
-               'Cache-Control': 'max-age=0',
-               'Connection': 'keep-alive',
-               'Referer': 'https://signon.telstra.com.au/login?goto=https%3A%2F%2Fapi.telstra.com%2Fv1%2Fsso%2Fidpcallback%3Fcbs%3DeyJhbGciOiJIUzI1NiJ9.eyJjYWxsYmFja19zdGF0ZSI6IjEyMjcyMDQ3LWU3N2ItNGRiZC1hNGZiLTBlYTcwMDMyYmRlMSIsImF1ZCI6InJhYSIsImV4cCI6MTUyMDczNTMyMTk0OCwiaWF0IjoxNTIwNjQ4OTIxOTQ4fQ.-I05HQE9eIpRS0LLSYB_pJ4iVKZZzyziVYarvjCe_2o%26app_name%3DOne%20Place%20portal',
-               'Upgrade-Insecure-Requests': '1',
-               'User-Agent': USER_AGENT_LONG,
-               'X-Requested-With': 'au.com.netball'}
 
 MEDIA_ORDER_HEADERS = {'Content-Type': 'application/json', 
                        'Accept': 'application/json, text/plain, */*', 
@@ -131,8 +120,30 @@ MEDIA_ORDER_HEADERS = {'Content-Type': 'application/json',
                        'User-Agent': USER_AGENT_LONG, 
                        'Accept-Encoding': 'gzip, deflate', 
                        'Accept-Language': 'en-AU,en-US;q=0.8', 
-                       'X-Requested-With': 'au.com.netball'}
-                        
+                       'X-Requested-With': 'com.ffa.hal'}
+
 MEDIA_ORDER_URL = 'https://api.telstra.com/v1/media-commerce/orders'
 
 MEDIA_ORDER_JSON = '{{"serviceId":"{0}","serviceType":"MSISDN","offer":{{"id":"{1}"}},"pai":"{2}"}}'
+
+
+#Mobile Auth
+OFFER_ID = '45d09e09-6472-43fa-9f24-d328d9b25ec7'
+
+MOBILE_ID_URL = 'http://medrx.telstra.com.au/online.php'
+
+MOBILE_CLIENT_ID = 'yGQTEDLGiWeVBogNzKuZAAt6x1yVk3Ot'
+
+MOBILE_CLIENT_SECRET = 'zsbhQBtJ9Towbac7'
+
+MOBILE_TOKEN_PARAMS = {'client_id': MOBILE_CLIENT_ID,
+                      'client_secret': MOBILE_CLIENT_SECRET,
+                      'grant_type': 'client_credentials',
+                      'scope': 'MEDIA-ENTITLEMENTS-API MEDIA-PRODUCTS-API MEDIA-COMMERCE-API MY-OFFERS-BFF',
+                      'x-user-idp': 'ngp'}
+
+MOBILE_OFFERS_URL = 'https://tapi.telstra.com/v1/media-products/catalogues/media/offers'
+
+MOBILE_ORDER_URL = 'https://tapi.telstra.com/v1/media-commerce/orders'
+
+MOBILE_ORDER_JSON = {"offer": {"id":OFFER_ID}, "serviceType":"MSISDN"}
