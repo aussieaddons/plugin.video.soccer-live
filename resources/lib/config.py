@@ -67,8 +67,7 @@ AWS_REGION = 'ap-southeast-2'
 
 #Free Auth
 SPC_HEADERS = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-               'Accept-Encoding': 'gzip, '
-                                  'deflate',
+               'Accept-Encoding': 'gzip, deflate',
                'Accept-Language': 'en-AU,en-US;q=0.9',
                'User-Agent': USER_AGENT_LONG,
                'X-Requested-With': 'com.ffa.hal'}
@@ -79,28 +78,24 @@ SSO_PARAMS = {'redirect_uri': 'https://hub.telstra.com.au/offers/content/cached/
               'response_type': 'id_token token',
               'scope': 'openid email profile phone telstra.user.sso.profile'}
 
-SSO_URL = 'https://api.telstra.com/v1/sso/auth'
+SSO_URL = 'https://tapi.telstra.com/v1/sso/auth'
 
 SSO_HEADERS = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-               'Accept-Encoding': 'gzip, '
-                                  'deflate',
+               'Accept-Encoding': 'gzip, deflate',
                'Accept-Language': 'en-AU,en-US;q=0.9',
                'Cache-Control': 'max-age=0',
                'Connection': 'keep-alive',
-               'Referer': 'https://signon.telstra.com.au/login?goto=https%3A%2F%2Fapi.telstra.com%2Fv1%2Fsso%2Fidpcallback%3Fcbs%3DeyJhbGciOiJIUzI1NiJ9.eyJjYWxsYmFja19zdGF0ZSI6IjEyMjcyMDQ3LWU3N2ItNGRiZC1hNGZiLTBlYTcwMDMyYmRlMSIsImF1ZCI6InJhYSIsImV4cCI6MTUyMDczNTMyMTk0OCwiaWF0IjoxNTIwNjQ4OTIxOTQ4fQ.-I05HQE9eIpRS0LLSYB_pJ4iVKZZzyziVYarvjCe_2o%26app_name%3DOne%20Place%20portal',
                'Upgrade-Insecure-Requests': '1',
                'User-Agent': USER_AGENT_LONG,
                'X-Requested-With': 'com.ffa.hal'}
 
-SIGNON_HEADERS = {'Host': 'signon.telstra.com', 
-                  'Connection': 'keep-alive', 
+SIGNON_HEADERS = {'Connection': 'keep-alive', 
                   'Cache-Control': 'max-age=0', 
                   'Origin': 'https://signon.telstra.com', 
                   'Upgrade-Insecure-Requests': '1', 
-                  'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; HTC One_M8 Build/MRA58K.H15; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36', 
+                  'User-Agent': USER_AGENT_LONG, 
                   'Content-Type': 'application/x-www-form-urlencoded', 
                   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 
-                  'Referer': 'https://signon.telstra.com/login?goto=https%3A%2F%2Fsignon.telstra.com%2Ffederation%2Fsaml2%3FSPID%3Dtelstramedia&gotoNoTok=', 
                   'Accept-Encoding': 'gzip, deflate', 
                   'Accept-Language': 'en-AU,en-US;q=0.8'}
                         
@@ -108,13 +103,12 @@ SIGNON_URL = 'https://signon.telstra.com/login'
 
 SIGNON_DATA = {'goto': 'https://signon.telstra.com/federation/saml2?SPID=telstramedia', 'gotoOnFail': '', 'username': None, 'password': None}
                         
-OFFERS_URL = 'https://api.telstra.com/v1/media-products/catalogues/media/offers?category=ffa'
+OFFERS_URL = 'https://tapi.telstra.com/v1/media-products/catalogues/media/offers'
 
 HUB_URL = 'http://hub.telstra.com.au/sp2017-netball-app'
 
 MEDIA_ORDER_HEADERS = {'Content-Type': 'application/json', 
                        'Accept': 'application/json, text/plain, */*', 
-                       'Host': 'api.telstra.com', 
                        'Connection': 'keep-alive', 
                        'Origin': 'https://hub.telstra.com.au',
                        'User-Agent': USER_AGENT_LONG, 
@@ -122,7 +116,7 @@ MEDIA_ORDER_HEADERS = {'Content-Type': 'application/json',
                        'Accept-Language': 'en-AU,en-US;q=0.8', 
                        'X-Requested-With': 'com.ffa.hal'}
 
-MEDIA_ORDER_URL = 'https://api.telstra.com/v1/media-commerce/orders'
+MEDIA_ORDER_URL = 'https://tapi.telstra.com/v1/media-commerce/orders'
 
 MEDIA_ORDER_JSON = '{{"serviceId":"{0}","serviceType":"MSISDN","offer":{{"id":"{1}"}},"pai":"{2}"}}'
 
@@ -141,9 +135,5 @@ MOBILE_TOKEN_PARAMS = {'client_id': MOBILE_CLIENT_ID,
                       'grant_type': 'client_credentials',
                       'scope': 'MEDIA-ENTITLEMENTS-API MEDIA-PRODUCTS-API MEDIA-COMMERCE-API MY-OFFERS-BFF',
                       'x-user-idp': 'ngp'}
-
-MOBILE_OFFERS_URL = 'https://tapi.telstra.com/v1/media-products/catalogues/media/offers'
-
-MOBILE_ORDER_URL = 'https://tapi.telstra.com/v1/media-commerce/orders'
 
 MOBILE_ORDER_JSON = {"offer": {"id":OFFER_ID}, "serviceType":"MSISDN"}

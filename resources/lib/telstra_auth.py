@@ -67,7 +67,7 @@ def get_paid_token(username, password):
 
     prog_dialog.update(66, 'Checking for valid subscription')
     try:
-        purchase_resp = session.get(config.MEDIA_PURCHASE_URL.format(userid))
+        session.get(config.MEDIA_PURCHASE_URL.format(userid))
 
     except requests.exceptions.HTTPError as e:
         if e.response.status_code == 404:
@@ -118,7 +118,7 @@ def get_mobile_token():
         {'Authorization': 'Bearer {0}'.format(bearer_token)})
     session.headers = media_order_headers
     try:
-        offers = session.get(config.MOBILE_OFFERS_URL)
+        offers = session.get(config.OFFERS_URL)
     except requests.exceptions.HTTPError as e:
         if e.response.status_code == 404:
             message = json.loads(e.response.text).get('userMessage')
@@ -148,17 +148,12 @@ def get_mobile_token():
 
     # 'Order' the subscription package to activate the service
     prog_dialog.update(60, 'Activating live pass on service')
-    #order_data = config.MEDIA_ORDER_JSON.format(ph_no, config.OFFER_ID, userid)
     order_data = config.MOBILE_ORDER_JSON
     order_data.update({'serviceId': ph_no, 'pai': userid})
-    utils.log(order_data)
-    utils.log(data)
-    utils.log(session.headers)
     try:
-        order = session.post(config.MOBILE_ORDER_URL, json=order_data)
+        order = session.post(config.MEDIA_ORDER_URL, json=order_data)
     except requests.exceptions.HTTPError as e:
-        utils.log(e.response.text)
-        utils.log(e.r.headers)
+        raise e
 
     # check to make sure order has been placed correctly
     if order.status_code == 201:
