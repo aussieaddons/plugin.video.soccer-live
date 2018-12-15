@@ -33,11 +33,20 @@ def router(paramstring):
         if params['action'] == 'listcategories':
             if params['category'] == 'Live Matches':
                 menus.make_live_list(params)
+            elif params['category'] == 'Match Replays':
+                menus.make_comp_list(params)
             elif params['category'] == 'Videos':
                 menus.make_video_list(params)
             elif params['category'] == 'Settings':
                 addon.openSettings()
-        elif params['action'] == 'listvideos':
+        elif params['action'] == 'listcomps':
+            if params['type'] == 'competition':
+                menus.make_round_list(params)
+            else:
+                menus.make_replay_list(params)
+        elif params['action'] == 'listrounds':
+            menus.make_replay_list(params)
+        elif params['action'] in ['listvideos', 'listreplays']:
             play.play_video(params)
         elif params['action'] == 'clearticket':
             ooyalahelper.clear_ticket()

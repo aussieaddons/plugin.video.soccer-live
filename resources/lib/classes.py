@@ -5,6 +5,37 @@ import unicodedata
 import urllib
 
 
+class Category():
+    def __init__(self):
+        self.title = None
+        self.thumb = None
+        self.id = None
+        self.rnd = None
+        self.type = None
+
+    def make_kodi_url(self):
+        d = self.__dict__
+        for key, value in d.iteritems():
+            if isinstance(value, unicode):
+                d[key] = unicodedata.normalize('NFKD', value).encode('ascii',
+                                                                     'ignore')
+        url = ''
+        if d['thumb']:
+            d['thumb'] = urllib.quote_plus(d['thumb'])
+        for item in d.keys():
+            url += '&{0}={1}'.format(item, d[item])
+        return url
+
+    def parse_kodi_url(self, url):
+        params = urlparse.parse_qsl(url)
+        for item in params.keys():
+            setattr(self, item, urllib.unquote_plus(params[item]))
+
+    def parse_params(self, params):
+        for item in params.keys():
+            setattr(self, item, urllib.unquote_plus(params[item]))
+
+
 class Video():
     def __init__(self):
         self.video_id = None
@@ -32,7 +63,8 @@ class Video():
         if d['thumb']:
             d['thumb'] = urllib.quote_plus(d['thumb'])
         for item in d.keys():
-            url += '&{0}={1}'.format(item, d[item])
+            if d[item]:
+                url += '&{0}={1}'.format(item, d[item])
         return url
 
     def parse_kodi_url(self, url):

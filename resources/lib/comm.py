@@ -16,6 +16,64 @@ def fetch_url(url, headers=None):
         return resp.text.encode("utf-8")
 
 
+def list_comps(params):
+    data = json.loads(fetch_url(config.CONFIG_URL))
+    listing = []
+    for comp in data.get('hub_configuration'):
+        c = classes.Category()
+        c.title = comp.get('long_name')
+        c.thumb = comp['small'].get('url')
+        c.type = comp.get('type')
+        if c.type == 'competition':
+            c.id = str(comp.get('competition_id'))
+        else:
+            c.id = str(comp.get('team_id'))
+        listing.append(c)
+    return listing
+
+
+def list_rounds(params):
+    comp_id = params.get('id')
+    data = json.loads(fetch_url(config.MATCHES_URL.format(
+        'c{0}/s2018/summary'.format(comp_id))))
+    listing = []
+    current_round = int(
+        data.get('round_info').get('active_round').get('number'))
+    for rnd in range(current_round, 0, -1):
+        c = classes.Category()
+        c.title = 'Round {0}'.format(str(rnd))
+        c.thumb = params.get('thumb')
+        c.rnd = str(rnd)
+        c.id = comp_id
+        listing.append(c)
+    return listing
+
+
+def list_matches(params):
+    comp_id = params.get('id')
+    rnd = params.get('rnd')
+    if params.get('type') == 'team':
+        query = 't{0}/fixture'.format(comp_id)
+        data = json.loads(fetch_url(config.MATCHES_URL.format(query)))
+        listing = []
+        round_data = [entry.get('match') for entry in data]
+    else:
+        query = 'c{0}/s2018/r{1}/fixture'.format(comp_id, rnd)
+        data = json.loads(fetch_url(config.MATCHES_URL.format(query)))
+        listing = []
+        round_data = data.get('rounds')
+    for match in round_data:
+        v = classes.Video()
+        v.ooyala_id = match.get('match_replay_embedcode')
+        if not v.ooyala_id:
+            continue
+        v.title = match.get('title')
+        v.desc = match.get('title')
+        v.thumb = params.get('thumb')
+        listing.append(v)
+    return listing
+
+
 def list_videos(params):
     data = json.loads(fetch_url(config.VIDEOS_URL))
     listing = []

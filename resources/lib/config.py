@@ -12,12 +12,15 @@ MAX_LIVEQUAL = 4
 MAX_REPLAYQUAL = 7
 
 CATEGORIES = ['Live Matches',
+              'Match Replays',
               'Videos',
               'Settings']
 
 CONFIG_URL = 'https://gateway.ffa.football/mobile/hub/config'
 
 HOME_URL = 'https://gateway.ffa.football/mobile/hub/home?preferences=aleague,socceroos,matildas,wleague,yleague,ffacup,npl'
+
+MATCHES_URL = 'https://gateway.ffa.football/football/{0}'
 
 VIDEOS_URL = 'https://gateway.ffa.football/content/aleague/videos?offset=0&limit=50'
 
@@ -40,7 +43,7 @@ TELSTRA_AUTH_URL = 'https://tapi.telstra.com/v1/media-stream/auth/token?code={co
 
 OOYALA_PCODE = 'xoNG0yOk4f4VR8pLKAKNukJ-gdEr'
 
-OOYALA_AUTH_URL = 'http://player.ooyala.com/sas/player_api/v1/authorization/embed_code/{pcode}/{videoid}?device=android_html&domain=http%3A%2F%2Fwww.ooyala.com&embedToken={embedtoken}&supportedFormats=dash%2Cakamai_hd2_vod_hls%2Cmp4%2Cm3u8%2Chls%2Cakamai_hd2_hls'
+OOYALA_AUTH_URL = 'http://player.ooyala.com/sas/player_api/v1/authorization/embed_code/{pcode}/{videoid}?device=html5&domain=http%3A%2F%2Fwww.ooyala.com&embedToken={embedtoken}&supportedFormats=dash%2Cakamai_hd2_vod_hls%2Cmp4%2Cm3u8%2Chls%2Cakamai_hd2_hls'
 
 
 OAUTH_HEADERS = {'User-Agent': 'okhttp/3.10.0',

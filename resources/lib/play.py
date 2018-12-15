@@ -28,7 +28,7 @@ def play_video(params):
                     'has started. Playable matches will have "LIVE NOW" in '
                     'green next to the title.')
             return
-        if v.live == 'True':
+        if v.ooyala_id:
             v.url = ooyalahelper.get_m3u8_playlist(v.ooyala_id)
         else:
             v.url = comm.get_stream_url(v.account_id, v.video_id)
