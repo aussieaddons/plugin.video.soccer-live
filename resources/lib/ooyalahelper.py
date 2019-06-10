@@ -88,6 +88,7 @@ def get_secure_token(secure_url, videoId):
     """
     res = sess.get(secure_url)
     data = res.text
+    token = None
     try:
         parsed_json = json.loads(data)
         token = (parsed_json['authorization_data'][videoId]
@@ -107,6 +108,9 @@ def get_secure_token(secure_url, videoId):
                                             ' and try again'.format(country))
         except Exception as e:
             raise e
+    if not token:
+        utils.log('parsed_json: {0}'.format(parsed_json))
+        raise Exception('Unable to extract secure token')
     return base64.b64decode(token)
 
 
