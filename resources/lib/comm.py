@@ -2,7 +2,7 @@ import classes
 import config
 import json
 
-from aussieaddonscommon import session
+from aussieaddonscommon import session, utils
 
 
 def fetch_url(url, headers=None):
@@ -24,6 +24,7 @@ def list_comps(params):
         c.title = comp.get('long_name')
         c.thumb = comp['small'].get('url')
         c.type = comp.get('type')
+        c.active_season = comp.get('active_season')
         if c.type == 'competition':
             c.id = str(comp.get('competition_id'))
         else:
@@ -34,17 +35,20 @@ def list_comps(params):
 
 def list_rounds(params):
     comp_id = params.get('id')
+    active_season = params.get('active_season')
     data = json.loads(fetch_url(config.MATCHES_URL.format(
-        'c{0}/s2018/summary'.format(comp_id))))
+        'c{0}/s{1}/summary'.format(comp_id, active_season))))
     listing = []
     current_round = int(
         data.get('round_info').get('active_round').get('number'))
+    round_data = data.get('round_info').get('rounds')
     for rnd in range(current_round, 0, -1):
         c = classes.Category()
-        c.title = 'Round {0}'.format(str(rnd))
+        c.title = round_data[rnd-1].get('name')
         c.thumb = params.get('thumb')
         c.rnd = str(rnd)
         c.id = comp_id
+        c.active_season = active_season
         listing.append(c)
     return listing
 
@@ -52,13 +56,14 @@ def list_rounds(params):
 def list_matches(params):
     comp_id = params.get('id')
     rnd = params.get('rnd')
+    active_season = params.get('active_season')
     if params.get('type') == 'team':
         query = 't{0}/fixture'.format(comp_id)
         data = json.loads(fetch_url(config.MATCHES_URL.format(query)))
         listing = []
         round_data = [entry.get('match') for entry in data]
     else:
-        query = 'c{0}/s2018/r{1}/fixture'.format(comp_id, rnd)
+        query = 'c{0}/s{1}/r{2}/fixture'.format(comp_id, active_season, rnd)
         data = json.loads(fetch_url(config.MATCHES_URL.format(query)))
         listing = []
         round_data = data.get('rounds')
@@ -123,12 +128,22 @@ def list_live(params):
 
 
 def get_stream_url(account_id, video_id):
-    policy = config.BC_POLICYS[account_id]
+    config_data = json.loads(fetch_url(config.CONFIG_URL))
+    policy = None
+    for acc in config_data['video_settings']:
+        if acc.get('account_id') == account_id:
+            policy = acc.get('policy_key')
+    if not policy:
+        raise Exception("Can't retrieve brightcove policy key")
     bc_url = config.BC_URL.format(account_id, video_id)
     data = json.loads(fetch_url(bc_url, {'BCOV-POLICY': policy}))
+    src = None
     for source in data.get('sources'):
         ext_ver = source.get('ext_x_version')
         src = source.get('src')
         if ext_ver == '4' and src:
             if src.startswith('https'):
                 return src
+    if not src:
+        utils.log(data.get('sources'))
+        raise Exception('Unable to locate video source.')

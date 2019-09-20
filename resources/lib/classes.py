@@ -1,8 +1,11 @@
 import datetime
 import time
-import urlparse
 import unicodedata
 import urllib
+from builtins import str
+from collections import OrderedDict
+
+from future.moves.urllib.parse import parse_qsl, quote_plus, unquote_plus
 
 
 class Category():
@@ -12,24 +15,31 @@ class Category():
         self.id = None
         self.rnd = None
         self.type = None
+        self.active_season = None
 
     def make_kodi_url(self):
-        d = self.__dict__
-        for key, value in d.iteritems():
-            if isinstance(value, unicode):
-                d[key] = unicodedata.normalize('NFKD', value).encode('ascii',
-                                                                     'ignore')
+        d_original = OrderedDict(
+            sorted(self.__dict__.items(), key=lambda x: x[0]))
+        d = d_original.copy()
+        for key, value in d_original.items():
+            if not value:
+                d.pop(key)
+                continue
+            if isinstance(value, str):
+                d[key] = unicodedata.normalize(
+                    'NFKD', value).encode('ascii', 'ignore').decode('utf-8')
         url = ''
-        if d['thumb']:
-            d['thumb'] = urllib.quote_plus(d['thumb'])
-        for item in d.keys():
-            url += '&{0}={1}'.format(item, d[item])
+        for key in d.keys():
+            if isinstance(d[key], (str, bytes)):
+                val = quote_plus(d[key])
+            else:
+                val = d[key]
+            url += '&{0}={1}'.format(key, val)
         return url
 
     def parse_kodi_url(self, url):
-        params = urlparse.parse_qsl(url)
-        for item in params.keys():
-            setattr(self, item, urllib.unquote_plus(params[item]))
+        params = parse_qsl(url)
+        self.parse_params(params)
 
     def parse_params(self, params):
         for item in params.keys():
@@ -54,23 +64,28 @@ class Video():
         self.status = None
 
     def make_kodi_url(self):
-        d = self.__dict__
-        for key, value in d.iteritems():
-            if isinstance(value, unicode):
-                d[key] = unicodedata.normalize('NFKD', value).encode('ascii',
-                                                                     'ignore')
+        d_original = OrderedDict(
+            sorted(self.__dict__.items(), key=lambda x: x[0]))
+        d = d_original.copy()
+        for key, value in d_original.items():
+            if not value:
+                d.pop(key)
+                continue
+            if isinstance(value, str):
+                d[key] = unicodedata.normalize(
+                    'NFKD', value).encode('ascii', 'ignore').decode('utf-8')
         url = ''
-        if d['thumb']:
-            d['thumb'] = urllib.quote_plus(d['thumb'])
-        for item in d.keys():
-            if d[item]:
-                url += '&{0}={1}'.format(item, d[item])
+        for key in d.keys():
+            if isinstance(d[key], (str, bytes)):
+                val = quote_plus(d[key])
+            else:
+                val = d[key]
+            url += '&{0}={1}'.format(key, val)
         return url
 
     def parse_kodi_url(self, url):
-        params = urlparse.parse_qsl(url)
-        for item in params.keys():
-            setattr(self, item, urllib.unquote_plus(params[item]))
+        params = parse_qsl(url)
+        self.parse_params(params)
 
     def parse_params(self, params):
         for item in params.keys():

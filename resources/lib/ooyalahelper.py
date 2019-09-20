@@ -41,15 +41,18 @@ def get_user_ticket():
     else:
         subscription_type = int(addon.getSetting('SUBSCRIPTION_TYPE'))
         if subscription_type == 0:
-            ticket = telstra_auth.get_free_token(
+            auth = telstra_auth.TelstraAuth(
                 addon.getSetting('LIVE_USERNAME'),
                 addon.getSetting('LIVE_PASSWORD'))
+            ticket = auth.get_free_token()
         elif subscription_type == 2:
-            ticket = telstra_auth.get_paid_token(
+            auth = telstra_auth.TelstraAuth(
                 addon.getSetting('PAID_USERNAME'),
                 addon.getSetting('PAID_PASSWORD'))
+            ticket = auth.get_paid_token()
         else:
-            ticket = telstra_auth.get_mobile_token()
+            auth = telstra_auth.TelstraAuth()
+            ticket = auth.get_mobile_token()
     cache.set('SOCCERTICKET', ticket)
     return ticket
 
@@ -61,7 +64,8 @@ def get_embed_token(pai, bearer, video_id):
     url = config.TELSTRA_AUTH_URL.format(code=video_id, pai=pai)
     sess.headers = {}
     sess.headers.update(
-        {'Authorization': 'Bearer {0}'.format(bearer)})
+        {'Authorization': 'Bearer {0}'.format(bearer),
+         'Accept-Encoding': 'gzip'})
     try:
         req = sess.get(url)
         data = req.text

@@ -1,8 +1,9 @@
-<?xml version="1.0" ?><addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="0.0.0">
+<?xml version="1.0" ?><addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="0.0.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.aussieaddonscommon"/>
     <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.future"/>
     <import addon="script.module.requests"/>
     <import addon="script.module.warrant"/>
     <import addon="script.common.plugin.cache"/>

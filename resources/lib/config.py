@@ -26,15 +26,6 @@ VIDEOS_URL = 'https://gateway.ffa.football/content/aleague/videos?offset=0&limit
 
 BC_URL = 'https://edge.api.brightcove.com/playback/v1/accounts/{0}/videos/{1}'
 
-BC_POLICYS = {'5519514577001': 'BCpkADawqM0j7AXGHFi_Dwx883WcrB6UvwJHuWlGKbtxY-isLlgM48Ck0TfWgJvo38YKyAebRSKVM2eZ3aLBomKWx63vH4QEcFJqWBSCmidqcI2CJxSNYKkaW3S0KlPhQg2KcNx0oA_1VjAK',
-              '5519514578001': 'BCpkADawqM0r9EEGoAc_vGhRKzA9LNT8kbAUfWYmdoVVB1NlYGrCt58_3Ky50L_rVj4gcYjA4WWG7DP1lA4LBDrqik98PdHN9ivVl9mQ8l2jzkf7nQqeTFB-5FKxmuhBDZ5_9GwcNDJFO-V7',
-              '5519514571001': 'BCpkADawqM3SGkvPiiweCR4BrANOi6Wu3dtzOIZVrDGY_XcQuOAVEU5_ubheHLKzCmBBBcq3IsAyhWrKss_xIMIJj_hrIEovLg2xNmFDyR00ojao3McEmOMDwk36iK5v-9xVbkbCWabCNRaZ',
-              '5519514572001': 'BCpkADawqM3qdGnXQkUk1OiqcwLAl5pM5hbynJDi52VVRMyiWZqc0dPaCu55y1nJmH49BFSJNHj1lveEVvXH_BdX8G0MaP4Tb0wKk0GOuUU-q0P9eQZNZg52R_S7XkS4WhvxYZLbtLMzpQJs',
-              '5519514573001': 'BCpkADawqM0a2uwu4YiOyVlm9L9HcSCW8tFT3KhCYS-qD2vgsyy7SWALmQF6CsS8SjrMzsPT2qsrz8W4U5HItDvXvqSngrQftPe04YvJ3lVxvNl8TG5T3qWSzqtQHZxeo1Oo2gPMjXNGsxXt',
-              '5519514574001': 'BCpkADawqM03yDM88JKXMgU0sWi9CCFGZI-0W2a2DsKW3dLR8pl60Lp8w5mZ2KFoX4VRaKf2C0EAR2HTODKU-31SQL1sPadUHcCyitDS1nMfTGplN6nCobcx_eaI2y7vP0ZfM0roCwRifhdN',
-              '5519514575001': 'BCpkADawqM1qoT9hdCPQapbHacGAuZkTbXHrzsZrcJmLeO1O8iw4NxjWC5nr3IDfhZKX4BLcJxEYni79JlYTf96eC3tx0ldTNYYbL8Sk8EljSt_4j8Zc05YJ7PdHOw907E1pZl0Z2nzHfOcz',
-              '5472387882001': 'BCpkADawqM27fXg9qQmpIm67ZxQq_PcLYENoWW-3FiLR1QmXph9PM2HuYw_nkTvnCRU3djpjWHJ81IBsw5fRCYFtuFTAJoch_wxrqr1DsPpieYAv-3sXPakRUfMPbPUbqTYKF5jHSYyENMzX'}
-
 USER_AGENT = 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; m8 Build/MOB31K)'
 
 USER_AGENT_LONG = 'Mozilla/5.0 (Linux; Android 6.0; HTC One_M8 Build/MRA58K.H15; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36'
@@ -69,6 +60,49 @@ AWS_POOL_ID = 'ap-southeast-2_3RiyW2G3K'
 AWS_REGION = 'ap-southeast-2'
 
 #Free Auth
+MYID_AUTHORIZATION_URL = 'https://myid.telstra.com/identity/as/authorization.oauth2'
+
+MYID_TOKEN_URL = 'https://myid.telstra.com/identity/as/token.oauth2'
+
+MYID_TOKEN_PARAMS = {
+    'redirect_uri': 'https://hub.telstra.com.au/offers/content/cached'
+                    '/callback.html',
+    'grant_type': 'authorization_code'
+}
+
+MYID_RESUME_AUTHORIZATION_URL = 'https://myid.telstra.com/identity/as/{0}/resume/as/authorization.ping'
+
+MYID_AUTH_RESUME_DATA = {
+    'pf.rememberUsername': 'on',
+    'pf.ok': 'clicked',
+    'pf.cancel': '',
+    'pf.adapterId': 'upAdapter'
+}
+
+SSO_SESSION_HANDLER_URLS = [
+    'https://signon.telstra.com/SSOSessionHandler',
+    'https://signon.bigpond.com/SSOSessionHandler',
+    'https://signon.telstra.com.au/SSOSessionHandler'
+]
+
+MYID_AUTH_PARAMS = {
+    'redirect_uri': 'https://hub.telstra.com.au/offers/content/cached'
+                    '/callback.html',
+    'response_type': 'code',
+    'scope': 'openid app.oneplace',
+    'code_challenge_method': 'S256',
+    'response_mode': 'query'}
+
+MYID_HEADERS = {
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,'
+              'image/webp,image/apng,*/*;q=0.8',
+    'Accept-Encoding': 'gzip, '
+                       'deflate',
+    'Accept-Language': 'en-AU,en-US;q=0.9',
+    'Cache-Control': 'max-age=0',
+    'Connection': 'keep-alive',
+    'X-Requested-With': 'com.telstra.nrl'}
+
 SPC_HEADERS = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
                'Accept-Encoding': 'gzip, deflate',
                'Accept-Language': 'en-AU,en-US;q=0.9',
@@ -77,34 +111,7 @@ SPC_HEADERS = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,
 
 SPC_URL = 'http://hub.telstra.com.au/sp2018-ffa-app?tpUID={0}&offerId=45d09e09-6472-43fa-9f24-d328d9b25ec7&type=SportPassConfirmation&device=mobile&cid=FFA_App'
 
-SSO_PARAMS = {'redirect_uri': 'https://hub.telstra.com.au/offers/content/cached/callback.html',
-              'response_type': 'id_token token',
-              'scope': 'openid email profile phone telstra.user.sso.profile'}
 
-SSO_URL = 'https://tapi.telstra.com/v1/sso/auth'
-
-SSO_HEADERS = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-               'Accept-Encoding': 'gzip, deflate',
-               'Accept-Language': 'en-AU,en-US;q=0.9',
-               'Cache-Control': 'max-age=0',
-               'Connection': 'keep-alive',
-               'Upgrade-Insecure-Requests': '1',
-               'User-Agent': USER_AGENT_LONG,
-               'X-Requested-With': 'com.ffa.hal'}
-
-SIGNON_HEADERS = {'Connection': 'keep-alive', 
-                  'Cache-Control': 'max-age=0', 
-                  'Origin': 'https://signon.telstra.com', 
-                  'Upgrade-Insecure-Requests': '1', 
-                  'User-Agent': USER_AGENT_LONG, 
-                  'Content-Type': 'application/x-www-form-urlencoded', 
-                  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 
-                  'Accept-Encoding': 'gzip, deflate', 
-                  'Accept-Language': 'en-AU,en-US;q=0.8'}
-                        
-SIGNON_URL = 'https://signon.telstra.com/login'
-
-SIGNON_DATA = {'goto': 'https://signon.telstra.com/federation/saml2?SPID=telstramedia', 'gotoOnFail': '', 'username': None, 'password': None}
                         
 OFFERS_URL = 'https://tapi.telstra.com/v1/media-products/catalogues/media/offers'
 
@@ -125,9 +132,11 @@ MEDIA_ORDER_JSON = '{{"serviceId":"{0}","serviceType":"MSISDN","offer":{{"id":"{
 
 
 #Mobile Auth
-OFFER_ID = '45d09e09-6472-43fa-9f24-d328d9b25ec7'
+MOBILE_OAUTH_URL = 'https://tapi.telstra.com/v1/media-commerce/oauth/token'
 
 MOBILE_ID_URL = 'http://medrx.telstra.com.au/online.php'
+
+OFFER_ID = '45d09e09-6472-43fa-9f24-d328d9b25ec7'
 
 MOBILE_CLIENT_ID = 'yGQTEDLGiWeVBogNzKuZAAt6x1yVk3Ot'
 
@@ -136,7 +145,7 @@ MOBILE_CLIENT_SECRET = 'zsbhQBtJ9Towbac7'
 MOBILE_TOKEN_PARAMS = {'client_id': MOBILE_CLIENT_ID,
                       'client_secret': MOBILE_CLIENT_SECRET,
                       'grant_type': 'client_credentials',
-                      'scope': 'MEDIA-ENTITLEMENTS-API MEDIA-PRODUCTS-API MEDIA-COMMERCE-API MY-OFFERS-BFF',
-                      'x-user-idp': 'ngp'}
+                      'scope': 'MEDIA-ENTITLEMENTS-API MEDIA-PURCHASE-API',
+                      'x-user-idp': 'NGP'}
 
 MOBILE_ORDER_JSON = {"offer": {"id":OFFER_ID}, "serviceType":"MSISDN"}
