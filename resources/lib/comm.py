@@ -83,6 +83,8 @@ def list_videos(params):
     data = json.loads(fetch_url(config.VIDEOS_URL))
     listing = []
     for video in data:
+        if not video.get('poster'):
+            continue
         v = classes.Video()
         v.title = video.get('name')
         v.desc = video.get('name')
