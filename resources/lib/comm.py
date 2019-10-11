@@ -124,7 +124,10 @@ def list_live(params):
             v.live = True
             v.premium = True
             v.title = v.get_live_title()
-            v.video_id = match.get('video_id')
+            for broadcast in broadcasters:
+                if 'Telstra' in broadcast.get('name'):
+                    v.video_id = broadcast.get('stream_name')
+                    break
             v.account_id = match.get('account_id')
         else:
             v.dummy = True
