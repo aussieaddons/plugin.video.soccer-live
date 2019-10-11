@@ -25,6 +25,7 @@ def list_comps(params):
         c.thumb = comp['small'].get('url')
         c.type = comp.get('type')
         c.active_season = comp.get('active_season')
+        c.tag = comp.get('tag')
         if c.type == 'competition':
             c.id = str(comp.get('competition_id'))
         else:
@@ -49,6 +50,7 @@ def list_rounds(params):
         c.rnd = str(rnd)
         c.id = comp_id
         c.active_season = active_season
+        c.tag = params.get('tag')
         listing.append(c)
     return listing
 
@@ -69,12 +71,14 @@ def list_matches(params):
         round_data = data.get('rounds')
     for match in round_data:
         v = classes.Video()
-        v.ooyala_id = match.get('match_replay_embedcode')
-        if not v.ooyala_id:
+        v.video_id = match.get('match_replay_embedcode')
+        if not v.video_id:
             continue
         v.title = match.get('title')
         v.desc = match.get('title')
         v.thumb = params.get('thumb')
+        v.tag = params.get('tag')
+        v.premium = True
         listing.append(v)
     return listing
 
@@ -92,6 +96,7 @@ def list_videos(params):
         v.fanart = video.get('poster').get('url')
         v.video_id = video.get('video_id')
         v.account_id = video.get('account_id')
+        v.tag = params.get('tag')
         listing.append(v)
     return listing
 
@@ -117,11 +122,10 @@ def list_live(params):
             v.status = 'Live'
         if v.status == 'Live':
             v.live = True
+            v.premium = True
             v.title = v.get_live_title()
-            for broadcast in broadcasters:
-                if 'Telstra' in broadcast.get('name'):
-                    v.ooyala_id = broadcast.get('stream_name')
-                    break
+            v.video_id = match.get('video_id')
+            v.account_id = match.get('account_id')
         else:
             v.dummy = True
             v.title = v.get_upcoming_title()
@@ -129,23 +133,35 @@ def list_live(params):
     return listing
 
 
-def get_stream_url(account_id, video_id):
+def get_stream_url(video):
     config_data = json.loads(fetch_url(config.CONFIG_URL))
-    policy = None
-    for acc in config_data['video_settings']:
-        if acc.get('account_id') == account_id:
-            policy = acc.get('policy_key')
+
+    if video.premium:
+        policy_data = [x for x in config_data['video_settings'] if x.get('name') == 'Premium'][0]
+        account_id = policy_data.get('account_id')
+        policy = policy_data.get('policy_key')
+    else:
+        account_id = video.account_id
+        policy_data = [x for x in config_data['video_settings'] if
+                       x.get('account_id') == account_id][0]
+        policy = policy_data.get('policy_key')
+
     if not policy:
-        raise Exception("Can't retrieve brightcove policy key")
-    bc_url = config.BC_URL.format(account_id, video_id)
+        raise Exception("Can't retrieve brightcove policy key for {0}".format(video.account_id))
+
+    bc_url = config.BC_URL.format(account_id, video.video_id)
     data = json.loads(fetch_url(bc_url, {'BCOV-POLICY': policy}))
     src = None
-    for source in data.get('sources'):
-        ext_ver = source.get('ext_x_version')
-        src = source.get('src')
-        if ext_ver == '4' and src:
-            if src.startswith('https'):
-                return src
+    sources = data.get('sources')
+    if len(sources) == 1:
+        return sources[0].get('src')
+    else:
+        for source in sources:
+            ext_ver = source.get('ext_x_version')
+            src = source.get('src')
+            if ext_ver == '4' and src:
+                if src.startswith('https'):
+                    return src
     if not src:
         utils.log(data.get('sources'))
         raise Exception('Unable to locate video source.')

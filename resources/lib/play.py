@@ -28,14 +28,17 @@ def play_video(params):
                     'has started. Playable matches will have "LIVE NOW" in '
                     'green next to the title.')
             return
-        if v.ooyala_id:
-            v.url = ooyalahelper.get_m3u8_playlist(v.ooyala_id)
-        else:
+
+        if v.premium:
             ooyalahelper.get_user_ticket()
-            v.url = comm.get_stream_url(v.account_id, v.video_id)
+        v.url = comm.get_stream_url(v)
+        if not v.url:
+            raise Exception('Unable to find stream for video')
         play_item = xbmcgui.ListItem(path=v.url,
                                      iconImage=v.thumb,
                                      thumbnailImage=v.thumb)
+        play_item.setProperty('inputstreamaddon', 'inputstream.adaptive')
+        play_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
         xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
     except Exception:
         utils.handle_error('Unable to play video')

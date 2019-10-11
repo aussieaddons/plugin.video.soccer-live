@@ -16,6 +16,7 @@ class Category():
         self.rnd = None
         self.type = None
         self.active_season = None
+        self.tag = None
 
     def make_kodi_url(self):
         d_original = OrderedDict(
@@ -62,6 +63,8 @@ class Video():
         self.ooyala_id = None
         self.start_date = None
         self.status = None
+        self.premium = False
+        self.tag = None
 
     def make_kodi_url(self):
         d_original = OrderedDict(

@@ -24,6 +24,8 @@ MATCHES_URL = 'https://gateway.ffa.football/football/{0}'
 
 VIDEOS_URL = 'https://gateway.ffa.football/content/aleague/videos?offset=0&limit=50'
 
+MATCH_DATA_URL = 'https://gateway.ffa.football/content/{tag}/match/{match}'
+
 BC_URL = 'https://edge.api.brightcove.com/playback/v1/accounts/{0}/videos/{1}'
 
 USER_AGENT = 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; m8 Build/MOB31K)'
