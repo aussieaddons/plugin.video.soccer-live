@@ -71,7 +71,7 @@ def list_matches(params):
         round_data = data.get('rounds')
     for match in round_data:
         v = classes.Video()
-        v.video_id = match.get('match_replay_embedcode')
+        v.video_id = match.get('match_replay_videoID')
         if not v.video_id:
             continue
         v.title = match.get('title')
