@@ -1,6 +1,7 @@
 import classes
 import config
 import json
+import urllib
 
 from aussieaddonscommon import session, utils
 
@@ -136,11 +137,12 @@ def list_live(params):
     return listing
 
 
-def get_stream_url(video):
+def get_stream_url(video, embed_token):
     config_data = json.loads(fetch_url(config.CONFIG_URL))
 
     if video.premium:
-        policy_data = [x for x in config_data['video_settings'] if x.get('name') == 'Premium'][0]
+        policy_data = [x for x in config_data['video_settings'] if
+                       x.get('name') == 'Premium'][0]
         account_id = policy_data.get('account_id')
         policy = policy_data.get('policy_key')
     else:
@@ -150,21 +152,37 @@ def get_stream_url(video):
         policy = policy_data.get('policy_key')
 
     if not policy:
-        raise Exception("Can't retrieve brightcove policy key for {0}".format(video.account_id))
+        raise Exception("Can't retrieve brightcove policy key for {0}".format(
+            video.account_id))
 
     bc_url = config.BC_URL.format(account_id, video.video_id)
     data = json.loads(fetch_url(bc_url, {'BCOV-POLICY': policy}))
     src = None
     sources = data.get('sources')
     if len(sources) == 1:
-        return sources[0].get('src')
+        src = sources[0].get('src')
     else:
         for source in sources:
             ext_ver = source.get('ext_x_version')
             src = source.get('src')
             if ext_ver == '4' and src:
                 if src.startswith('https'):
-                    return src
+                    break
     if not src:
         utils.log(data.get('sources'))
         raise Exception('Unable to locate video source.')
+    if not embed_token:
+        return src
+    else:
+        src = sign_live_url(src, embed_token)
+    return src
+
+
+def sign_live_url(url, embed_token):
+    headers = {'authorization': 'JWT {0}'.format(embed_token)}
+    data = json.loads(
+        fetch_url(config.SIGN_URL.format(urllib.quote(url)), headers=headers))
+    if data.get('message') == 'SUCCESS':
+        return data.get('url')
+    else:
+        raise Exception('error in signing url')

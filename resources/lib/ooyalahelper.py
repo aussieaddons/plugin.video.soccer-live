@@ -83,7 +83,7 @@ def get_embed_token(pai, bearer, video_id):
         else:
             raise e
 
-    return urllib.quote_plus(embed_token)
+    return embed_token
 
 
 def get_secure_token(secure_url, videoId):

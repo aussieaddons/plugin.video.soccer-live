@@ -28,11 +28,13 @@ MATCH_DATA_URL = 'https://gateway.ffa.football/content/{tag}/match/{match}'
 
 BC_URL = 'https://edge.api.brightcove.com/playback/v1/accounts/{0}/videos/{1}'
 
+SIGN_URL = 'https://api.afl.com.au//keyserver/urlSigning?url={0}'
+
 USER_AGENT = 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; m8 Build/MOB31K)'
 
 USER_AGENT_LONG = 'Mozilla/5.0 (Linux; Android 6.0; HTC One_M8 Build/MRA58K.H15; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36'
 
-TELSTRA_AUTH_URL = 'https://tapi.telstra.com/v1/media-stream/auth/token?code={code}&pai={pai}&provider=ooyala&partnerId=FFA'
+TELSTRA_AUTH_URL = 'https://tapi.telstra.com/v1/media-stream/auth/token?code={code}&pai={pai}&provider=signed&partnerId=FFA'
 
 OOYALA_PCODE = 'xoNG0yOk4f4VR8pLKAKNukJ-gdEr'
 
