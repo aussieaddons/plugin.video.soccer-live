@@ -12,7 +12,7 @@ sys.path.append(BASE_RESOURCE_PATH)
 
 import play  # noqa: E402
 import menus  # noqa: E402
-import ooyalahelper  # noqa: E402
+import stream_auth  # noqa: E402
 import categories  # noqa: E402
 
 _url = sys.argv[0]
@@ -49,7 +49,7 @@ def router(paramstring):
         elif params['action'] in ['listvideos', 'listreplays']:
             play.play_video(params)
         elif params['action'] == 'clearticket':
-            ooyalahelper.clear_ticket()
+            stream_auth.clear_ticket()
     else:
         categories.list_categories()
 

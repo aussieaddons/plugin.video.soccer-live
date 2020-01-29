@@ -1,7 +1,7 @@
 import classes
 import comm
 import json
-import ooyalahelper
+import stream_auth
 import sys
 import xbmcaddon
 import xbmcgui
@@ -30,13 +30,13 @@ def play_video(params):
                     'green next to the title.')
             return
 
-        embed_token = None
+        media_auth_token = None
         if v.premium:
-            auth = json.loads(ooyalahelper.get_user_ticket())
-            embed_token = ooyalahelper.get_embed_token(auth.get('pai'),
-                                                       auth.get('bearer'),
-                                                       v.video_id)
-        v.url = comm.get_stream_url(v, embed_token)
+            auth = json.loads(stream_auth.get_user_ticket())
+            media_auth_token = stream_auth.get_media_auth_token(auth.get('pai'),
+                                                           auth.get('bearer'),
+                                                           v.video_id)
+        v.url = comm.get_stream_url(v, media_auth_token)
         if not v.url:
             raise Exception('Unable to find stream for video')
         play_item = xbmcgui.ListItem(path=v.url,
@@ -47,4 +47,5 @@ def play_video(params):
             play_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
         xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
     except Exception:
+        raise
         utils.handle_error('Unable to play video')
