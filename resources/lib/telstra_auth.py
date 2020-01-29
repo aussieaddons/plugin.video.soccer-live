@@ -49,18 +49,14 @@ class TelstraAuth(object):
 
     def get_code_challenge(self, verifier):
         code_challenge_digest = hashlib.sha256(verifier).digest()
-        code_challenge = base64.b64encode(code_challenge_digest, b'-_').rstrip(
-            b'=')
+        code_challenge = base64.b64encode(
+            code_challenge_digest, b'-_').rstrip(b'=')
         return code_challenge
 
     def create_dialog(self, msg):
         self.prog_dialog.create(msg)
 
-    def get_paid_token(self):
-        session = custom_session.Session(force_tlsv1=False)
-        prog_dialog = xbmcgui.DialogProgress()
-        prog_dialog.create('Logging in with mobile service')
-        prog_dialog.update(1, 'Obtaining user ID from AWS')
+    def _get_aws_userid(self):
         try:
             client = boto3.client('cognito-idp',
                                   region_name=config.AWS_REGION,
@@ -72,30 +68,20 @@ class TelstraAuth(object):
                          client_id=config.AWS_CLIENT_ID,
                          client=client)
         except NameError:
-            raise TelstraAuthException('Paid subscriptions not supported on some '
-                                       'platforms of Kodi < 18. Please upgrade to '
-                                       'Kodi 18 to resolve this.')
+            raise TelstraAuthException(
+                'Paid subscriptions not supported on some '
+                'platforms of Kodi < 18. Please upgrade to '
+                'Kodi 18 to resolve this.')
         try:
             tokens = aws.authenticate_user().get('AuthenticationResult')
         except Exception as e:
             raise TelstraAuthException(str(e))
-
         response = client.get_user(AccessToken=tokens.get('AccessToken'))
-        userid = response.get('Username')
+        return response.get('Username')
 
-        prog_dialog.update(33, 'Obtaining oauth token')
-        config.OAUTH_DATA.update({'x-user-id': userid})
-        oauth_resp = session.post(config.OAUTH_URL,
-                                  data=config.OAUTH_DATA)
-        oauth_json = json.loads(oauth_resp.text)
-        access_token = oauth_json.get('access_token')
-        session.headers = {}
-        session.headers.update(
-            {'Authorization': 'Bearer {0}'.format(access_token)})
-
-        prog_dialog.update(66, 'Checking for valid subscription')
+    def purchase_subscription(self):
         try:
-            session.get(config.MEDIA_PURCHASE_URL.format(userid))
+            self.session.get(config.MEDIA_PURCHASE_URL.format(self.userid))
 
         except requests.exceptions.HTTPError as e:
             if e.response.status_code == 404:
@@ -105,18 +91,31 @@ class TelstraAuth(object):
                 utils.log(json.loads(e.response.text).get('exception'))
                 raise TelstraAuthException('Unknown error. Please check the log '
                                            'for more information.')
-        session.close()
+
+    def get_paid_token(self):
+        self.session = custom_session.Session(force_tlsv1=False)
+        prog_dialog = xbmcgui.DialogProgress()
+        prog_dialog.create('Logging in with mobile service')
+        prog_dialog.update(1, 'Obtaining user ID from AWS')
+        self.userid = self._get_aws_userid()
+        prog_dialog.update(33, 'Obtaining oauth token')
+        self.set_initial_token()
+        prog_dialog.update(66, 'Checking for valid subscription')
+        self.purchase_subscription()
+        self.session.close()
         prog_dialog.update(100, 'Finished!')
         prog_dialog.close()
-        return json.dumps({'pai': str(userid), 'bearer': access_token})
+        return json.dumps({'pai': str(self.userid),
+                           'bearer': self.access_token})
+
+    def set_userid(self):
+        self.userid = uuid.uuid4()
 
     def set_initial_token(self):
         # Send our first login request to Yinzcam, recieve (unactivated) ticket
-
-        self.userid = uuid.uuid4()
         config.OAUTH_DATA.update({'x-user-id': self.userid})
         oauth_resp = self.session.post(config.OAUTH_URL,
-                                  data=config.OAUTH_DATA)
+                                       data=config.OAUTH_DATA)
         oauth_json = json.loads(oauth_resp.text)
         self.access_token = oauth_json.get('access_token')
         self.session.headers = {}
@@ -129,7 +128,7 @@ class TelstraAuth(object):
         :return:
         """
         self.session.headers = config.SPC_HEADERS
-        spc_resp = self.session.get(config.SPC_URL)
+        spc_resp = self.session.get(config.SPC_URL.format(uuid.uuid4()))
         sso_token_match = re.search('ssoClientId = "(\\w+)"', spc_resp.text)
         try:
             self.sso_client_id = sso_token_match.group(1)
@@ -238,7 +237,7 @@ class TelstraAuth(object):
             self.ph_no_list = []
 
             for offer in offers_list:
-                if offer.get('name') != 'NRL Live Pass':
+                if offer.get('name') != 'My Football Live Pass':
                     continue
                 data = offer.get('productOfferingAttributes')
                 serv_id = \
@@ -296,7 +295,7 @@ class TelstraAuth(object):
             {'Authorization': 'Bearer {0}'.format(self.bearer_token)})
         confirm = json.loads(self.session.get(config.ENTITLEMENTS_URL).text)
         if len(confirm.get('entitlements')) < 1:
-            raise AussieAddonsException('Telstra ID activation failed')
+            raise TelstraAuthException('Telstra ID activation failed')
 
     def get_free_token(self):
         """
@@ -305,6 +304,7 @@ class TelstraAuth(object):
         """
         self.create_dialog('Activating live pass via free offer')
         self.prog_dialog.update(1, 'Obtaining oauth token')
+        self.set_userid()
         self.set_initial_token()
 
         # Check entitlements (not sure if needed)
@@ -364,6 +364,7 @@ class TelstraAuth(object):
     def get_mobile_token(self):
         self.create_dialog('Activating live pass via mobile network')
         self.prog_dialog.update(1, 'Obtaining oauth token')
+        self.set_userid()
         self.set_initial_token()
         # remove auth header, not wanted for some reason...
         self.session.headers.pop('Authorization')
