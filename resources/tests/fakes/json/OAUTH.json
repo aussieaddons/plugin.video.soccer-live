@@ -1,0 +1,21 @@
+{
+    "access_token": "abc123",
+    "api_product_list": "[Media APIs FFA Consumer, Media APIs]",
+    "api_product_list_json": [
+        "Media APIs FFA Consumer",
+        "Media APIs"
+    ],
+    "application_name": "uuid",
+    "client_id": "foobar",
+    "developer.email": "email@c.c",
+    "expires_in": "3599",
+    "issued_at": "1580208000000",
+    "organization_name": "telstra-prod",
+    "refresh_count": "0",
+    "refresh_token_expires_in": "0",
+    "scope": "MEDIA-ENTITLEMENTS-API MEDIA-PURCHASE-API",
+    "status": "approved",
+    "token_type": "BearerToken",
+    "x_user_id": "uuid",
+    "x_user_idp": "PARTNER"
+}

@@ -1,0 +1,771 @@
+{
+  "name": "hub",
+  "version_info": {
+    "ios": {
+      "current_version": "5.0.1",
+      "minimum_version": "5.0.1",
+      "store_url": "https:\/\/itunes.apple.com\/au\/app\/my-football-live-app\/id917667859?ls=1&mt=8"
+    },
+    "android": {
+      "current_version": "3849",
+      "minimum_version": "3849",
+      "store_url": "https:\/\/play.google.com\/store\/apps\/details?id=com.ffa.hal"
+    }
+  },
+  "loading_screen": [],
+  "onboarding_screen": [],
+  "navigation": [
+    {
+      "type": "screen",
+      "params": {
+        "screen": "myfootball",
+        "tab": "hubapp:\/\/live-pass\/voucher"
+      },
+      "title": "Redeem a voucher"
+    },
+    {
+      "type": "internal",
+      "params": {
+        "url": "https:\/\/www.telstra.com.au\/thanks\/sport\/aleague",
+        "heading": "Telstra Thanks Tickets"
+      },
+      "title": "Telstra Thanks Tickets"
+    },
+    {
+      "type": "external",
+      "params": {
+        "url": "https:\/\/crowdsupport.telstra.com.au\/t5\/My-Football-Live\/bd-p\/My-Football-Live"
+      },
+      "title": "24\/7 Support"
+    },
+    {
+      "type": "internal",
+      "params": {
+        "url": "https:\/\/www.ffa.com.au\/my-football-livepass-faqs?view_mode=webview",
+        "heading": "Live Pass FAQs"
+      },
+      "title": "Live Pass FAQs"
+    },
+    {
+      "type": "internal",
+      "params": {
+        "url": "https:\/\/www.ffa.com.au\/my-football-live-terms-use?view_mode=webview",
+        "heading": "Terms of Use"
+      },
+      "title": "Terms of Use"
+    }
+  ],
+  "snapshot_ladders": [
+    {
+      "label": "World Cup (W)",
+      "season_uuid": "cc251bb7-3ca8-3514-8f81-f5abcafcd816",
+      "season": "2018",
+      "competition": "408",
+      "team": "6231"
+    },
+    {
+      "label": "A-League",
+      "season_uuid": "84b70295-60f9-3fd6-866b-c7036d8714e3",
+      "season": "2019",
+      "competition": "214"
+    },
+    {
+      "label": "W-League",
+      "season_uuid": "664e2069-6d55-3be6-80bf-ba06ba0a7ef4",
+      "season": "2019",
+      "competition": "684"
+    },
+    {
+      "label": "Y-League",
+      "season_uuid": "bfb6e3b0-c356-3263-8ca8-b46db23d0ab2",
+      "season": "2019",
+      "competition": "685"
+    },
+    {
+      "label": "WC Qualifiers",
+      "season_uuid": "a9473368-2717-3c3a-9243-4f0ce3472b58",
+      "season": "112022",
+      "competition": "341",
+      "team": "575"
+    },
+    {
+      "label": "Tournament of Nations",
+      "season_uuid": "332e0b60-8eed-31a6-a23a-f3e5c666a4da",
+      "season": "2018",
+      "competition": "863",
+      "team": "6231"
+    }
+  ],
+  "fixtures": [],
+  "squads": [
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "2309",
+      "hidden_players": []
+    },
+    {
+      "label": "W-League",
+      "season_id": "2017",
+      "competition_id": "684",
+      "team_id": "9406",
+      "hidden_players": []
+    },
+    {
+      "label": "Y-League",
+      "season_id": "2016",
+      "competition_id": "685",
+      "team_id": "9414",
+      "hidden_players": []
+    },
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "2248",
+      "hidden_players": []
+    },
+    {
+      "label": "W-League",
+      "season_id": "2017",
+      "competition_id": "684",
+      "team_id": "9407",
+      "hidden_players": []
+    },
+    {
+      "label": "Y-League",
+      "season_id": "2016",
+      "competition_id": "685",
+      "team_id": "9416",
+      "hidden_players": []
+    },
+    {
+      "label": "W-League",
+      "season_id": "2017",
+      "competition_id": "684",
+      "team_id": "9408",
+      "hidden_players": []
+    },
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "1988",
+      "hidden_players": []
+    },
+    {
+      "label": "Y-League",
+      "season_id": "2016",
+      "competition_id": "685",
+      "team_id": "9417",
+      "hidden_players": []
+    },
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "5664",
+      "hidden_players": []
+    },
+    {
+      "label": "W-League",
+      "season_id": "2017",
+      "competition_id": "684",
+      "team_id": "10950",
+      "hidden_players": []
+    },
+    {
+      "label": "Y-League",
+      "season_id": "2016",
+      "competition_id": "685",
+      "team_id": "9418",
+      "hidden_players": []
+    },
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "2237",
+      "hidden_players": []
+    },
+    {
+      "label": "W-League",
+      "season_id": "2017",
+      "competition_id": "684",
+      "team_id": "9409",
+      "hidden_players": []
+    },
+    {
+      "label": "Y-League",
+      "season_id": "2016",
+      "competition_id": "685",
+      "team_id": "9419",
+      "hidden_players": []
+    },
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "2319",
+      "hidden_players": []
+    },
+    {
+      "label": "W-League",
+      "season_id": "2017",
+      "competition_id": "684",
+      "team_id": "9410",
+      "hidden_players": []
+    },
+    {
+      "label": "Y-League",
+      "season_id": "2016",
+      "competition_id": "685",
+      "team_id": "9420",
+      "hidden_players": []
+    },
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "989",
+      "hidden_players": []
+    },
+    {
+      "label": "W-League",
+      "season_id": "2017",
+      "competition_id": "684",
+      "team_id": "9411",
+      "hidden_players": []
+    },
+    {
+      "label": "Y-League",
+      "season_id": "2016",
+      "competition_id": "685",
+      "team_id": "9421",
+      "hidden_players": []
+    },
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "1962",
+      "hidden_players": []
+    },
+    {
+      "label": "W-League",
+      "season_id": "2017",
+      "competition_id": "684",
+      "team_id": "9412",
+      "hidden_players": []
+    },
+    {
+      "label": "Y-League",
+      "season_id": "2016",
+      "competition_id": "685",
+      "team_id": "9422",
+      "hidden_players": []
+    },
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "2655",
+      "hidden_players": []
+    },
+    {
+      "label": "A-League",
+      "season_id": "2017",
+      "competition_id": "214",
+      "team_id": "7062",
+      "hidden_players": []
+    },
+    {
+      "label": "W-League",
+      "season_id": "2017",
+      "competition_id": "684",
+      "team_id": "9413",
+      "hidden_players": []
+    },
+    {
+      "label": "Y-League",
+      "season_id": "2016",
+      "competition_id": "685",
+      "team_id": "9423",
+      "hidden_players": []
+    },
+    {
+      "label": "WC Qualifiers",
+      "season_id": "112018",
+      "competition_id": "341",
+      "team_id": "575",
+      "hidden_players": []
+    },
+    {
+      "label": "Friendlies",
+      "season_id": "2017",
+      "competition_id": "34",
+      "team_id": "6231",
+      "hidden_players": []
+    }
+  ],
+  "hidden_players": [],
+  "match_ribbon": [],
+  "video_settings": [
+    {
+      "name": "A-League",
+      "account_id": "5519514571001",
+      "policy_key": "BCpkADawqM3SGkvPiiweCR4BrANOi6Wu3dtzOIZVrDGY_XcQuOAVEU5_ubheHLKzCmBBBcq3IsAyhWrKss_xIMIJj_hrIEovLg2xNmFDyR00ojao3McEmOMDwk36iK5v-9xVbkbCWabCNRaZ"
+    },
+    {
+      "name": "W-League",
+      "account_id": "5519514572001",
+      "policy_key": "BCpkADawqM3qdGnXQkUk1OiqcwLAl5pM5hbynJDi52VVRMyiWZqc0dPaCu55y1nJmH49BFSJNHj1lveEVvXH_BdX8G0MaP4Tb0wKk0GOuUU-q0P9eQZNZg52R_S7XkS4WhvxYZLbtLMzpQJs"
+    },
+    {
+      "name": "Y-League",
+      "account_id": "5519514573001",
+      "policy_key": "BCpkADawqM0a2uwu4YiOyVlm9L9HcSCW8tFT3KhCYS-qD2vgsyy7SWALmQF6CsS8SjrMzsPT2qsrz8W4U5HItDvXvqSngrQftPe04YvJ3lVxvNl8TG5T3qWSzqtQHZxeo1Oo2gPMjXNGsxXt"
+    },
+    {
+      "name": "MyFootball",
+      "account_id": "5472387882001",
+      "policy_key": "BCpkADawqM27fXg9qQmpIm67ZxQq_PcLYENoWW-3FiLR1QmXph9PM2HuYw_nkTvnCRU3djpjWHJ81IBsw5fRCYFtuFTAJoch_wxrqr1DsPpieYAv-3sXPakRUfMPbPUbqTYKF5jHSYyENMzX"
+    },
+    {
+      "name": "Socceroos",
+      "account_id": "5519514577001",
+      "policy_key": "BCpkADawqM0j7AXGHFi_Dwx883WcrB6UvwJHuWlGKbtxY-isLlgM48Ck0TfWgJvo38YKyAebRSKVM2eZ3aLBomKWx63vH4QEcFJqWBSCmidqcI2CJxSNYKkaW3S0KlPhQg2KcNx0oA_1VjAK"
+    },
+    {
+      "name": "Matildas",
+      "account_id": "5519514578001",
+      "policy_key": "BCpkADawqM0r9EEGoAc_vGhRKzA9LNT8kbAUfWYmdoVVB1NlYGrCt58_3Ky50L_rVj4gcYjA4WWG7DP1lA4LBDrqik98PdHN9ivVl9mQ8l2jzkf7nQqeTFB-5FKxmuhBDZ5_9GwcNDJFO-V7"
+    },
+    {
+      "name": "CON",
+      "account_id": "5519514578001",
+      "policy_key": "BCpkADawqM0r9EEGoAc_vGhRKzA9LNT8kbAUfWYmdoVVB1NlYGrCt58_3Ky50L_rVj4gcYjA4WWG7DP1lA4LBDrqik98PdHN9ivVl9mQ8l2jzkf7nQqeTFB-5FKxmuhBDZ5_9GwcNDJFO-V7"
+    },
+    {
+      "name": "FFA Cup",
+      "account_id": "5519514574001",
+      "policy_key": "BCpkADawqM03yDM88JKXMgU0sWi9CCFGZI-0W2a2DsKW3dLR8pl60Lp8w5mZ2KFoX4VRaKf2C0EAR2HTODKU-31SQL1sPadUHcCyitDS1nMfTGplN6nCobcx_eaI2y7vP0ZfM0roCwRifhdN"
+    },
+    {
+      "name": "NPL",
+      "account_id": "5519514575001",
+      "policy_key": "BCpkADawqM1qoT9hdCPQapbHacGAuZkTbXHrzsZrcJmLeO1O8iw4NxjWC5nr3IDfhZKX4BLcJxEYni79JlYTf96eC3tx0ldTNYYbL8Sk8EljSt_4j8Zc05YJ7PdHOw907E1pZl0Z2nzHfOcz"
+    },
+    {
+      "name": "Premium",
+      "account_id": "6058022062001",
+      "policy_key": "BCpkADawqM2-3zP0pkm3YhrUF5uyGqMZlIZIWDPgutiOr9J36SXijWchzniqWN6BN2fPk8v2dQZ15xEb2oAt_ugg8p1pPbm5oMZlSte-vqbo6KcRW7BWH6TKoU9ctyHFYWFrkWsvjk4OujSFI5QLDo2wStiuKAmd0FWmc9cCogB6SoWEBoKLJA49e0c"
+    }
+  ],
+  "club_stats_centre": [],
+  "hub_configuration": [
+    {
+      "type": "competition",
+      "active_season": "2019",
+      "competition_id": "214",
+      "short_name": "A-League",
+      "long_name": "Hyundai A-League",
+      "brightcove_account": "5519514571001",
+      "tag": "aleague",
+      "color": "#FF5000",
+      "vertical_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/aleague-visit.png?itok=-GzwbJES",
+        "width": 520,
+        "height": 520,
+        "caption": "aleague promo large"
+      },
+      "vertical_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/aleague-visit.png?itok=-GzwbJES",
+        "width": 520,
+        "height": 520,
+        "caption": "aleague promo large"
+      },
+      "horizontal_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/hubbar-aleague.png?itok=ivzUh-Qe",
+        "width": 200,
+        "height": 85,
+        "caption": "Hyundai A-League Homepage Logo"
+      },
+      "horizontal_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/hubbar-aleague.png?itok=ivzUh-Qe",
+        "width": 200,
+        "height": 85,
+        "caption": "Hyundai A-League Homepage Logo"
+      },
+      "small": {
+        "url": "example.jpg",
+        "width": 520,
+        "height": 520,
+        "caption": "aleague promo large"
+      },
+      "background": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-09\/Competition%20Page%20Background.png?itok=Ny1EAIQV",
+        "width": 1200,
+        "height": 675,
+        "caption": "Comp Page BackGround"
+      },
+      "ticket_url": "https:\/\/www.google.com.au",
+      "shop_url": "https:\/\/www.socceroos.com.au"
+    },
+    {
+      "type": "competition",
+      "active_season": "2019",
+      "competition_id": "684",
+      "short_name": "W-League",
+      "long_name": "Westfield W-League",
+      "brightcove_account": "5519514572001",
+      "tag": "wleague",
+      "color": "#DA291C",
+      "vertical_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/hubbar-wleague.png?itok=rzlVzaIT",
+        "width": 200,
+        "height": 80,
+        "caption": "Westfield W-League Homepage Logo"
+      },
+      "vertical_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/hubbar-wleague.png?itok=rzlVzaIT",
+        "width": 200,
+        "height": 80,
+        "caption": "Westfield W-League Homepage Logo"
+      },
+      "horizontal_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/hubbar-wleague.png?itok=rzlVzaIT",
+        "width": 200,
+        "height": 80,
+        "caption": "Westfield W-League Homepage Logo"
+      },
+      "horizontal_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/hubbar-wleague.png?itok=rzlVzaIT",
+        "width": 200,
+        "height": 80,
+        "caption": "Westfield W-League Homepage Logo"
+      },
+      "small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/hubbar-wleague.png?itok=rzlVzaIT",
+        "width": 200,
+        "height": 80,
+        "caption": "Westfield W-League Homepage Logo"
+      },
+      "background": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-09\/Competition%20Page%20Background.png?itok=Ny1EAIQV",
+        "width": 1200,
+        "height": 675,
+        "caption": "Comp Page BackGround"
+      }
+    },
+    {
+      "type": "competition",
+      "active_season": "2019",
+      "competition_id": "685",
+      "short_name": "Y-League",
+      "long_name": "Foxtel Y-League",
+      "brightcove_account": "5519514573001",
+      "tag": "yleague",
+      "color": "#FF5000",
+      "vertical_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2019-12\/Y-League.png?itok=avOAW69N",
+        "width": 520,
+        "height": 520,
+        "caption": "Y-League-Logo"
+      },
+      "vertical_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2019-12\/Y-League.png?itok=avOAW69N",
+        "width": 520,
+        "height": 520,
+        "caption": "Y-League-Logo"
+      },
+      "horizontal_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/hubbar-yleague.png?itok=bfP-RaJu",
+        "width": 200,
+        "height": 82,
+        "caption": "Foxtel Y-League Homepage Logo"
+      },
+      "horizontal_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/hubbar-yleague.png?itok=bfP-RaJu",
+        "width": 200,
+        "height": 82,
+        "caption": "Foxtel Y-League Homepage Logo"
+      },
+      "small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2019-12\/Y-League.png?itok=avOAW69N",
+        "width": 520,
+        "height": 520,
+        "caption": "Y-League-Logo"
+      },
+      "background": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-09\/Competition%20Page%20Background.png?itok=Ny1EAIQV",
+        "width": 1200,
+        "height": 675,
+        "caption": "Comp Page BackGround"
+      }
+    },
+    {
+      "type": "competition",
+      "active_season": "2019",
+      "competition_id": "716",
+      "short_name": "FFA Cup",
+      "long_name": "FFA Cup",
+      "brightcove_account": "5519514574001",
+      "tag": "ffacup",
+      "color": "#EC343A",
+      "vertical_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-01\/Cup_Logo.png?itok=kTzllG7y",
+        "width": 520,
+        "height": 520,
+        "caption": "FFA Cup Logo"
+      },
+      "vertical_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-01\/Cup_Logo.png?itok=kTzllG7y",
+        "width": 520,
+        "height": 520,
+        "caption": "FFA Cup Logo"
+      },
+      "horizontal_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-01\/Cup_Logo.png?itok=kTzllG7y",
+        "width": 520,
+        "height": 520,
+        "caption": "FFA Cup Logo"
+      },
+      "horizontal_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-01\/Cup_Logo.png?itok=kTzllG7y",
+        "width": 520,
+        "height": 520,
+        "caption": "FFA Cup Logo"
+      },
+      "small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-01\/Cup_Logo.png?itok=kTzllG7y",
+        "width": 520,
+        "height": 520,
+        "caption": "FFA Cup Logo"
+      },
+      "background": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-09\/Competition%20Page%20Background.png?itok=Ny1EAIQV",
+        "width": 1200,
+        "height": 675,
+        "caption": "Comp Page BackGround"
+      }
+    },
+    {
+      "type": "team",
+      "team_id": "575",
+      "short_name": "Socceroos",
+      "long_name": "Socceroos",
+      "brightcove_account": "5519514577001",
+      "tag": "socceroos",
+      "color": "#143e34",
+      "vertical_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/socceroos%20logo.png?itok=7OP6NJ1s",
+        "width": 200,
+        "height": 80,
+        "caption": "Socceroos Logo"
+      },
+      "vertical_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/socceroos%20logo.png?itok=7OP6NJ1s",
+        "width": 200,
+        "height": 80,
+        "caption": "Socceroos Logo"
+      },
+      "horizontal_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/socceroos%20logo.png?itok=7OP6NJ1s",
+        "width": 200,
+        "height": 80,
+        "caption": "Socceroos Logo"
+      },
+      "horizontal_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/socceroos%20logo.png?itok=7OP6NJ1s",
+        "width": 200,
+        "height": 80,
+        "caption": "Socceroos Logo"
+      },
+      "small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/socceroos%20logo.png?itok=7OP6NJ1s",
+        "width": 200,
+        "height": 80,
+        "caption": "Socceroos Logo"
+      },
+      "background": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-09\/Competition%20Page%20Background.png?itok=Ny1EAIQV",
+        "width": 1200,
+        "height": 675,
+        "caption": "Comp Page BackGround"
+      }
+    },
+    {
+      "type": "team",
+      "team_id": "6231",
+      "short_name": "Matildas",
+      "long_name": "Westfield Matildas",
+      "brightcove_account": "5519514578001",
+      "tag": "matildas",
+      "color": "#143e34",
+      "vertical_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/matildas%20logo.png?itok=LvkBV5Yj",
+        "width": 200,
+        "height": 80,
+        "caption": "Matildas logo"
+      },
+      "vertical_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/matildas%20logo.png?itok=LvkBV5Yj",
+        "width": 200,
+        "height": 80,
+        "caption": "Matildas logo"
+      },
+      "horizontal_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/matildas%20logo.png?itok=LvkBV5Yj",
+        "width": 200,
+        "height": 80,
+        "caption": "Matildas logo"
+      },
+      "horizontal_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/matildas%20logo.png?itok=LvkBV5Yj",
+        "width": 200,
+        "height": 80,
+        "caption": "Matildas logo"
+      },
+      "small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-09\/matildas%20logo.png?itok=LvkBV5Yj",
+        "width": 200,
+        "height": 80,
+        "caption": "Matildas logo"
+      },
+      "background": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-09\/Competition%20Page%20Background.png?itok=Ny1EAIQV",
+        "width": 1200,
+        "height": 675,
+        "caption": "Comp Page BackGround"
+      }
+    },
+    {
+      "type": "competition",
+      "active_season": "2019",
+      "competition_id": "737",
+      "short_name": "NPL",
+      "long_name": "National Premier League",
+      "brightcove_account": "5519514575001",
+      "tag": "npl",
+      "color": "#00A9E0",
+      "vertical_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-11\/National%20Premier%20Leagues%20-%20Stacked%20%28520x520%29_1.png?itok=tQzCL4xu",
+        "width": 520,
+        "height": 520,
+        "caption": "National Premier League"
+      },
+      "vertical_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-11\/National%20Premier%20Leagues%20-%20Stacked%20%28520x520%29_1.png?itok=tQzCL4xu",
+        "width": 520,
+        "height": 520,
+        "caption": "National Premier League"
+      },
+      "horizontal_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-12\/NPL_MyFootball_Splitter.png?itok=VyFAPmQR",
+        "width": 200,
+        "height": 80,
+        "caption": "National Premier Leagues Logo"
+      },
+      "horizontal_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-12\/NPL_MyFootball_Splitter.png?itok=VyFAPmQR",
+        "width": 200,
+        "height": 80,
+        "caption": "National Premier Leagues Logo"
+      },
+      "small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2017-11\/National%20Premier%20Leagues%20-%20Stacked%20%28520x520%29_1.png?itok=tQzCL4xu",
+        "width": 520,
+        "height": 520,
+        "caption": "National Premier League"
+      },
+      "background": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-09\/Competition%20Page%20Background.png?itok=Ny1EAIQV",
+        "width": 1200,
+        "height": 675,
+        "caption": "Comp Page BackGround"
+      }
+    },
+    {
+      "type": "competition",
+      "active_season": "2019",
+      "competition_id": "1009",
+      "short_name": "CON",
+      "long_name": "Cup of Nations",
+      "brightcove_account": "5519514578001",
+      "tag": "cupofnations",
+      "color": "#58595b",
+      "vertical_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2019-02\/cupofnations-vert-primary-drupal.png?itok=-y3v0zu-",
+        "width": 320,
+        "height": 320,
+        "caption": "Cup of Nations Vert Logo - Config"
+      },
+      "vertical_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2019-02\/cupofnations-vert-primary-drupal.png?itok=-y3v0zu-",
+        "width": 320,
+        "height": 320,
+        "caption": "Cup of Nations Vert Logo - Config"
+      },
+      "horizontal_positive": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2019-02\/Cupofnations-horizontal.png?itok=6aJ0QKEo",
+        "width": 800,
+        "height": 320,
+        "caption": "Cup of Nations - Horizontal"
+      },
+      "horizontal_negative": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2019-02\/Cupofnations-horizontal.png?itok=6aJ0QKEo",
+        "width": 800,
+        "height": 320,
+        "caption": "Cup of Nations - Horizontal"
+      },
+      "small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2019-02\/cupofnations-small.png?itok=c0qFPkUp",
+        "width": 160,
+        "height": 160,
+        "caption": "Cup of Nations - Small Config"
+      },
+      "background": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2018-09\/Competition%20Page%20Background.png?itok=Ny1EAIQV",
+        "width": 1200,
+        "height": 675,
+        "caption": "Comp Page BackGround"
+      }
+    }
+  ],
+  "betting_integration": {
+    "disclaimer_text": "<p>18+ <strong><a href=\"http:\/\/www.gamblinghelponline.org.au\">www.gamblinghelponline.org.au<\/a><\/strong> National Problem Gambling Helpline 1800 858 858. Gamble Responsibly.<\/p>",
+    "image": {
+      "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2019-03\/250px-Bet365_0.png?itok=m72ufku-",
+      "width": 250,
+      "height": 128
+    },
+    "odds_display": false,
+    "target_url": "http:\/\/www.bet365.com\/dl\/~offer?affiliate=365_890511",
+    "competition_season": [
+      {
+        "competition": 214,
+        "season": 2019
+      },
+      {
+        "competition": 716,
+        "season": 2019
+      },
+      {
+        "competition": 341,
+        "season": 112022
+      },
+      {
+        "competition": 551,
+        "season": 2018
+      }
+    ]
+  },
+  "mfl_general_settings": {
+    "mfl_one_place_control": {
+      "disable_all_one_place_call": false,
+      "disable_opt_only": false
+    }
+  }
+}

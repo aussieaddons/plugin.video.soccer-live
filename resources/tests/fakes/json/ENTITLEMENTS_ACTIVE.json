@@ -1,0 +1,20 @@
+{
+    "attributes": [],
+    "entitlements": [
+        {
+            "endDate": "2020-06-30T23:59:59+1000",
+            "pai": "uuid",
+            "productId": "45d09e09-6472-43fa-9f24-d328d9b25ec7",
+            "productName": "myfootball_streaming",
+            "serviceId": "61400000000",
+            "startDate": "2020-01-01T22:00:00+1100",
+            "status": "Active",
+            "type": "Sport",
+            "url": "https://www.myfootball.com.au/"
+        }
+    ],
+    "user": {
+        "id": "uuid",
+        "idp": "PAI"
+    }
+}

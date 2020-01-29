@@ -1,0 +1,350 @@
+{
+  "competition": {
+    "id": 214,
+    "uuid": "425139ff-ded8-3801-a553-be4974137079",
+    "name": "Hyundai A-League",
+    "short_name": "A-League",
+    "active_season": 2019
+  },
+  "season": {
+    "id": 2019,
+    "uuid": "84b70295-60f9-3fd6-866b-c7036d8714e3",
+    "name": "Hyundai A-League 2019\/20",
+    "short_name": "2019\/20"
+  },
+  "round_info": {
+    "num_rounds": 29,
+    "active_round": {
+      "number": 16,
+      "name": "Round 16",
+      "abbr": "R16",
+      "start_date": "2020-01-24T06:15:00+00:00",
+      "end_date": "2020-01-26T07:00:00+00:00"
+    },
+    "rounds": [
+      {
+        "number": 1,
+        "name": "Round 1",
+        "abbr": "R1",
+        "start_date": "2019-10-11T08:30:00+00:00",
+        "end_date": "2019-10-13T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 2,
+        "name": "Round 2",
+        "abbr": "R2",
+        "start_date": "2019-10-18T08:30:00+00:00",
+        "end_date": "2019-10-20T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 3,
+        "name": "Round 3",
+        "abbr": "R3",
+        "start_date": "2019-10-25T08:30:00+00:00",
+        "end_date": "2019-10-27T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 4,
+        "name": "Round 4",
+        "abbr": "R4",
+        "start_date": "2019-11-01T08:30:00+00:00",
+        "end_date": "2019-11-03T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 5,
+        "name": "Round 5",
+        "abbr": "R5",
+        "start_date": "2019-11-08T08:30:00+00:00",
+        "end_date": "2019-11-10T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 6,
+        "name": "Round 6",
+        "abbr": "R6",
+        "start_date": "2019-11-16T06:00:00+00:00",
+        "end_date": "2019-11-17T07:30:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 7,
+        "name": "Round 7",
+        "abbr": "R7",
+        "start_date": "2019-11-22T09:06:00+00:00",
+        "end_date": "2019-11-24T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 8,
+        "name": "Round 8",
+        "abbr": "R8",
+        "start_date": "2019-11-29T08:30:00+00:00",
+        "end_date": "2019-12-01T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 9,
+        "name": "Round 9",
+        "abbr": "R9",
+        "start_date": "2019-12-06T08:30:00+00:00",
+        "end_date": "2019-12-08T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 10,
+        "name": "Round 10",
+        "abbr": "R10",
+        "start_date": "2019-12-13T08:30:00+00:00",
+        "end_date": "2019-12-15T07:30:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 11,
+        "name": "Round 11",
+        "abbr": "R11",
+        "start_date": "2019-12-20T08:30:00+00:00",
+        "end_date": "2019-12-22T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 12,
+        "name": "Round 12",
+        "abbr": "R12",
+        "start_date": "2019-12-27T08:30:00+00:00",
+        "end_date": "2019-12-31T08:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 13,
+        "name": "Round 13",
+        "abbr": "R13",
+        "start_date": "2020-01-01T08:30:00+00:00",
+        "end_date": "2020-01-05T07:30:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 14,
+        "name": "Round 14",
+        "abbr": "R14",
+        "start_date": "2020-01-10T08:30:00+00:00",
+        "end_date": "2020-01-12T07:00:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 15,
+        "name": "Round 15",
+        "abbr": "R15",
+        "start_date": "2020-01-17T08:30:00+00:00",
+        "end_date": "2020-01-19T07:30:00+00:00",
+        "matches": 0
+      },
+      {
+        "number": 16,
+        "name": "Round 16",
+        "abbr": "R16",
+        "start_date": "2020-01-24T06:15:00+00:00",
+        "end_date": "2020-01-26T07:00:00+00:00",
+        "matches": 1
+      },
+      {
+        "number": 17,
+        "name": "Round 17",
+        "abbr": "R17",
+        "start_date": "2020-01-31T08:30:00+00:00",
+        "end_date": "2020-02-02T05:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 18,
+        "name": "Round 18",
+        "abbr": "R18",
+        "start_date": "2020-02-07T08:30:00+00:00",
+        "end_date": "2020-02-09T05:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 19,
+        "name": "Round 19",
+        "abbr": "R19",
+        "start_date": "2020-02-14T08:30:00+00:00",
+        "end_date": "2020-02-16T05:00:00+00:00",
+        "matches": 4
+      },
+      {
+        "number": 20,
+        "name": "Round 20",
+        "abbr": "R20",
+        "start_date": "2020-02-21T06:15:00+00:00",
+        "end_date": "2020-02-23T07:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 21,
+        "name": "Round 21",
+        "abbr": "R21",
+        "start_date": "2020-02-28T08:30:00+00:00",
+        "end_date": "2020-03-01T07:30:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 22,
+        "name": "Round 22",
+        "abbr": "R22",
+        "start_date": "2020-03-06T08:30:00+00:00",
+        "end_date": "2020-03-08T07:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 23,
+        "name": "Round 23",
+        "abbr": "R23",
+        "start_date": "2020-03-13T08:30:00+00:00",
+        "end_date": "2020-03-15T07:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 24,
+        "name": "Round 24",
+        "abbr": "R24",
+        "start_date": "2020-03-20T08:30:00+00:00",
+        "end_date": "2020-03-22T07:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 25,
+        "name": "Round 25",
+        "abbr": "R25",
+        "start_date": "2020-03-27T08:30:00+00:00",
+        "end_date": "2020-03-29T07:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 26,
+        "name": "Round 26",
+        "abbr": "R26",
+        "start_date": "2020-04-03T08:30:00+00:00",
+        "end_date": "2020-04-05T08:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 27,
+        "name": "Round 27",
+        "abbr": "R27",
+        "start_date": "2020-04-10T06:00:00+00:00",
+        "end_date": "2020-04-12T08:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 28,
+        "name": "Round 28",
+        "abbr": "R28",
+        "start_date": "2020-04-16T09:00:00+00:00",
+        "end_date": "2020-04-19T06:00:00+00:00",
+        "matches": 5
+      },
+      {
+        "number": 29,
+        "name": "Round 29",
+        "abbr": "R29",
+        "start_date": "2020-04-24T09:30:00+00:00",
+        "end_date": "2020-04-26T08:00:00+00:00",
+        "matches": 5
+      }
+    ]
+  },
+  "teams": [
+    {
+      "id": 2309,
+      "uuid": "41ea0853-be15-35a2-b3d1-75b0c94153f5",
+      "name": "Adelaide United",
+      "nickname": "",
+      "abbr": "ADE",
+      "country": "Australia"
+    },
+    {
+      "id": 2248,
+      "uuid": "8ebde53f-fe48-3a97-8866-c5ff03f830f5",
+      "name": "Brisbane Roar FC",
+      "nickname": "",
+      "abbr": "BRR",
+      "country": "Australia"
+    },
+    {
+      "id": 1988,
+      "uuid": "a2586733-d975-3b40-b711-717be474b5a6",
+      "name": "Central Coast Mariners",
+      "nickname": "Mariners",
+      "abbr": "CCM",
+      "country": "Australia"
+    },
+    {
+      "id": 5664,
+      "uuid": "a932253f-415c-39e8-a702-6a07ff2fb271",
+      "name": "Melbourne City FC",
+      "nickname": "Heart",
+      "abbr": "MCIT",
+      "country": "Australia"
+    },
+    {
+      "id": 2237,
+      "uuid": "3e15291b-59bc-3df0-91de-53323cbac829",
+      "name": "Melbourne Victory",
+      "nickname": "",
+      "abbr": "MVIC",
+      "country": "Australia"
+    },
+    {
+      "id": 2319,
+      "uuid": "d3737a59-d990-3557-bf3f-45c8349c5f4d",
+      "name": "Newcastle Jets",
+      "nickname": "",
+      "abbr": "NEWJ",
+      "country": "Australia"
+    },
+    {
+      "id": 989,
+      "uuid": "e19791cd-0fe7-3cec-9010-775af544e8df",
+      "name": "Perth Glory",
+      "nickname": "",
+      "abbr": "PTH",
+      "country": "Australia"
+    },
+    {
+      "id": 1962,
+      "uuid": "c6ac3326-90ea-3847-a2e0-1e545870ad5e",
+      "name": "Sydney FC",
+      "nickname": "The Sky Blues",
+      "abbr": "SFC",
+      "country": "Australia"
+    },
+    {
+      "id": 2655,
+      "uuid": "96df30f0-a9bd-3b09-b1ca-a2f32c0ffce1",
+      "name": "Wellington Phoenix",
+      "nickname": "",
+      "abbr": "WPH",
+      "country": "Australia"
+    },
+    {
+      "id": 7062,
+      "uuid": "ea8f2e34-a8e6-3b1c-be44-24ec1b344c51",
+      "name": "Western Sydney Wanderers FC",
+      "nickname": "",
+      "abbr": "WSW",
+      "country": "Australia"
+    },
+    {
+      "id": 15834,
+      "uuid": "cd7e06dc-24e0-364b-a649-fd01c845707e",
+      "name": "Western United FC",
+      "nickname": "",
+      "abbr": "WES",
+      "country": "Australia"
+    }
+  ],
+  "timestamp": "2020-01-26T04:45:06+00:00"
+}

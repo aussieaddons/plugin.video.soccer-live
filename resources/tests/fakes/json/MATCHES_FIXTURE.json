@@ -1,0 +1,492 @@
+{
+  "competition": {
+    "id": 214,
+    "uuid": "425139ff-ded8-3801-a553-be4974137079",
+    "name": "Hyundai A-League",
+    "short_name": "A-League",
+    "active_season": 2019
+  },
+  "season": {
+    "id": 2019,
+    "uuid": "84b70295-60f9-3fd6-866b-c7036d8714e3",
+    "name": "Hyundai A-League 2019\/20",
+    "short_name": "2019\/20"
+  },
+  "round_info": {
+    "num_rounds": 29,
+    "active_round": {
+      "number": 16,
+      "name": "Round 16",
+      "abbr": "R16",
+      "start_date": "2020-01-24T06:15:00+00:00",
+      "end_date": "2020-01-26T07:00:00+00:00"
+    }
+  },
+  "rounds": [
+    {
+      "id": 2023987,
+      "uuid": "063f91ae-1a0a-3387-af8b-5ca3ae917999",
+      "last_updated": "2019-12-06T10:29:22+00:00",
+      "created": "2019-08-08T02:00:05+00:00",
+      "round_number": 9,
+      "title": "Melbourne City FC vs Perth Glory, Hyundai A-League, Round 9, 6th Dec 2019",
+      "status": "FullTime",
+      "start_date": "2019-12-06T08:30:00+00:00",
+      "coverage_level": 1,
+      "timing": 1,
+      "time_accuracy": 1,
+      "venue": {
+        "id": 6678,
+        "uuid": "0603d3ac-d5f0-3e76-b333-b49571accbe9",
+        "name": "AAMI Park",
+        "shortname": "",
+        "city": "Melbourne",
+        "timezone": "Australia\/Melbourne"
+      },
+      "home_team": {
+        "id": 5664,
+        "uuid": "a932253f-415c-39e8-a702-6a07ff2fb271",
+        "name": "Melbourne City FC",
+        "nickname": "Heart",
+        "abbr": "MCIT",
+        "country": "Australia"
+      },
+      "away_team": {
+        "id": 989,
+        "uuid": "e19791cd-0fe7-3cec-9010-775af544e8df",
+        "name": "Perth Glory",
+        "nickname": "",
+        "abbr": "PTH",
+        "country": "Australia"
+      },
+      "buy_tickets": "https:\/\/premier.ticketek.com.au\/shows\/show.aspx?sh=MCITY0920",
+      "hashtag": "",
+      "restricted_match_centre": 0,
+      "match_replay_embedcode": "",
+      "match_replay_videoID": 6113795616001,
+      "index": 1,
+      "broadcasters": [
+        {
+          "name": "Match Broadcaster: Fox Sports",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/foxsports%402x.png?itok=WUJ1VN_o",
+          "url": "",
+          "type": "tv",
+          "stream_name": null,
+          "streams": []
+        },
+        {
+          "name": "Match Broadcaster: Telstra Live Stream",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+          "url": "",
+          "type": "tv",
+          "stream_name": "6083272973001",
+          "streams": []
+        },
+        {
+          "name": "Radio Broadcaster - Football Nation",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2017-10\/FN-RadioBroadcaster.png?itok=ITDoc8p2",
+          "url": "",
+          "type": "radio",
+          "stream_name": "Football Nation",
+          "streams": [
+            {
+              "url": "http:\/\/stream02.aflnation.com.au:8010\/;stream.nsv",
+              "type": "mp3"
+            }
+          ]
+        }
+      ],
+      "end_date": "2019-12-06T10:29:22+00:00",
+      "odds": {
+        "home_team": "$2.05",
+        "away_team": "$3.50"
+      },
+      "match_info": {
+        "period": "FullTime",
+        "time": 95,
+        "winner_id": 989,
+        "home_team": {
+          "score": 0,
+          "shootout_score": 0
+        },
+        "away_team": {
+          "score": 3,
+          "shootout_score": 0
+        }
+      },
+      "round": {
+        "number": 9,
+        "name": "Round 9",
+        "abbr": "R9",
+        "start_date": "2019-12-06T08:30:00+00:00",
+        "end_date": "2019-12-08T07:00:00+00:00"
+      }
+    },
+    {
+      "id": 2023988,
+      "uuid": "7b7cfb99-0606-3a1c-87c4-acedeb35b58d",
+      "last_updated": "2019-12-07T08:01:02+00:00",
+      "created": "2019-08-08T02:00:05+00:00",
+      "round_number": 9,
+      "title": "Wellington Phoenix vs Western Sydney Wanderers FC, Hyundai A-League, Round 9, 7th Dec 2019",
+      "status": "FullTime",
+      "start_date": "2019-12-07T06:00:00+00:00",
+      "coverage_level": 1,
+      "timing": 1,
+      "time_accuracy": 1,
+      "venue": {
+        "id": 8364,
+        "uuid": "ae8e823f-a43c-3c2b-85d7-3993a6c3d005",
+        "name": "Eden Park",
+        "shortname": "",
+        "city": "Auckland",
+        "timezone": "Pacific\/Auckland"
+      },
+      "home_team": {
+        "id": 2655,
+        "uuid": "96df30f0-a9bd-3b09-b1ca-a2f32c0ffce1",
+        "name": "Wellington Phoenix",
+        "nickname": "",
+        "abbr": "WPH",
+        "country": "Australia"
+      },
+      "away_team": {
+        "id": 7062,
+        "uuid": "ea8f2e34-a8e6-3b1c-be44-24ec1b344c51",
+        "name": "Western Sydney Wanderers FC",
+        "nickname": "",
+        "abbr": "WSW",
+        "country": "Australia"
+      },
+      "buy_tickets": "https:\/\/premier.ticketek.co.nz\/events\/PHOENAKL20\/venues\/AEP\/performances\/EAEP2019959\/tickets",
+      "hashtag": "",
+      "restricted_match_centre": 0,
+      "match_replay_embedcode": "",
+      "match_replay_videoID": 6113889317001,
+      "index": 2,
+      "broadcasters": [
+        {
+          "name": "Match Broadcaster: Fox Sports",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/foxsports%402x.png?itok=WUJ1VN_o",
+          "url": "",
+          "type": "tv",
+          "stream_name": null,
+          "streams": []
+        },
+        {
+          "name": "Match Broadcaster: ABC",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2019-10\/ABC_Broadcast_Fixtures_75x75.png?itok=c6_bHqJh",
+          "url": "",
+          "type": "tv",
+          "stream_name": null,
+          "streams": []
+        },
+        {
+          "name": "Match Broadcaster: Telstra Live Stream 2",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+          "url": "",
+          "type": "tv",
+          "stream_name": "6083268147001",
+          "streams": []
+        }
+      ],
+      "end_date": "2019-12-07T08:01:02+00:00",
+      "odds": {
+        "home_team": "$2.20",
+        "away_team": "$3.10"
+      },
+      "match_info": {
+        "period": "FullTime",
+        "time": 98,
+        "winner_id": 2655,
+        "home_team": {
+          "score": 2,
+          "shootout_score": 0
+        },
+        "away_team": {
+          "score": 1,
+          "shootout_score": 0
+        }
+      },
+      "round": {
+        "number": 9,
+        "name": "Round 9",
+        "abbr": "R9",
+        "start_date": "2019-12-06T08:30:00+00:00",
+        "end_date": "2019-12-08T07:00:00+00:00"
+      }
+    },
+    {
+      "id": 2023989,
+      "uuid": "1a0029a6-054b-333b-ac0a-325c8e11ba6e",
+      "last_updated": "2019-12-07T10:28:53+00:00",
+      "created": "2019-08-08T02:00:05+00:00",
+      "round_number": 9,
+      "title": "Sydney FC vs Brisbane Roar FC, Hyundai A-League, Round 9, 7th Dec 2019",
+      "status": "FullTime",
+      "start_date": "2019-12-07T08:30:00+00:00",
+      "coverage_level": 1,
+      "timing": 1,
+      "time_accuracy": 1,
+      "venue": {
+        "id": 10167,
+        "uuid": "68ed4751-1f33-382e-9ee8-e0c7d82c1cda",
+        "name": "Netstrata Jubilee Stadium",
+        "shortname": "",
+        "city": "Sydney",
+        "timezone": "Australia\/Sydney"
+      },
+      "home_team": {
+        "id": 1962,
+        "uuid": "c6ac3326-90ea-3847-a2e0-1e545870ad5e",
+        "name": "Sydney FC",
+        "nickname": "The Sky Blues",
+        "abbr": "SFC",
+        "country": "Australia"
+      },
+      "away_team": {
+        "id": 2248,
+        "uuid": "8ebde53f-fe48-3a97-8866-c5ff03f830f5",
+        "name": "Brisbane Roar FC",
+        "nickname": "",
+        "abbr": "BRR",
+        "country": "Australia"
+      },
+      "buy_tickets": "https:\/\/premier.ticketek.com.au\/shows\/Show.aspx?sh=SYDFC0920",
+      "hashtag": "",
+      "restricted_match_centre": 0,
+      "match_replay_embedcode": "",
+      "match_replay_videoID": 6113951127001,
+      "index": 3,
+      "broadcasters": [
+        {
+          "name": "Match Broadcaster: Fox Sports",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/foxsports%402x.png?itok=WUJ1VN_o",
+          "url": "",
+          "type": "tv",
+          "stream_name": null,
+          "streams": []
+        },
+        {
+          "name": "Match Broadcaster: Telstra Live Stream 3",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+          "url": "",
+          "type": "tv",
+          "stream_name": "6083266846001",
+          "streams": []
+        }
+      ],
+      "end_date": "2019-12-07T10:28:53+00:00",
+      "odds": {
+        "home_team": "$1.72",
+        "away_team": "$4.20"
+      },
+      "match_info": {
+        "period": "FullTime",
+        "time": 95,
+        "winner_id": 1962,
+        "home_team": {
+          "score": 5,
+          "shootout_score": 0
+        },
+        "away_team": {
+          "score": 1,
+          "shootout_score": 0
+        }
+      },
+      "round": {
+        "number": 9,
+        "name": "Round 9",
+        "abbr": "R9",
+        "start_date": "2019-12-06T08:30:00+00:00",
+        "end_date": "2019-12-08T07:00:00+00:00"
+      }
+    },
+    {
+      "id": 2023990,
+      "uuid": "8da51851-e998-378a-b0e1-612e4fdcb770",
+      "last_updated": "2019-12-08T06:56:02+00:00",
+      "created": "2019-08-08T02:00:05+00:00",
+      "round_number": 9,
+      "title": "Western United FC vs Melbourne Victory, Hyundai A-League, Round 9, 8th Dec 2019",
+      "status": "FullTime",
+      "start_date": "2019-12-08T05:00:00+00:00",
+      "coverage_level": 1,
+      "timing": 1,
+      "time_accuracy": 1,
+      "venue": {
+        "id": 10030,
+        "uuid": "091f6ddd-eb2f-35c2-9ddd-ae5b3b69d891",
+        "name": "GMHBA Stadium",
+        "shortname": "",
+        "city": "Geelong",
+        "timezone": "Australia\/Melbourne"
+      },
+      "home_team": {
+        "id": 15834,
+        "uuid": "cd7e06dc-24e0-364b-a649-fd01c845707e",
+        "name": "Western United FC",
+        "nickname": "",
+        "abbr": "WES",
+        "country": "Australia"
+      },
+      "away_team": {
+        "id": 2237,
+        "uuid": "3e15291b-59bc-3df0-91de-53323cbac829",
+        "name": "Melbourne Victory",
+        "nickname": "",
+        "abbr": "MVIC",
+        "country": "Australia"
+      },
+      "buy_tickets": "https:\/\/premier.ticketek.com.au\/shows\/Show.aspx?sh=WESTER0920",
+      "hashtag": "",
+      "restricted_match_centre": 0,
+      "match_replay_embedcode": "",
+      "match_replay_videoID": 6114006242001,
+      "index": 4,
+      "broadcasters": [
+        {
+          "name": "Match Broadcaster: Telstra Live Stream 2",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+          "url": "",
+          "type": "tv",
+          "stream_name": "6083268147001",
+          "streams": []
+        },
+        {
+          "name": "Match Broadcaster: Fox Sports",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/foxsports%402x.png?itok=WUJ1VN_o",
+          "url": "",
+          "type": "tv",
+          "stream_name": null,
+          "streams": []
+        }
+      ],
+      "end_date": "2019-12-08T06:56:02+00:00",
+      "odds": {
+        "home_team": "$2.37",
+        "away_team": "$2.90"
+      },
+      "match_info": {
+        "period": "FullTime",
+        "time": 95,
+        "winner_id": 15834,
+        "home_team": {
+          "score": 3,
+          "shootout_score": 0
+        },
+        "away_team": {
+          "score": 1,
+          "shootout_score": 0
+        }
+      },
+      "round": {
+        "number": 9,
+        "name": "Round 9",
+        "abbr": "R9",
+        "start_date": "2019-12-06T08:30:00+00:00",
+        "end_date": "2019-12-08T07:00:00+00:00"
+      }
+    },
+    {
+      "id": 2023991,
+      "uuid": "cf435aec-efa3-352d-be0f-6d5800bb40a5",
+      "last_updated": "2019-12-08T08:59:42+00:00",
+      "created": "2019-08-08T02:00:05+00:00",
+      "round_number": 9,
+      "title": "Adelaide United vs Newcastle Jets, Hyundai A-League, Round 9, 8th Dec 2019",
+      "status": "FullTime",
+      "start_date": "2019-12-08T07:00:00+00:00",
+      "coverage_level": 1,
+      "timing": 1,
+      "time_accuracy": 1,
+      "venue": {
+        "id": 2978,
+        "uuid": "15cefcbb-4ae8-3ed8-92c0-3a44a9ed78aa",
+        "name": "Coopers Stadium",
+        "shortname": "",
+        "city": "Hindmarsh",
+        "timezone": "Australia\/Adelaide"
+      },
+      "home_team": {
+        "id": 2309,
+        "uuid": "41ea0853-be15-35a2-b3d1-75b0c94153f5",
+        "name": "Adelaide United",
+        "nickname": "",
+        "abbr": "ADE",
+        "country": "Australia"
+      },
+      "away_team": {
+        "id": 2319,
+        "uuid": "d3737a59-d990-3557-bf3f-45c8349c5f4d",
+        "name": "Newcastle Jets",
+        "nickname": "",
+        "abbr": "NEWJ",
+        "country": "Australia"
+      },
+      "buy_tickets": "http:\/\/premier.ticketek.com.au\/shows\/show.aspx?sh=AUFC0920",
+      "hashtag": "",
+      "restricted_match_centre": 0,
+      "match_replay_embedcode": "",
+      "match_replay_videoID": 6114100255001,
+      "index": 5,
+      "broadcasters": [
+        {
+          "name": "Match Broadcaster: Fox Sports",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/foxsports%402x.png?itok=WUJ1VN_o",
+          "url": "",
+          "type": "tv",
+          "stream_name": null,
+          "streams": []
+        },
+        {
+          "name": "Match Broadcaster: Telstra Live Stream 3",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+          "url": "",
+          "type": "tv",
+          "stream_name": "6083266846001",
+          "streams": []
+        },
+        {
+          "name": "Radio Broadcaster - Football Nation",
+          "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2017-10\/FN-RadioBroadcaster.png?itok=ITDoc8p2",
+          "url": "",
+          "type": "radio",
+          "stream_name": "Football Nation",
+          "streams": [
+            {
+              "url": "http:\/\/stream02.aflnation.com.au:8010\/;stream.nsv",
+              "type": "mp3"
+            }
+          ]
+        }
+      ],
+      "end_date": "2019-12-08T08:59:42+00:00",
+      "odds": {
+        "home_team": "$1.83",
+        "away_team": "$3.75"
+      },
+      "match_info": {
+        "period": "FullTime",
+        "time": 95,
+        "winner_id": 2309,
+        "home_team": {
+          "score": 2,
+          "shootout_score": 0
+        },
+        "away_team": {
+          "score": 1,
+          "shootout_score": 0
+        }
+      },
+      "round": {
+        "number": 9,
+        "name": "Round 9",
+        "abbr": "R9",
+        "start_date": "2019-12-06T08:30:00+00:00",
+        "end_date": "2019-12-08T07:00:00+00:00"
+      }
+    }
+  ],
+  "timestamp": "2020-01-26T04:46:27+00:00"
+}

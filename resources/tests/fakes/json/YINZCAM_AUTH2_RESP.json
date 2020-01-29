@@ -1,0 +1,11 @@
+{
+    "AppId": "NRL_LIVE",
+    "Destination": "NRL_LIVE",
+    "GenerationTime": "2019-07-28T02:08:29Z",
+    "OfferId": "69b1f3e1-5196-4a57-9a46-472d20b78bc8",
+    "TenantId": "sp2017-nrl-app",
+    "TpUid": "6a8e4220-87fb-4737-9221-b736c36a6c49|foobar",
+    "Type": "SportPassConfirmation",
+    "Url": "http://hub.telstra.com.au/sp2017-nrl-app?offerId=69b1f3e1-5196-4a57-9a46-472d20b78bc8&type=SportPassConfirmation",
+    "YinzId": "6a8e4220-87fb-4737-9221-b736c36a6c49"
+}

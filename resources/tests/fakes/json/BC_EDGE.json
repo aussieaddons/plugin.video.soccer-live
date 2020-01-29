@@ -1,0 +1,48 @@
+{
+    "account_id": "6058022062001",
+    "ad_keys": null,
+    "created_at": "2019-10-11T22:18:19.287Z",
+    "cue_points": [],
+    "custom_fields": {
+        "asset_ref": "2299290",
+        "competitionid": "214",
+        "filehash": "15ec90324a39b6964bdb41359573cafe",
+        "matchid": "2023948",
+        "roundnumber": "1",
+        "seasonid": "2019"
+    },
+    "description": "Match Replay - Adelaide United vs Sydney FC, Hyundai A-League, Round 1, 11th Oct 2019",
+    "duration": 0,
+    "economics": "AD_SUPPORTED",
+    "id": "6094229474001",
+    "link": null,
+    "long_description": null,
+    "name": "Adelaide United vs Sydney FC, Hyundai A-League, Round 1, 11th Oct 2019",
+    "offline_enabled": false,
+    "poster": "https://cf-images.ap-southeast-2.prod.boltdns.net/v1/static/6058022062001/0efb2ad3-9aa9-414e-b9ed-bf603febdeb1/1ee8c0c6-dc8c-4a13-8f6b-1dc46c438191/1280x720/match/image.jpg",
+    "poster_sources": [
+        {
+            "src": "https://cf-images.ap-southeast-2.prod.boltdns.net/v1/static/6058022062001/0efb2ad3-9aa9-414e-b9ed-bf603febdeb1/1ee8c0c6-dc8c-4a13-8f6b-1dc46c438191/1280x720/match/image.jpg"
+        }
+    ],
+    "published_at": "2019-10-11T22:18:19.295Z",
+    "reference_id": null,
+    "sources": [
+        {
+            "asset_id": "6094232223001",
+            "src": "https://ffamultisvod2364.ngcdn.telstra.com/hls_ffa_h264_ts/2299290/index.m3u8",
+            "type": "application/vnd.apple.mpegurl"
+        }
+    ],
+    "tags": [
+        "match replay"
+    ],
+    "text_tracks": [],
+    "thumbnail": "https://cf-images.ap-southeast-2.prod.boltdns.net/v1/static/6058022062001/0efb2ad3-9aa9-414e-b9ed-bf603febdeb1/6c7f0060-7eff-4f1f-b833-72f5688ebb4c/160x90/match/image.jpg",
+    "thumbnail_sources": [
+        {
+            "src": "https://cf-images.ap-southeast-2.prod.boltdns.net/v1/static/6058022062001/0efb2ad3-9aa9-414e-b9ed-bf603febdeb1/6c7f0060-7eff-4f1f-b833-72f5688ebb4c/160x90/match/image.jpg"
+        }
+    ],
+    "updated_at": "2019-10-11T22:18:54.993Z"
+}

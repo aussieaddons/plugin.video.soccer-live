@@ -1,0 +1,76 @@
+{
+    "correlationId": "",
+    "data": {
+        "offers": [
+            {
+                "bonusEndDateTime": "2020-06-30T23:59:59.000+1000",
+                "bonusPeriod": 0,
+                "carrierBillableOffer": true,
+                "channelTags": [
+                    "All_v1Apps_All_3248",
+                    "TTV_OneApp_HomeScreen_7677",
+                    "All_MyOffersPortal_Offerpage_4368",
+                    "All_MyTelstra_Summary_6859"
+                ],
+                "contractTerm": 0,
+                "externalId": "NA",
+                "id": "69b1f3e1-5196-4a57-9a46-472d20b78bc8",
+                "name": "My Football Live Pass",
+                "oneOffCharge": 0,
+                "productOfferingAttributes": [
+                    {
+                        "id": "69b1f3e1-5196-4a57-9a46-472d20b78bc8",
+                        "name": "OfferType",
+                        "value": "base"
+                    },
+                    {
+                        "id": "69b1f3e1-5196-4a57-9a46-472d20b78bc8",
+                        "name": "carrierBillable",
+                        "value": "true"
+                    },
+                    {
+                        "id": "69b1f3e1-5196-4a57-9a46-472d20b78bc8",
+                        "name": "ServiceType",
+                        "value": "MSISDN"
+                    },
+                    {
+                        "id": "69b1f3e1-5196-4a57-9a46-472d20b78bc8",
+                        "name": "ServiceId",
+                        "value": "61400000000"
+                    }
+                ],
+                "productOffers": [
+                    {
+                        "contractTerm": 0,
+                        "externalId": "SPORTS_PASS_$0_FFA",
+                        "id": "69b1f3e1-5196-4a57-9a46-472d20b78bc8",
+                        "name": "My Football Live Pass Streaming",
+                        "oneOffCharge": 0,
+                        "product": {
+                            "category": "Sport",
+                            "description": "My Football Streaming",
+                            "externalId": "FFA",
+                            "id": "69b1f3e1-5196-4a57-9a46-472d20b78bc8",
+                            "partner": {
+                                "description": "Football Federation Australia",
+                                "id": "ffa",
+                                "name": "FFA",
+                                "website": "https://www.myfootball.com.au/"
+                            },
+                            "productName": "myfootball_streaming",
+                            "productUrl": "https://www.myfootball.com.au/"
+                        },
+                        "recurringCharge": 0,
+                        "url": "https://www.myfootball.com.au/"
+                    }
+                ],
+                "publishEndDate": "2071-01-01T23:59:59.999+1100",
+                "publishStartDate": "2018-07-21T00:00:00.000+1000",
+                "recurringCharge": 0,
+                "reuptakeAllowed": true,
+                "serviceTransferAllowed": false,
+                "totalPrice": 0
+            }
+        ]
+    }
+}

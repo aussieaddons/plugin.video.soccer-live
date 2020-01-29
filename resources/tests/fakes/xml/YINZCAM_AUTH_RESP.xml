@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TicketResponse>
+  <Ticket>ticket123</Ticket>
+  <IssueTime>1564280000000</IssueTime>
+  <ExpireTime>1595816000000</ExpireTime>
+  <ValidSpan>31536000000</ValidSpan>
+  <YinzId>6a8e4220-87fb-4737-9221-b736c36a6c49</YinzId>
+  <AccountCreated>true</AccountCreated>
+</TicketResponse>

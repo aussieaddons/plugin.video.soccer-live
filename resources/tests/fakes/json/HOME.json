@@ -1,0 +1,2669 @@
+{
+  "condensed_standings": [
+    {
+      "competition": {
+        "id": 408,
+        "uuid": "da582757-73e0-320a-ad11-3dc275021abb",
+        "name": "World Cup",
+        "short_name": "World Cup (W)",
+        "active_season": 2018
+      },
+      "season": {
+        "id": 2018,
+        "uuid": "cc251bb7-3ca8-3514-8f81-f5abcafcd816",
+        "name": "World Cup 2019 (W)",
+        "short_name": "2019"
+      },
+      "standings": {
+        "team_standings": [
+          {
+            "team": {
+              "id": 6328,
+              "uuid": "df227d6e-b024-3822-8ebd-2efe40d4470a",
+              "name": "Italy Women",
+              "nickname": "",
+              "abbr": "ITA",
+              "country": "Italy"
+            },
+            "summary": {
+              "position": 1,
+              "change": "none",
+              "played": 3,
+              "won": 2,
+              "drawn": 0,
+              "lost": 1,
+              "goals_for": 7,
+              "goals_against": 2,
+              "goals_difference": 5,
+              "points": 6,
+              "recent_results": [
+                "loss",
+                "win",
+                "loss",
+                "win",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 6231,
+              "uuid": "17c5ce57-4ea4-3bd5-b61a-090c67018b27",
+              "name": "Australia Women",
+              "nickname": "Westfield Matildas",
+              "abbr": "AUS",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 2,
+              "change": "up",
+              "played": 3,
+              "won": 2,
+              "drawn": 0,
+              "lost": 1,
+              "goals_for": 8,
+              "goals_against": 5,
+              "goals_difference": 3,
+              "points": 6,
+              "recent_results": [
+                "loss",
+                "win",
+                "win",
+                "loss"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 6239,
+              "uuid": "e6302817-8282-3894-a070-2364831c6576",
+              "name": "Brazil Women",
+              "nickname": "",
+              "abbr": "BRW",
+              "country": "Brazil"
+            },
+            "summary": {
+              "position": 3,
+              "change": "down",
+              "played": 3,
+              "won": 2,
+              "drawn": 0,
+              "lost": 1,
+              "goals_for": 6,
+              "goals_against": 3,
+              "goals_difference": 3,
+              "points": 6,
+              "recent_results": [
+                "loss",
+                "win",
+                "loss",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 14729,
+              "uuid": "9360f422-a521-3262-b740-23974afeb67a",
+              "name": "Jamaica Women",
+              "nickname": "",
+              "abbr": "JAM",
+              "country": "Jamaica"
+            },
+            "summary": {
+              "position": 4,
+              "change": "none",
+              "played": 3,
+              "won": 0,
+              "drawn": 0,
+              "lost": 3,
+              "goals_for": 1,
+              "goals_against": 12,
+              "goals_difference": -11,
+              "points": 0,
+              "recent_results": [
+                "loss",
+                "loss",
+                "loss"
+              ]
+            }
+          }
+        ],
+        "group": {
+          "id": "C",
+          "name": "Group C"
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 214,
+        "uuid": "425139ff-ded8-3801-a553-be4974137079",
+        "name": "Hyundai A-League",
+        "short_name": "A-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "84b70295-60f9-3fd6-866b-c7036d8714e3",
+        "name": "Hyundai A-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "standings": {
+        "team_standings": [
+          {
+            "team": {
+              "id": 1962,
+              "uuid": "c6ac3326-90ea-3847-a2e0-1e545870ad5e",
+              "name": "Sydney FC",
+              "nickname": "The Sky Blues",
+              "abbr": "SFC",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 1,
+              "change": "none",
+              "played": 14,
+              "won": 12,
+              "drawn": 1,
+              "lost": 1,
+              "goals_for": 33,
+              "goals_against": 13,
+              "goals_difference": 20,
+              "points": 37,
+              "recent_results": [
+                "win",
+                "win",
+                "win",
+                "win",
+                "draw"
+              ],
+              "odds": "$4.33"
+            }
+          },
+          {
+            "team": {
+              "id": 5664,
+              "uuid": "a932253f-415c-39e8-a702-6a07ff2fb271",
+              "name": "Melbourne City FC",
+              "nickname": "Heart",
+              "abbr": "MCIT",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 2,
+              "change": "none",
+              "played": 15,
+              "won": 8,
+              "drawn": 3,
+              "lost": 4,
+              "goals_for": 29,
+              "goals_against": 22,
+              "goals_difference": 7,
+              "points": 27,
+              "recent_results": [
+                "draw",
+                "win",
+                "draw",
+                "win",
+                "loss"
+              ],
+              "odds": "$5.50"
+            }
+          },
+          {
+            "team": {
+              "id": 989,
+              "uuid": "e19791cd-0fe7-3cec-9010-775af544e8df",
+              "name": "Perth Glory",
+              "nickname": "",
+              "abbr": "PTH",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 3,
+              "change": "none",
+              "played": 14,
+              "won": 7,
+              "drawn": 4,
+              "lost": 3,
+              "goals_for": 25,
+              "goals_against": 12,
+              "goals_difference": 13,
+              "points": 25,
+              "recent_results": [
+                "draw",
+                "win",
+                "win",
+                "win",
+                "win"
+              ],
+              "odds": "$5.50"
+            }
+          },
+          {
+            "team": {
+              "id": 2655,
+              "uuid": "96df30f0-a9bd-3b09-b1ca-a2f32c0ffce1",
+              "name": "Wellington Phoenix",
+              "nickname": "",
+              "abbr": "WPH",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 4,
+              "change": "none",
+              "played": 15,
+              "won": 7,
+              "drawn": 3,
+              "lost": 5,
+              "goals_for": 22,
+              "goals_against": 18,
+              "goals_difference": 4,
+              "points": 24,
+              "recent_results": [
+                "win",
+                "loss",
+                "win",
+                "win",
+                "win"
+              ],
+              "odds": "$67.00"
+            }
+          },
+          {
+            "team": {
+              "id": 15834,
+              "uuid": "cd7e06dc-24e0-364b-a649-fd01c845707e",
+              "name": "Western United FC",
+              "nickname": "",
+              "abbr": "WES",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 5,
+              "change": "none",
+              "played": 14,
+              "won": 6,
+              "drawn": 2,
+              "lost": 6,
+              "goals_for": 20,
+              "goals_against": 18,
+              "goals_difference": 2,
+              "points": 20,
+              "recent_results": [
+                "win",
+                "loss",
+                "loss",
+                "draw",
+                "win"
+              ],
+              "odds": "$15.00"
+            }
+          },
+          {
+            "team": {
+              "id": 2248,
+              "uuid": "8ebde53f-fe48-3a97-8866-c5ff03f830f5",
+              "name": "Brisbane Roar FC",
+              "nickname": "",
+              "abbr": "BRR",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 6,
+              "change": "up",
+              "played": 14,
+              "won": 5,
+              "drawn": 4,
+              "lost": 5,
+              "goals_for": 16,
+              "goals_against": 19,
+              "goals_difference": -3,
+              "points": 19,
+              "recent_results": [
+                "win",
+                "win",
+                "draw",
+                "win",
+                "draw"
+              ],
+              "odds": "$21.00"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "competition": {
+        "id": 684,
+        "uuid": "21f52d9f-4f2b-3015-baa9-e49dc63872e4",
+        "name": "Westfield W-League",
+        "short_name": "W-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "664e2069-6d55-3be6-80bf-ba06ba0a7ef4",
+        "name": "Westfield W-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "standings": {
+        "team_standings": [
+          {
+            "team": {
+              "id": 10950,
+              "uuid": "2d06662b-7eeb-3e44-a7d9-6ace8c25abcd",
+              "name": "Melbourne City FC Women",
+              "nickname": "",
+              "abbr": "MCIT",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 1,
+              "change": "none",
+              "played": 9,
+              "won": 8,
+              "drawn": 1,
+              "lost": 0,
+              "goals_for": 16,
+              "goals_against": 3,
+              "goals_difference": 13,
+              "points": 25,
+              "recent_results": [
+                "win",
+                "win",
+                "win",
+                "win",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 9413,
+              "uuid": "1a87cf72-d37b-3d7d-beaa-bd8fb0d41784",
+              "name": "Western Sydney Wanderers FC Women",
+              "nickname": "",
+              "abbr": "WSW",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 2,
+              "change": "up",
+              "played": 9,
+              "won": 6,
+              "drawn": 1,
+              "lost": 2,
+              "goals_for": 21,
+              "goals_against": 11,
+              "goals_difference": 10,
+              "points": 19,
+              "recent_results": [
+                "loss",
+                "win",
+                "loss",
+                "win",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 9412,
+              "uuid": "344d8baa-a8da-3fb0-9f36-067f88d1f41e",
+              "name": "Sydney FC Women",
+              "nickname": "",
+              "abbr": "SFC",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 3,
+              "change": "down",
+              "played": 9,
+              "won": 6,
+              "drawn": 1,
+              "lost": 2,
+              "goals_for": 16,
+              "goals_against": 8,
+              "goals_difference": 8,
+              "points": 19,
+              "recent_results": [
+                "draw",
+                "win",
+                "win",
+                "loss",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 9407,
+              "uuid": "94464b7b-27de-3f8c-9934-83e4a093b5c5",
+              "name": "Brisbane Roar FC Women",
+              "nickname": "",
+              "abbr": "BRR",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 4,
+              "change": "none",
+              "played": 9,
+              "won": 4,
+              "drawn": 2,
+              "lost": 3,
+              "goals_for": 14,
+              "goals_against": 12,
+              "goals_difference": 2,
+              "points": 14,
+              "recent_results": [
+                "draw",
+                "win",
+                "loss",
+                "win",
+                "draw"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 9409,
+              "uuid": "e7603e10-6de5-3a0f-8efb-a99253c2a13e",
+              "name": "Melbourne Victory Women",
+              "nickname": "",
+              "abbr": "MVIC",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 5,
+              "change": "none",
+              "played": 8,
+              "won": 4,
+              "drawn": 2,
+              "lost": 2,
+              "goals_for": 11,
+              "goals_against": 9,
+              "goals_difference": 2,
+              "points": 14,
+              "recent_results": [
+                "draw",
+                "win",
+                "win",
+                "win",
+                "draw"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 9408,
+              "uuid": "e41b05d2-37f1-340a-a983-e59924e01919",
+              "name": "Canberra United Women",
+              "nickname": "",
+              "abbr": "CAN",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 6,
+              "change": "none",
+              "played": 9,
+              "won": 3,
+              "drawn": 1,
+              "lost": 5,
+              "goals_for": 10,
+              "goals_against": 20,
+              "goals_difference": -10,
+              "points": 10,
+              "recent_results": [
+                "draw",
+                "loss",
+                "loss",
+                "loss",
+                "win"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "competition": {
+        "id": 685,
+        "uuid": "1923a508-d7e4-3bc6-a1ee-99778f22a89e",
+        "name": "Foxtel Y-League",
+        "short_name": "Y-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "bfb6e3b0-c356-3263-8ca8-b46db23d0ab2",
+        "name": "Foxtel Y-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "standings": {
+        "team_standings": [
+          {
+            "team": {
+              "id": 9419,
+              "uuid": "ef134827-fbfb-35a5-b355-3bee5365c50f",
+              "name": "Melbourne Victory Youth",
+              "nickname": "",
+              "abbr": "MBV",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 1,
+              "change": "up",
+              "played": 8,
+              "won": 5,
+              "drawn": 1,
+              "lost": 2,
+              "goals_for": 17,
+              "goals_against": 16,
+              "goals_difference": 1,
+              "points": 16,
+              "recent_results": [
+                "win",
+                "loss",
+                "win",
+                "draw",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 9416,
+              "uuid": "61c42dda-bc5f-3a51-a51a-cb462f9f3865",
+              "name": "Brisbane Roar FC Youth",
+              "nickname": "",
+              "abbr": "BRR",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 2,
+              "change": "down",
+              "played": 8,
+              "won": 4,
+              "drawn": 2,
+              "lost": 2,
+              "goals_for": 22,
+              "goals_against": 9,
+              "goals_difference": 13,
+              "points": 14,
+              "recent_results": [
+                "loss",
+                "win",
+                "loss",
+                "draw",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 9414,
+              "uuid": "57fc82d2-6bcf-3e31-9693-1fad6b9f37e6",
+              "name": "Adelaide United Youth",
+              "nickname": "",
+              "abbr": "ADE",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 3,
+              "change": "none",
+              "played": 8,
+              "won": 4,
+              "drawn": 1,
+              "lost": 3,
+              "goals_for": 15,
+              "goals_against": 15,
+              "goals_difference": 0,
+              "points": 13,
+              "recent_results": [
+                "loss",
+                "win",
+                "draw",
+                "win",
+                "loss"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 9418,
+              "uuid": "c583900d-798f-3ebf-95d7-5492f3c2de1b",
+              "name": "Melbourne City FC Youth",
+              "nickname": "",
+              "abbr": "MBC",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 4,
+              "change": "none",
+              "played": 8,
+              "won": 2,
+              "drawn": 4,
+              "lost": 2,
+              "goals_for": 15,
+              "goals_against": 16,
+              "goals_difference": -1,
+              "points": 10,
+              "recent_results": [
+                "win",
+                "win",
+                "draw",
+                "draw",
+                "loss"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 9421,
+              "uuid": "fee615b1-b3d2-3fd1-8e71-235ee23cf691",
+              "name": "Perth Glory Youth",
+              "nickname": "",
+              "abbr": "PGL",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 5,
+              "change": "none",
+              "played": 8,
+              "won": 0,
+              "drawn": 2,
+              "lost": 6,
+              "goals_for": 11,
+              "goals_against": 24,
+              "goals_difference": -13,
+              "points": 2,
+              "recent_results": [
+                "loss",
+                "loss",
+                "loss",
+                "draw",
+                "loss"
+              ]
+            }
+          }
+        ],
+        "group": {
+          "id": "A",
+          "name": "Group A"
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 341,
+        "uuid": "d806ef48-e80a-353e-a851-956be5c7784c",
+        "name": "World Cup Qualifiers",
+        "short_name": "WC Qualifiers",
+        "active_season": 112022
+      },
+      "season": {
+        "id": 112022,
+        "uuid": "a9473368-2717-3c3a-9243-4f0ce3472b58",
+        "name": "Qualifying World Cup 2022",
+        "short_name": "2019\/20"
+      },
+      "standings": {
+        "team_standings": [
+          {
+            "team": {
+              "id": 575,
+              "uuid": "020cfe68-e6e8-3cf5-a8d6-cd1c5a24f6a4",
+              "name": "Australia",
+              "nickname": "Socceroos",
+              "abbr": "AUS",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 1,
+              "change": "up",
+              "played": 4,
+              "won": 4,
+              "drawn": 0,
+              "lost": 0,
+              "goals_for": 16,
+              "goals_against": 1,
+              "goals_difference": 15,
+              "points": 12,
+              "recent_results": [
+                "win",
+                "win",
+                "win",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 1805,
+              "uuid": "ed7e1c3a-998e-3e53-b11c-d75149894492",
+              "name": "Kuwait",
+              "nickname": "",
+              "abbr": "KUW",
+              "country": "Kuwait"
+            },
+            "summary": {
+              "position": 2,
+              "change": "down",
+              "played": 5,
+              "won": 3,
+              "drawn": 1,
+              "lost": 1,
+              "goals_for": 17,
+              "goals_against": 3,
+              "goals_difference": 14,
+              "points": 10,
+              "recent_results": [
+                "loss"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 1843,
+              "uuid": "e13e790a-9f56-3a64-9f6f-54a1407f08fb",
+              "name": "Jordan",
+              "nickname": "",
+              "abbr": "JOR",
+              "country": "Jordan"
+            },
+            "summary": {
+              "position": 3,
+              "change": "none",
+              "played": 5,
+              "won": 3,
+              "drawn": 1,
+              "lost": 1,
+              "goals_for": 10,
+              "goals_against": 2,
+              "goals_difference": 8,
+              "points": 10,
+              "recent_results": [
+                "loss"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 2490,
+              "uuid": "89268cfa-7a98-3d0a-8f1e-df02bd0e0ace",
+              "name": "Nepal",
+              "nickname": "",
+              "abbr": "NEP",
+              "country": "Nepal"
+            },
+            "summary": {
+              "position": 4,
+              "change": "none",
+              "played": 5,
+              "won": 1,
+              "drawn": 0,
+              "lost": 4,
+              "goals_for": 2,
+              "goals_against": 16,
+              "goals_difference": -14,
+              "points": 3,
+              "recent_results": [
+                "loss"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 1827,
+              "uuid": "23c14614-70ae-375f-8683-6682ef93f967",
+              "name": "Chinese Taipei",
+              "nickname": "",
+              "abbr": "TPE",
+              "country": "Chinese Taipei"
+            },
+            "summary": {
+              "position": 5,
+              "change": "none",
+              "played": 5,
+              "won": 0,
+              "drawn": 0,
+              "lost": 5,
+              "goals_for": 2,
+              "goals_against": 25,
+              "goals_difference": -23,
+              "points": 0,
+              "recent_results": [
+                "loss"
+              ]
+            }
+          }
+        ],
+        "group": {
+          "id": "B",
+          "name": "Group B"
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 863,
+        "uuid": "de45a064-3f9a-36c4-b9f5-0287c2dca1df",
+        "name": "Tournament of Nations",
+        "short_name": "Tournament of Nations",
+        "active_season": 2018
+      },
+      "season": {
+        "id": 2018,
+        "uuid": "332e0b60-8eed-31a6-a23a-f3e5c666a4da",
+        "name": "Tournament of Nations 2018",
+        "short_name": "2018"
+      },
+      "standings": {
+        "team_standings": [
+          {
+            "team": {
+              "id": 6238,
+              "uuid": "f03c1308-1752-3d63-8751-d770c1362611",
+              "name": "USA Women",
+              "nickname": "",
+              "abbr": "USA",
+              "country": "USA"
+            },
+            "summary": {
+              "position": 1,
+              "change": "none",
+              "played": 3,
+              "won": 2,
+              "drawn": 1,
+              "lost": 0,
+              "goals_for": 9,
+              "goals_against": 4,
+              "goals_difference": 5,
+              "points": 7,
+              "recent_results": [
+                "win",
+                "draw",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 6231,
+              "uuid": "17c5ce57-4ea4-3bd5-b61a-090c67018b27",
+              "name": "Australia Women",
+              "nickname": "Westfield Matildas",
+              "abbr": "AUS",
+              "country": "Australia"
+            },
+            "summary": {
+              "position": 2,
+              "change": "none",
+              "played": 3,
+              "won": 2,
+              "drawn": 1,
+              "lost": 0,
+              "goals_for": 6,
+              "goals_against": 2,
+              "goals_difference": 4,
+              "points": 7,
+              "recent_results": [
+                "win",
+                "draw",
+                "win"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 6239,
+              "uuid": "e6302817-8282-3894-a070-2364831c6576",
+              "name": "Brazil Women",
+              "nickname": "",
+              "abbr": "BRW",
+              "country": "Brazil"
+            },
+            "summary": {
+              "position": 3,
+              "change": "none",
+              "played": 3,
+              "won": 1,
+              "drawn": 0,
+              "lost": 2,
+              "goals_for": 4,
+              "goals_against": 8,
+              "goals_difference": -4,
+              "points": 3,
+              "recent_results": [
+                "loss",
+                "win",
+                "loss"
+              ]
+            }
+          },
+          {
+            "team": {
+              "id": 6232,
+              "uuid": "35025ae3-933f-3774-9ef1-8afc43b80126",
+              "name": "Japan Women",
+              "nickname": "",
+              "abbr": "JAW",
+              "country": "Japan"
+            },
+            "summary": {
+              "position": 4,
+              "change": "none",
+              "played": 3,
+              "won": 0,
+              "drawn": 0,
+              "lost": 3,
+              "goals_for": 3,
+              "goals_against": 8,
+              "goals_difference": -5,
+              "points": 0,
+              "recent_results": [
+                "loss",
+                "loss",
+                "loss"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "featured_news": [
+    {
+      "uuid": "fb20d46b-2ef7-4d6d-aabc-b3dc21239f66",
+      "node_id": 247781,
+      "path": "https:\/\/www.myfootball.com.au\/news\/melbourne-city-vs-perth-glory-reaction",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/melbourne-city-vs-perth-glory-reaction?view_mode=webview",
+      "title": "Popovic lauds Perth defence as Glory go 35 days without conceding",
+      "byline": "Jacob Windon",
+      "created_date": "2020-01-25T22:20:26+1100",
+      "modified_date": "2020-01-25T22:21:22+1100",
+      "tags": [
+        "featured",
+        "2019\/20 season",
+        "reaction and interview 2019-20 ",
+        "aleague"
+      ],
+      "source": "aleague",
+      "teaser": "Perth Glory boss Tony Popovic lauded another sterling defensive display from his side after holding Melbourne City to a 0-0 draw on Saturday night.\u00a0\n\nThe reigning Premiers' defence could not be breached for the fourth consecutive game as Perth held City - the Hyundai A-League's second-highest scorers - to a rare blank at AAMI Park.\u00a0",
+      "body": "<p class=\"standfirst\">Perth Glory boss Tony Popovic lauded another sterling defensive display from his side after holding Melbourne City to a 0-0 draw on Saturday night.\u00a0<\/p>\n\n<p class=\"ifresponsive\">The reigning Premiers' defence could not be breached for the fourth consecutive game as Perth held City - the Hyundai A-League's second-highest scorers - to a rare blank at AAMI Park.\u00a0<\/p>\n\n<p class=\"ifresponsive\">Several observers had earmarked the clash between second-placed City and third-placed Glory as a case study in determining which of the two Premiers Plate outsiders held the strongest claim to chase down runaway leaders Sydney FC.<\/p>\n\n<p>And on the basis on the run of play in Melbourne, and the formidable sequence of six shutouts from seven league matches, many would be inclined to tip the men from WA as the Sky Blues' nearest challengers despite a 12 point deficit between the two 2019 Grand Finalists opening up as a result of Saturday's stalemate.\u00a0<\/p>\n\n<p>It has been over 400 minutes of action since Glory last conceded - an ultimately ineffective equalising goal from Newcastle Jets' midfielder Steven Ugarkovic in a game on December 21 Glory would go on to win comfortably, 6-2.<\/p>\n\n<p><strong>READ:\u00a0<\/strong><a href=\"https:\/\/www.a-league.com.au\/news\/melbourne-city-vs-perth-glory-report-goals-video-highlights\">City halt Glory's winning run but settle for frustrating draw<\/a><\/p>\n\n<p><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\"><img alt=\"Watch Hyundai A-League Live and Free on ABC and iView\" src=\"https:\/\/www.a-league.com.au\/sites\/aleague\/files\/2019-10\/Watch-live-and-free-thin-banner.png\" \/><\/a><\/p>\n\n<p>And after securing back to back away clean sheets against Western Sydney Wanderers and City in their last two fixtures, Popovic says Perth's ability to grind out defensive shutouts is 'a real positive' as the AFC Champions League winner seeks to fine-tune his side for another title assault.\u00a0<\/p>\n\n<p>\"We had to really dig deep as a team [against City],\" Popovic told FOX Sports.<\/p>\n\n<p>\"You could see there are a lot of tired bodies out there but we dealt with the crosses well. We didn't give away any chances, we kept their striker relatively quiet.<\/p>\n\n<p>\"The last couple of games for us we've been a little depleted and I'm delighted with the two results we've picked up on the road.<\/p>\n\n<p>\"We take a good point away from home back to Perth.\"<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-embed-code field--type-string-long field--label-hidden field__item\"><p class=\"opta-media-name\">\n  Opta Widget: ALeague \n<\/p>\n<opta-widget widget=\"team_ranking\" competition=\"214\" season=\"2019\" team=\"2309,2248,1988,5664,2237,2319,989,1962,2655,7062,15834\" template=\"normal\" navigation=\"tabs_more\" default_nav=\"1\" show_crests=\"false\" show_ranks=\"true\" visible_categories=\"clean_sheets,goals_conceded\" limit=\"10\" hide_zeroes=\"true\" team_naming=\"full\" show_logo=\"true\" show_title=\"true\" breakpoints=\"400\" sport=\"football\"><\/opta-widget><\/div>\n      \n  <\/div>\n    <\/article><article class=\"embedded-entity\"><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\">  <img src=\"\/sites\/default\/files\/2019-12\/how%20to%20watch%20the%20hyundai%20a-league.png\" alt=\"How to Watch A-League\" title=\"How to Watch A-League\" typeof=\"foaf:Image\" \/><\/a>    <\/article><p><br \/>\nAfter clocking up the travel kilometres in the past two rounds of action, Popovic is relishing the trip back to WA for next Saturday evening's clash with Melbourne Victory, where a fifth clean sheet would be a new club record for the ex-National Soccer League powerhouse.\u00a0<\/p>\n\n<p>More importantly for the Glory taskmaster says, will be the chance to take stock and recover during the build up after a gruelling run of games in which last season's Premiers have underlined why it would be premature to rule them out of the title race despite the handsome advantage Sydney possess.\u00a0<\/p>\n\n<p>\"There are a lot of tired bodies out there from two tough away games,\" Popovic admitted.<\/p>\n\n<p>\"Hopefully we recover some bodies for next week.\"<\/p>\n\n<figure role=\"group\" class=\"caption caption-article embedded-entity\"><article><img alt=\"A-League \" src=\"\/sites\/default\/files\/2020-01\/GettyImages-1201823922%20%281%29.jpg\" title=\"A-League \" typeof=\"foaf:Image\" \/><\/article><figcaption>Socceroos striker Jamie Maclaren was silenced on an off-night for the forwards at AAMI Park<\/figcaption><\/figure><article class=\"embedded-entity\"><a href=\"https:\/\/www.myfootball.com.au\/download-myfootball-live\">  <img src=\"\/sites\/default\/files\/2019-11\/unnamed.jpg\" alt=\"Telstra \" title=\"Telstra \" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3>Round 17<\/h3>\n\n<p>Adelaide United v Melbourne City<br \/>\nSaturday, 1 February 2020<br \/>\nCoopers Stadium<br \/>\nKick-off: 7.00pm local, 7:30pm AEDT<\/p>\n\n<p><a href=\"http:\/\/premier.ticketek.com.au\/shows\/show.aspx?sh=AUFC1720\">Buy Tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/adelaide-united-v-melbourne-city-fc-a-league-01-02-2020\/2024029\">Match Centre<\/a><\/p>\n\n<p><strong>Perth Glory v Melbourne Victory<\/strong><br \/>\nSaturday, 1 February 2020<br \/>\nHBF Park<br \/>\nKick-off: 6.45pm local, 9.45pm AEDT<\/p>\n\n<p><a href=\"https:\/\/www.ticketmaster.com.au\/event\/1300571DCE4D8E6D\">Buy tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024030\">Match centre<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"goto.kayosports.com.au\/c\/1976356\/707839\/9635?sharedid=aleaguewebed\">  <img src=\"\/sites\/default\/files\/2019-11\/MCS1406_FFA_2000x280_0.png\" alt=\"Kayo free trial\" title=\"Kayo free trial\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/GettyImages-1201825188%20%281%29.jpg?itok=xPq1hD6_",
+        "width": 600,
+        "height": 384,
+        "caption": "Tony Popovic "
+      },
+      "main_media_type": "video",
+      "video": {
+        "uuid": "262efcf1-dc00-454a-bb2e-9ab27c29b97d",
+        "video_id": 6126471407001,
+        "account_id": 5472387882001,
+        "name": "Match Highlights | Melbourne City v Perth Glory | Hyundai A-League",
+        "long_description": "",
+        "created_date": "2020-01-25T21:56:11+1100",
+        "modified_date": "2020-01-25T21:56:27+1100",
+        "duration": 242880,
+        "thumbnail": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14824.jpg?itok=qjb5M9Jb",
+          "width": 320,
+          "height": 180
+        },
+        "poster": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14858.jpg?itok=sjSkmcE4",
+          "width": 1200,
+          "height": 675
+        },
+        "poster_small": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14858.jpg?itok=FybWiNp5",
+          "width": 600,
+          "height": 338
+        },
+        "tags": [
+          "2019-20 season",
+          "mcy",
+          "match highlights",
+          "featured",
+          "per",
+          "round 16"
+        ]
+      },
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/GettyImages-1201825188%20%281%29.jpg?itok=RoNjJ9eB",
+        "width": 1200,
+        "height": 768,
+        "caption": "Tony Popovic "
+      },
+      "gallery": []
+    },
+    {
+      "uuid": "59732ae8-e924-4c9a-a19e-51a87a2ba815",
+      "node_id": 247776,
+      "path": "https:\/\/www.myfootball.com.au\/news\/adelaide-united-vs-western-sydney-wanderers-match-report-w-league-highlights-goals-video-score",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/adelaide-united-vs-western-sydney-wanderers-match-report-w-league-highlights-goals-video-score?view_mode=webview",
+      "title": "Wanderers' title hopes dented in stunning loss to Adelaide",
+      "byline": "Samuel Green",
+      "created_date": "2020-01-25T21:32:15+1100",
+      "modified_date": "2020-01-25T21:42:25+1100",
+      "tags": [
+        "featured",
+        "westfield w-league 2019\/20",
+        "2019\/20 season",
+        "match report",
+        "wleague"
+      ],
+      "source": "wleague",
+      "teaser": "Western Sydney Wanderers\u2019 Premiership hopes suffered a severe blow as Adelaide United clung on to\u00a0a shock 3-2 win to climb off the bottom of the ladder.\n\nChelsie Dawber\u2019s opener and a double from Mallory Weber\u00a0set\u00a0the Lady Reds on course for a first victory of the 2019\/20 campaign, but late goals from Sam Staab and an own goal from Lais Araujo made it a nervy finish at the Marden Sports Complex.\u00a0",
+      "body": "<p class=\"standfirst\"><strong><em>Western Sydney Wanderers\u2019 Premiership hopes suffered a severe blow as Adelaide United clung on to\u00a0a shock 3-2 win to climb off the bottom of the ladder.<\/em><\/strong><\/p>\n\n<p>Chelsie Dawber\u2019s opener and a double from Mallory Weber\u00a0set\u00a0the Lady Reds on course for a first victory of the 2019\/20 campaign, but late goals from Sam Staab and an own goal from Lais Araujo made it a nervy finish at the Marden Sports Complex.\u00a0<\/p>\n\n<p>Kristen Hamilton had skied\u00a0an 81st-minute penalty with the score still at 3-0 and Amy Harrison lashed a 95th minute volley over the crossbar as the out-of-sorts Westfield W-League title challengers fell to a second defeat in three games.<\/p>\n\n<p>A sudden slip in form leaves Dean Heffernan\u2019s second-placed side trailing Melbourne City by six points with three games to play \u2013 but the Red and Black remain in the mix to claim their first ever Finals Series berth.<\/p>\n\n<p>The rock bottom side stunned the competition high fliers from the off with their crisp passing and fluid movement as Emily Condon rattled the crossbar on six minutes to leave the visitors rocked \u2013 and that served as a warning sign of what was to follow.<\/p>\n\n<p>In their first match without Irish midfielder Denise O\u2019Sullivan following the end of her guest player contract, Western Sydney failed to stamp their mark on the game as Dawber\u2019s 17th-minute strike and Weber\u2019s late first-half double left Wanderers reeling at the interval.<\/p>\n\n<p>The visitors continued to be carved open in the second half but some desperate defending kept Western Sydney from further embarrassment until their late rally, but it was not enough to deny Adelaide one of the\u00a0upsets of the 2019\/20 season.<\/p>\n\n<p><a href=\"https:\/\/www.w-league.com.au\/news\/every-westfield-w-league-201920-season-match-watch-live-and-free\"><img alt=\"Watch live and free\" src=\"https:\/\/www.w-league.com.au\/sites\/wleague\/files\/2019-12\/thumbnail_WWL_2019_20_Banner_2000x280_Broadcast_TMP.png\" \/><\/a><\/p>\n\n<p><strong>REPORT:\u00a0<\/strong><a href=\"https:\/\/www.w-league.com.au\/news\/newcastle-jets-vs-perth-glory-report\">Glory earn first win of the season in six-goal thriller<\/a><br \/><strong>REACTION:\u00a0<\/strong><a href=\"https:\/\/www.w-league.com.au\/news\/its-a-dream-come-true-lowry-announces-herself-westfield-w-league-stage\">Lowry announces herself on Westfield W-League stage<\/a><\/p>\n\n<p>They may have started the day as winless cellar dwellers, but the Lady Reds opened in confident fashion with American attacker Weber racing through on goal and drawing a rash foul from back-up goalkeeper Newbon, who received a yellow card on her second Westfield W-League start in relief of the injured United States custodian Abby Smith after two minutes.<\/p>\n\n<p>There were more nervous moments for Western Sydney in the sixth minute when Weber stole the ball from Alex Huynh and Condon crashed a shot against the top of the visitors\u2019 crossbar, but the Golden-clad Wanderers finally threatened on 15 minutes when stand-in right-back Amy Harrison found Kirsten Hamilton and her driven delivery flashed past both Courtnee Vine and the home goal.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126453456001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nMoments later, the visitors had fallen behind when Huynh lost possession again deep in her own territory and Dawber made no mistake from 20 yards to fire Adelaide in front.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126453688001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nWhen Laura Johns cut through the middle on 39 minutes and found Condon on the right, the Lady Reds sent shockwaves through their opponents as Weber tapped in a precision cross from close range.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126458417001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nSix minutes later, a minute into first-half stoppage time, Weber showed her lightning-quick pace once again to chase down Charlotte Grant\u2019s long pass and add a composed finish to send Wanderers into the sheds three goals down.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126459945001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nIt was almost four within five minutes of the restart but an offside flag denied Weber a treble after a goal-mouth scramble, before\u00a0Huynh came to the rescue with a last-gasp tackle to prevent\u00a0Dawber scoring a second and Newbon made herself big\u00a0to take hat-trick honours away from\u00a0Weber as she ran clear\u00a0on goal.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126472049001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nWanderers toiled and were\u00a0handed a chance for some redemption when\u00a0Hamilton was tripped by\u00a0Matilda McNamara in the box. The American forward launched her 81st-minute spot-kick high into the night's sky.<\/p>\n\n<p>Her compatriot Staab made amends in the 88th minute when she headed in Ella Mastrantonio's delivery to grab one\u00a0back, and Western Sydney bundled in another goal on\u00a093 minutes when Lais turned Kyra Cooney-Cross' corner into her own net. A final chance fell to Harrison but the Wanderers captain could not control her volley.<\/p>\n\n<p>Adelaide\u00a0were the competition's lowest scorers at the start of play with six goals in eight games. By the full-time whistle, the Lady Reds had halted a four-match losing run against Western Sydney and overtaken the\u00a0Newcastle Jets to move up to eighth place in the Westfield W-League ladder.<\/p>\n\n<p><strong>SUNDAY\u00a0PREVIEW:\u00a0<a href=\"https:\/\/www.w-league.com.au\/news\/melbourne-victory-v-canberra-united-match-preview\">Melbourne Victory v Canberra United<\/a><\/strong><\/p>\n\n<p><img alt=\"How to watch\" src=\"https:\/\/www.w-league.com.au\/sites\/wleague\/files\/2019-12\/thumbnail_HOW-TO-WATCH-WWL-THIN-BANNER.png\" \/><\/p>\n\n<h3>Round 12<\/h3>\n\n<p><strong>Sydney FC v Western Sydney Wanderers<\/strong><br \/>\nSaturday, 15 February 2020<br \/>\nCromer Park<br \/>\nKick-off: 4pm AEDT<\/p>\n\n<p><a href=\"https:\/\/www.eventopia.co\/event\/Round-12-Sydney-FC-v-Western-Sydney-Wanderers\/397322\">Match Centre<br \/>\nTickets<\/a><\/p>\n\n<p><strong>Canberra United v Adelaide United<\/strong><br \/>\nSunday, 6 February 2020<br \/>\nMcKellar Park<br \/>\nKick-off: 4pm AEDT<\/p>\n\n<p><a href=\"https:\/\/www.w-league.com.au\/match\/canberra-united-women-v-adelaide-united-women-w-league-16-02-2020\/2032898\">Match Centre<\/a><br \/><a href=\"https:\/\/sa2.seatadvisor.com\/sabo\/servlets\/TicketRequest?&amp;presenter=AUABCTIK&amp;event=WWL12R12\">Tickets<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/account.footballnetwork.com.au\/register\">  <img src=\"\/sites\/default\/files\/2019-10\/create-football-account.png\" alt=\"Create a Football Account Thin Banner\" title=\"Create a Football Account Thin Banner\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/Dawber%20250120.jpg?itok=1A1nI07B",
+        "width": 600,
+        "height": 360,
+        "caption": "Chelsie Dawber"
+      },
+      "main_media_type": "news",
+      "video": null,
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/Dawber%20250120.jpg?itok=RruSo92r",
+        "width": 1200,
+        "height": 720,
+        "caption": "Chelsie Dawber"
+      },
+      "gallery": []
+    },
+    {
+      "uuid": "25bfc402-f526-4e38-a3dc-6b70984a986d",
+      "node_id": 247771,
+      "path": "https:\/\/www.myfootball.com.au\/news\/melbourne-city-vs-perth-glory-report-goals-video-highlights",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/melbourne-city-vs-perth-glory-report-goals-video-highlights?view_mode=webview",
+      "title": "City halt Glory's winning run but settle for frustrating draw ",
+      "byline": "a-league.com.au",
+      "created_date": "2020-01-25T19:31:31+1100",
+      "modified_date": "2020-01-25T22:21:53+1100",
+      "tags": [
+        "2019\/20 season",
+        "featured",
+        "match report 2019\/20",
+        "aleague"
+      ],
+      "source": "aleague",
+      "teaser": "Melbourne City and Perth Glory both lost further ground on runaway Hyundai A-League leaders Sydney FC after a 0-0 draw on Saturday evening.\u00a0\n\nBoth sides traded blows throughout a tense and even contest but neither City or the visiting reigning Premiers were able to muster a breakthrough moment and stake a claim as the Sky Blues' nearest Premiership contenders.",
+      "body": "<p class=\"standfirst\">Melbourne City and Perth Glory both lost further ground on runaway Hyundai A-League leaders Sydney FC after a 0-0 draw on Saturday evening.\u00a0<\/p>\n\n<p class=\"ifresponsive\">Both sides traded blows throughout a tense and even contest but neither City or the visiting reigning Premiers were able to muster a breakthrough moment and stake a claim as the Sky Blues' nearest Premiership contenders.<\/p>\n\n<p class=\"ifresponsive\">Instead, the goalless stalemate sees Sydney 10 points clear of Erick Mombaerts' City in second, while Glory remain 12 points behind the team who beat them in the Hyundai A-League Grand Final 2019 last May.<\/p>\n\n<p class=\"ifresponsive\">Glory had won a club record six matches in a row prior to the contest at AAMI Park but found it difficult to break down a City defence reinforced with the addition of on-loan Celtic youngster Jack Hendry.<\/p>\n\n<p class=\"ifresponsive\">Former City talisman Bruno Fornaroli came close to haunting his former employers throughout, while opposite number Jamie Maclaren will lament a huge early chance wasted on a night where both defences prevailed \u2013 Perth registering their sixth clean sheet in seven matches.\u00a0<\/p>\n\n<p><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024024\">Head here for the Match Centre<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\">  <img src=\"\/sites\/default\/files\/2019-11\/Watch%20live%20and%20free_0.png\" alt=\"Watch Live and Free\" title=\"Watch Live and Free\" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3>Key moments<\/h3>\n\n<p><strong>Maclaren misses glorious chance to open after Kim error<\/strong><\/p>\n\n<p>Perth got away with a big early scare when Kim Soo-Beom's botched clearance fell to the feet of Jamie Maclaren. Incredibly, the 13-goal City marksman could only direct a tame effort into the arms of Glory 'keeper Liam Reddy.\u00a0<\/p>\n\n<p>Reddy was called into action again 10 minutes later. A wonderful move from City saw Maclaren teed up Adrian Luna, and the Perth shot-stopper \u2013 who had kept five clean sheets in six prior to kick off \u2013 lept acrobatically to his right.\u00a0<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514571001\/default_default\/index.html?videoId=6126453687001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/><strong>Fornaroli and Castro cannot find the breakthrough for Perth<\/strong><\/p>\n\n<p>Bruno Fornaroli will want this attempt again.\u00a0The ex-City talisman's diminutive frame emerged amid Perth's tall timber to get on the end of Neil Kilkenny's corner but the headed finish from the Uruguayan was wayward.<\/p>\n\n<p>Diego Castro perhaps should have done better with the best chance Glory constructed in the opening stanza. Kim and Chianese were involved, with the latter dropping the ball off for the onrushing Spaniard who directed his effort into the midriff of City gloveman Dean Bouzanis.\u00a0<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514571001\/default_default\/index.html?videoId=6126453687001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nCity piled on the pressure early in the second half but Erick Mombaerts' side dodged a bullet when Josh Brillante was penalised for bringing down Fornaroli, with the Video Assistant Referee overturning the decision because the Perth frontman was offside in the lead up.\u00a0<\/p>\n\n<p>Fornaroli was next to threaten, wriggling away from the City defence after a cheap turnover and forced a sharp stop from Bouzanis, and the hosts drew a huge sigh of relief when the resulting corner kick deflected off Curtis Good and onto the post.\u00a0<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514571001\/default_default\/index.html?videoId=6126469277001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><h3>Ways to watch<\/h3>\n\n<p><a href=\"https:\/\/www.telstra.com.au\/tv-movies-music\/sports-offer#myfootball\">Download the MyFootball Live App now<\/a><br \/><a href=\"https:\/\/kayosports.com.au\/\">Sign up for Kayo Sports<\/a><br \/><a href=\"https:\/\/www.foxtel.com.au\/channel-packs\/sport-pack.html\">Get Foxtel<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.a-league.com.au\/become-a-junior-fox-sports-presenter\">  <img src=\"\/sites\/default\/files\/2020-01\/Kid_Commentator_2000x280_1.png\" alt=\"Kid_Commentator\" title=\"Kid_Commentator\" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3>Round 17<\/h3>\n\n<p>Adelaide United v Melbourne City<br \/>\nSaturday, 1 February 2020<br \/>\nCoopers Stadium<br \/>\nKick-off: 7.00pm local, 7:30pm AEDT<\/p>\n\n<p><a href=\"http:\/\/premier.ticketek.com.au\/shows\/show.aspx?sh=AUFC1720\">Buy Tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/adelaide-united-v-melbourne-city-fc-a-league-01-02-2020\/2024029\">Match Centre<\/a><\/p>\n\n<p><strong>Perth Glory v Melbourne Victory<\/strong><br \/>\nSaturday, 1 February 2020<br \/>\nHBF Park<br \/>\nKick-off: 6.45pm local, 9.45pm AEDT<\/p>\n\n<p><a href=\"https:\/\/www.ticketmaster.com.au\/event\/1300571DCE4D8E6D\">Buy tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024030\">Match centre<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"\/\/kayosports.com.au\/?marketing=multi-1&amp;amp;extcamp=ffaaleague-prt-ffa-bnr-acq-ptr-ftb&amp;amp;channel=ffa&amp;amp;campaign=launch&amp;amp;voucher=LAU\">  <img src=\"\/sites\/default\/files\/2019-11\/Kayo.png\" alt=\"Kayo Sports\" title=\"Kayo Sports\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/GettyImages-1201816699%20%281%29.jpg?itok=4EyrZb0c",
+        "width": 600,
+        "height": 386,
+        "caption": "A-League "
+      },
+      "main_media_type": "video",
+      "video": {
+        "uuid": "262efcf1-dc00-454a-bb2e-9ab27c29b97d",
+        "video_id": 6126471407001,
+        "account_id": 5472387882001,
+        "name": "Match Highlights | Melbourne City v Perth Glory | Hyundai A-League",
+        "long_description": "",
+        "created_date": "2020-01-25T21:56:11+1100",
+        "modified_date": "2020-01-25T21:56:27+1100",
+        "duration": 242880,
+        "thumbnail": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14824.jpg?itok=qjb5M9Jb",
+          "width": 320,
+          "height": 180
+        },
+        "poster": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14858.jpg?itok=sjSkmcE4",
+          "width": 1200,
+          "height": 675
+        },
+        "poster_small": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14858.jpg?itok=FybWiNp5",
+          "width": 600,
+          "height": 338
+        },
+        "tags": [
+          "2019-20 season",
+          "mcy",
+          "match highlights",
+          "featured",
+          "per",
+          "round 16"
+        ]
+      },
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/GettyImages-1201816699%20%281%29.jpg?itok=CKrkz2Cg",
+        "width": 1200,
+        "height": 773,
+        "caption": "A-League "
+      },
+      "gallery": []
+    },
+    {
+      "uuid": "da83949c-eb2c-40b9-ac2d-4325f7e5a828",
+      "node_id": 247766,
+      "path": "https:\/\/www.myfootball.com.au\/news\/central-coast-mariners-vs-brisbane-roar-reaction",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/central-coast-mariners-vs-brisbane-roar-reaction?view_mode=webview",
+      "title": "Brown says Brisbane are finding their groove under Fowler ",
+      "byline": "www.a-league.com.au",
+      "created_date": "2020-01-25T19:25:13+1100",
+      "modified_date": "2020-01-25T19:32:50+1100",
+      "tags": [
+        "featured",
+        "2019\/20 season",
+        "reaction and interview 2019-20 ",
+        "aleague"
+      ],
+      "source": "aleague",
+      "teaser": "Corey Brown is relishing the chance to work alongside Robbie Fowler and believes Saturday\u2019s 1-0 win over Central Coast Mariners is evidence the tide is turning for Brisbane Roar under the Premier League legend.\n\nBrown \u2013 who was playing his second match back in the colours of Brisbane following his mid-season departure from Melbourne Victory \u2013 provided the match-winning moment for Roar after seeing his 86th minute effort take a deflection off Mariners defender Lewis Miller and wrongfoot \u2018keeper Mark Birighitti.",
+      "body": "<p class=\"standfirst\">Corey Brown is relishing the chance to work alongside Robbie Fowler and believes Saturday\u2019s 1-0 win over Central Coast Mariners is evidence the tide is turning for Brisbane Roar under the Premier League legend.<\/p>\n\n<p class=\"ifresponsive\">Brown \u2013 who was playing his second match back in the colours of Brisbane following his mid-season departure from Melbourne Victory \u2013 provided the match-winning moment for Roar after seeing his 86th minute effort take a deflection off Mariners defender Lewis Miller and wrongfoot \u2018keeper Mark Birighitti.<\/p>\n\n<p class=\"ifresponsive\">It ensures the Roar leapfrog Adelaide United into sixth on the Hyundai A-League ladder, where they will remain until the Reds travel to fifth-place Western United on Sunday evening.<\/p>\n\n<p>After a trying start to the campaign for ex-Liverpool striker Fowler, Brisbane have mustered a five-match unbeaten run and have won three of their last four fixtures.<\/p>\n\n<p>\u201cIt was a really important win and hopefully we keep climbing,\u201d Brown told FOX Sports.<\/p>\n\n<p><strong>READ:\u00a0<\/strong><a href=\"https:\/\/www.a-league.com.au\/news\/central-coast-mariners-vs-brisbane-roar-report-goals-highlights-video\">Brisbane enter top six as late own goal sinks Mariners<\/a><\/p>\n\n<p><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\"><img alt=\"Watch Hyundai A-League Live and Free on ABC and iView\" src=\"https:\/\/www.a-league.com.au\/sites\/aleague\/files\/2019-10\/Watch-live-and-free-thin-banner.png\" \/><\/a><\/p>\n\n<p>\u201cWe always go out to win the game and you saw the desperation a few times where we were blocking shots on the line.<\/p>\n\n<p>\u201cIf you bring that desperation into the game, defending and attacking, you are going to win more games than you lose.\u201d<\/p>\n\n<p>\u201cThe first day I walked into his office and I sat down and it sort of hit me - it\u2019s God,\u201d Brown said of his chance to work under Fowler.<\/p>\n\n<p>\u201cIt\u2019s really good and we\u2019re seeing the results now.\u201d<\/p>\n\n<p>Brown struggled for minutes and results at Melbourne Victory earlier in the season, winning just three starts under former coach Marco Kurz.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514571001\/default_default\/index.html?videoId=6126448636001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p>\u00a0<\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\">  <img src=\"\/sites\/default\/files\/2019-12\/how%20to%20watch%20the%20hyundai%20a-league.png\" alt=\"How to Watch A-League\" title=\"How to Watch A-League\" typeof=\"foaf:Image\" \/><\/a>    <\/article><p><br \/>\nSince joining Brisbane on January 17, with whom the fullback started his Hyundai A-League career in 2011, Brown has played full matches and helped Roar keep back to back clean sheets in 1-0 triumphs over high-flying Wellington Phoenix and the Mariners.<\/p>\n\n<p>\u201cI\u2019ve still got a little bit to go in terms of match fitness. That\u2019ll come as I play more games,\u201d said Brown.<\/p>\n\n<p>\u201cI\u2019ve kept myself in decent shape. We work hard at Melbourne Victory when I was there and when I wasn\u2019t playing, I was working hard.<\/p>\n\n<p>\u201cI was able to come into the team pretty well so hopefully I can keep getting fitter the more games I play.\u201d<\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.myfootball.com.au\/download-myfootball-live\">  <img src=\"\/sites\/default\/files\/2019-11\/unnamed.jpg\" alt=\"Telstra \" title=\"Telstra \" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3>Round 17<\/h3>\n\n<p><strong>Sydney FC v Brisbane Roar<\/strong><br \/>\nFriday, 31 January 2020<br \/>\nNetstrata Jubilee Stadium<br \/>\nKick off: 6.30pm AEDT<\/p>\n\n<p><a href=\"https:\/\/premier.ticketek.com.au\/shows\/Show.aspx?sh=SYDFC1720\">Buy tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024027\">Match centre<\/a><\/p>\n\n<p><strong>Central Coast Mariners v Western Sydney Wanderers<\/strong><br \/>\nSunday, 2 February 2020<br \/>\nCentral Coast Stadium<br \/>\nKick off: 3.00pm AEDT<\/p>\n\n<p><a href=\"https:\/\/premier.ticketek.com.au\/shows\/Show.aspx?sh=CMR1720\">Buy tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024031\">Match centre<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"goto.kayosports.com.au\/c\/1976356\/707839\/9635?sharedid=aleaguewebed\">  <img src=\"\/sites\/default\/files\/2019-11\/MCS1406_FFA_2000x280_0.png\" alt=\"Kayo free trial\" title=\"Kayo free trial\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/GettyImages-1201804688%20%281%29.jpg?itok=-8xXbpP7",
+        "width": 600,
+        "height": 365,
+        "caption": "A-League "
+      },
+      "main_media_type": "video",
+      "video": {
+        "uuid": "979c5779-3898-4e6c-b6ac-cbaaaeb41bd8",
+        "video_id": 6126451553001,
+        "account_id": 5472387882001,
+        "name": "Match Highlights | Central Coast Mariners v Brisbane Roar | Hyundai A-League",
+        "long_description": "",
+        "created_date": "2020-01-25T19:25:29+1100",
+        "modified_date": "2020-01-25T19:25:29+1100",
+        "duration": 272384,
+        "thumbnail": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14795.jpg?itok=L4P6m0hd",
+          "width": 320,
+          "height": 180
+        },
+        "poster": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14829.jpg?itok=QNJk3r-M",
+          "width": 1200,
+          "height": 674
+        },
+        "poster_small": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14829.jpg?itok=swX4_ZOr",
+          "width": 600,
+          "height": 337
+        },
+        "tags": [
+          "2019-20 season",
+          "bri",
+          "ccm",
+          "featured",
+          "match highlights",
+          "round 16"
+        ]
+      },
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/Brown%20250120.jpg?itok=dFKPqLAW",
+        "width": 1200,
+        "height": 720,
+        "caption": "Corey Brown"
+      },
+      "gallery": []
+    },
+    {
+      "uuid": "173033fc-2cbd-4241-a6e2-09eba4665609",
+      "node_id": 247761,
+      "path": "https:\/\/www.myfootball.com.au\/news\/gallery-inside-westfield-matildas-training-ahead-china-challenge-0",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/gallery-inside-westfield-matildas-training-ahead-china-challenge-0?view_mode=webview",
+      "title": "Gallery: Inside Westfield Matildas training ahead of China challenge",
+      "byline": "Matildas.com.au",
+      "created_date": "2020-01-25T15:54:19+1100",
+      "modified_date": "2020-01-25T15:56:53+1100",
+      "tags": [
+        "featured",
+        "olympic qualifiers 2020",
+        "matildas"
+      ],
+      "source": "matildas",
+      "teaser": "The Westfield Matildas were mixing it up in camp in Sydney this week to prepare for next month\u2019s 2020 AFC Women's Olympic Qualifying Tournament.\n\nBack together for the first time since November\u2019s friendlies against Chile, coach Ante Milicic has put his side through a couple of intense sessions to get them ready for the upcoming trip to China.\n\nAustralia need to finish in the top two of their group when they take on Chinese Taipei, Thailand and the host nation from February 3-9 in Nanjing.",
+      "body": "<p class=\"standfirst\">The Westfield Matildas were mixing it up in camp in Sydney this week to prepare for next month\u2019s 2020 AFC Women's Olympic Qualifying Tournament.<\/p>\n\n<p class=\"MsoNoSpacing\">Back together for the first time since November\u2019s friendlies against Chile, coach Ante Milicic has put his side through a couple of intense sessions to get them ready for the upcoming trip to China.<\/p>\n\n<p class=\"MsoNoSpacing\">Australia need to finish in the top two of their group when they take on Chinese Taipei, Thailand and the host nation from February 3-9 in Nanjing.<\/p>\n\n<p class=\"MsoNoSpacing\">Enjoy some behind-the-scenes shots of the Matildas training on the pitch and in the gym \u2013 and enjoying a high tea with supporters \u2013 ahead of a huge few weeks for the national team.<\/p>\n\n<p class=\"MsoNoSpacing\"><strong>MORE: <\/strong><a href=\"https:\/\/www.matildas.com.au\/news\/european-moves-will-only-benefit-westfield-matildas-says-milicic\">European moves will only benefit Westfield Matildas, says Milicic<\/a><br \/><strong>ULTIMATE\u00a0GUIDE:<\/strong>\u00a0<a href=\"https:\/\/www.matildas.com.au\/news\/ultimate-guide-2020-afc-womens-olympic-qualifiers\">2020 AFC Women\u2019s Olympic Qualifiers<\/a><\/p>\n\n<article class=\"embedded-entity\"><div class=\"article-banner-gallery js-video-exclusive-handler \">\n\t\t<div class=\"article-banner-gallery__inner o-block o-block--corset o-block--flush\">\n\t\t\t<a href=\"#\" class=\"open-fullscreen js-lightbox-trigger\"><\/a>\n                <div class=\"image-gallery\">\n        <div class=\"image-gallery__inner js-image-gallery\">\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3917.jpg?itok=PIHeKyVt\" alt=\"\" title=\"Jenna McCormick is all smiles in the gym\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/200121-mat_d3_training_-3899_1.jpg?itok=KcvESWkZ\" alt=\"\" title=\"Alanna Kennedy always goes at full tilt\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3873.jpg?itok=lJjt_pjx\" alt=\"\" title=\"Laura Brock does some heavy lifting\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3881.jpg?itok=SMFHGReL\" alt=\"\" title=\"Caitlin Foord spreads her wings in the gym\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2627.jpg?itok=Hv8J39ts\" alt=\"\" title=\"The Westfield Matildas take to the training pitch\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2987.jpg?itok=zFYJ6U3D\" alt=\"\" title=\"Katrina Gorry working on that touch and pace\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3080.jpg?itok=UxKjNbll\" alt=\"\" title=\"Mackenzie Arnold looking for the quick release\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3514.jpg?itok=pTxgyp4j\" alt=\"\" title=\"Karly Roestbakken with eyes on the ball\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2879.jpg?itok=XtZsuMwJ\" alt=\"\" title=\"Tameka Yallop keeping her marker at arm's length\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3785.jpg?itok=kOTHFs3M\" alt=\"\" title=\"Thumbs up from Emily van Egmond and Caitlin Foord\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2101.jpg?itok=ZGwb3WMC\" alt=\"\" title=\"A spot of high tea for Teagan Micah\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2179.jpg?itok=U4EXhNYi\" alt=\"\" title=\"Tameka Yallop is not tempted by the sweet treats on offer\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2216.jpg?itok=2wGVzUsD\" alt=\"\" title=\"Lydia Williams and Hayley Raso making time for a fan\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2187.jpg?itok=0eYbWMC1\" alt=\"\" title=\"Always happy to satisfy the autograph requests \" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2203.jpg?itok=fT2-WF7t\" alt=\"\" title=\"All smiles for Jenna McCormick and Lydia Williams with supporters.\" \/><\/div>\n                    <\/div>\n        <div class=\"image-gallery__caption\">\n            <p><\/p>\n            <span><\/span>\n        <\/div>\n    <\/div>\n\n\t\t<\/div>\n\t\t<div class=\"article-banner-gallery__lightbox\">\n\t\t\t<div class=\"article-banner-gallery__lightbox-bg\"><\/div>\n                <div class=\"image-gallery\">\n        <div class=\"image-gallery__inner js-image-gallery\">\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3917.jpg?itok=PIHeKyVt\" alt=\"\" title=\"Jenna McCormick is all smiles in the gym\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/200121-mat_d3_training_-3899_1.jpg?itok=KcvESWkZ\" alt=\"\" title=\"Alanna Kennedy always goes at full tilt\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3873.jpg?itok=lJjt_pjx\" alt=\"\" title=\"Laura Brock does some heavy lifting\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3881.jpg?itok=SMFHGReL\" alt=\"\" title=\"Caitlin Foord spreads her wings in the gym\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2627.jpg?itok=Hv8J39ts\" alt=\"\" title=\"The Westfield Matildas take to the training pitch\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2987.jpg?itok=zFYJ6U3D\" alt=\"\" title=\"Katrina Gorry working on that touch and pace\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3080.jpg?itok=UxKjNbll\" alt=\"\" title=\"Mackenzie Arnold looking for the quick release\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3514.jpg?itok=pTxgyp4j\" alt=\"\" title=\"Karly Roestbakken with eyes on the ball\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2879.jpg?itok=XtZsuMwJ\" alt=\"\" title=\"Tameka Yallop keeping her marker at arm's length\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3785.jpg?itok=kOTHFs3M\" alt=\"\" title=\"Thumbs up from Emily van Egmond and Caitlin Foord\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2101.jpg?itok=ZGwb3WMC\" alt=\"\" title=\"A spot of high tea for Teagan Micah\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2179.jpg?itok=U4EXhNYi\" alt=\"\" title=\"Tameka Yallop is not tempted by the sweet treats on offer\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2216.jpg?itok=2wGVzUsD\" alt=\"\" title=\"Lydia Williams and Hayley Raso making time for a fan\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2187.jpg?itok=0eYbWMC1\" alt=\"\" title=\"Always happy to satisfy the autograph requests \" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2203.jpg?itok=fT2-WF7t\" alt=\"\" title=\"All smiles for Jenna McCormick and Lydia Williams with supporters.\" \/><\/div>\n                    <\/div>\n        <div class=\"image-gallery__caption\">\n            <p><\/p>\n            <span><\/span>\n        <\/div>\n    <\/div>\n\n\t\t\t<a href=\"#\" class=\"exit-fullscreen\"><\/a>\n\t\t<\/div>\n\t<\/div>\n\n\n    <\/article><p class=\"MsoNoSpacing\">\u00a0<\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.matildas.com.au\/official-tour-partner\">  <img src=\"\/sites\/default\/files\/2019-12\/GGArmy_matildas_olympic.png\" alt=\"GGArmy_matildas_olympic\" title=\"GGArmy_matildas_olympic\" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3><strong><strong>Upcoming Matches \u2013 Westfield Matildas<\/strong><\/strong><\/h3>\n\n<p><strong>Westfield Matildas v Chinese Taipei<\/strong><br \/>\nDate: Monday, 3 February 2020<br \/>\nVenue: Five Rings Sports Centre, Wuhan, China<br \/>\nKick-off: 4.00pm (local); 7.00pm (AEDT)<br \/><br \/><strong>Thailand v Westfield Matildas<\/strong><br \/>\nDate: Thursday, 6 February 2020<br \/>\nVenue: Five Rings Sports Centre, Wuhan, China<br \/>\nKick-off: 4.00pm (local); 7.00pm (AEDT)<br \/><br \/><strong>Westfield Matildas v China PR<\/strong><br \/>\nDate: Sunday, 9 February 2020<br \/>\nVenue: Five Rings Sports Centre, Wuhan, China<br \/>\nKick-off: 7.30pm (local); 10.30pm (AEDT)\u00a0\u00a0<br \/><br \/><em>Ticketing &amp; broadcast information to be advised.<\/em><\/p>\n\n<p><strong>ULTIMATE GUIDE:<\/strong>\u00a0<a href=\"https:\/\/www.matildas.com.au\/news\/ultimate-guide-westfield-matildas-olympic-games-qualifiers\">Westfield Matildas at Tokyo 2020 Olympic Games qualifiers<\/a><br \/><strong>CALENDAR:\u00a0<\/strong><a href=\"https:\/\/www.matildas.com.au\/news\/your-westfield-matildas-2020-guide-key-dates-and-more\">Your Westfield Matildas 2020 guide - key dates and more<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"http:\/\/bit.ly\/MyFootballLive\">  <img src=\"\/sites\/default\/files\/2019-12\/MatsTelstraLive.jpg\" alt=\"Matildas Telstra Live Pass\" title=\"Matildas Telstra Live Pass\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2627.jpg?itok=_jvHxLLP",
+        "width": 600,
+        "height": 400,
+        "caption": "Westfield Matildas training camp in Sydney"
+      },
+      "main_media_type": "news",
+      "video": null,
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2627.jpg?itok=Hv8J39ts",
+        "width": 1200,
+        "height": 800,
+        "caption": "Westfield Matildas training camp in Sydney"
+      },
+      "gallery": []
+    }
+  ],
+  "featured_video": [
+    {
+      "uuid": "59b66b6b-5e81-4767-a123-8e80d4ea61d2",
+      "video_id": 6126500184001,
+      "account_id": 5472387882001,
+      "name": "D'Agostino: It hasn't kicked in yet | Interview | AFC U-23 Championship",
+      "long_description": "",
+      "created_date": "2020-01-26T01:59:13+1100",
+      "modified_date": "2020-01-26T02:14:58+1100",
+      "duration": 35029,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14852.jpg?itok=QyPFFmW9",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14886.jpg?itok=5IUK9Bz0",
+        "width": 1200,
+        "height": 675
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14886.jpg?itok=gX3aiA7K",
+        "width": 600,
+        "height": 338
+      },
+      "tags": [
+        "afc",
+        "interview",
+        "olyroos",
+        "u-23"
+      ]
+    },
+    {
+      "uuid": "ea37783f-2f42-424f-98e0-bdf96a00d2db",
+      "video_id": 6126501059001,
+      "account_id": 5472387882001,
+      "name": "Match Highlights | Australia U-23 v Uzbekistan U-23 | AFC U-23 Championship",
+      "long_description": "",
+      "created_date": "2020-01-26T01:38:08+1100",
+      "modified_date": "2020-01-26T01:49:56+1100",
+      "duration": 284032,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14851.jpg?itok=2nG2_Eeo",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14885.jpg?itok=PAOkkqBG",
+        "width": 1200,
+        "height": 674
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14885.jpg?itok=ki57cbl5",
+        "width": 600,
+        "height": 337
+      },
+      "tags": [
+        "afc",
+        "featured",
+        "match highlights",
+        "olyroos",
+        "u-23"
+      ]
+    },
+    {
+      "uuid": "3e3c7f61-fdc5-497d-b57c-d8f5e4565730",
+      "video_id": 6126498561001,
+      "account_id": 5472387882001,
+      "name": "SAVE: Glover - Safe set of hands from the Olyroos keeper",
+      "long_description": "",
+      "created_date": "2020-01-26T01:38:08+1100",
+      "modified_date": "2020-01-26T01:49:15+1100",
+      "duration": 15466,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14847.jpg?itok=QFPuyxTo",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14881.jpg?itok=8E_jaJwN",
+        "width": 1200,
+        "height": 675
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14881.jpg?itok=0GhkQ3RP",
+        "width": 600,
+        "height": 338
+      },
+      "tags": [
+        "afc",
+        "in-play",
+        "olyroos",
+        "u-23",
+        "match highlights"
+      ]
+    },
+    {
+      "uuid": "0cbb44d6-6147-45fa-a40a-97679013cb3f",
+      "video_id": 6126498780001,
+      "account_id": 5472387882001,
+      "name": "DISALLOWED GOAL: D'Agostino's celebrations cut short",
+      "long_description": "",
+      "created_date": "2020-01-26T01:31:36+1100",
+      "modified_date": "2020-01-26T01:49:15+1100",
+      "duration": 15467,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14845.jpg?itok=21RV_oWd",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14879.jpg?itok=AEn18_H-",
+        "width": 1200,
+        "height": 675
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14879.jpg?itok=LpuNKc_y",
+        "width": 600,
+        "height": 338
+      },
+      "tags": [
+        "afc",
+        "in-play",
+        "olyroos",
+        "u-23",
+        "match highlights"
+      ]
+    },
+    {
+      "uuid": "81dbce11-6091-4f5b-b0e8-a7db5bd97117",
+      "video_id": 6126495155001,
+      "account_id": 5472387882001,
+      "name": "CHANCE: Baccus - Midfielder tests out Nematov",
+      "long_description": "",
+      "created_date": "2020-01-26T01:12:35+1100",
+      "modified_date": "2020-01-26T01:15:15+1100",
+      "duration": 15467,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14844.jpg?itok=qvOQ3FgH",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14878.jpg?itok=CZysO2wR",
+        "width": 1200,
+        "height": 675
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14878.jpg?itok=wWRg6LUN",
+        "width": 600,
+        "height": 338
+      },
+      "tags": [
+        "afc",
+        "in-play",
+        "olyroos",
+        "u-23",
+        "match highlights"
+      ]
+    }
+  ],
+  "upcoming_matches": [
+    {
+      "competition": {
+        "id": 685,
+        "uuid": "1923a508-d7e4-3bc6-a1ee-99778f22a89e",
+        "name": "Foxtel Y-League",
+        "short_name": "Y-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "bfb6e3b0-c356-3263-8ca8-b46db23d0ab2",
+        "name": "Foxtel Y-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "round": {
+        "number": 10,
+        "name": "Round 10",
+        "abbr": "R10",
+        "start_date": "2020-01-24T23:30:00+00:00",
+        "end_date": "2020-01-26T02:30:00+00:00"
+      },
+      "match": {
+        "id": 2033099,
+        "uuid": "09ce52df-bded-3267-8c03-e74585feeadb",
+        "last_updated": "2020-01-26T04:24:02+00:00",
+        "created": "2019-10-25T00:52:03+00:00",
+        "round_number": 10,
+        "title": "Perth Glory Youth vs Melbourne City FC Youth, Foxtel Y-League, Round 10, 26th Jan 2020",
+        "status": "FullTime",
+        "start_date": "2020-01-26T02:30:00+00:00",
+        "coverage_level": 4,
+        "timing": 1,
+        "time_accuracy": 1,
+        "venue": {
+          "id": 10629,
+          "uuid": "f89f53c6-e624-3d14-ac83-1659d3608b7e",
+          "name": "Dorrien Gardens",
+          "shortname": "",
+          "city": "Perth",
+          "timezone": "Australia\/Perth"
+        },
+        "home_team": {
+          "id": 9421,
+          "uuid": "fee615b1-b3d2-3fd1-8e71-235ee23cf691",
+          "name": "Perth Glory Youth",
+          "nickname": "",
+          "abbr": "PGL",
+          "country": "Australia"
+        },
+        "away_team": {
+          "id": 9418,
+          "uuid": "c583900d-798f-3ebf-95d7-5492f3c2de1b",
+          "name": "Melbourne City FC Youth",
+          "nickname": "",
+          "abbr": "MBC",
+          "country": "Australia"
+        },
+        "buy_tickets": "",
+        "hashtag": "",
+        "restricted_match_centre": 0,
+        "match_replay_embedcode": "",
+        "match_replay_videoID": null,
+        "end_date": "2020-01-26T04:24:02+00:00",
+        "match_info": {
+          "period": "FullTime",
+          "time": 97,
+          "winner_id": 9418,
+          "home_team": {
+            "score": 0,
+            "shootout_score": 0
+          },
+          "away_team": {
+            "score": 1,
+            "shootout_score": 0
+          }
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 214,
+        "uuid": "425139ff-ded8-3801-a553-be4974137079",
+        "name": "Hyundai A-League",
+        "short_name": "A-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "84b70295-60f9-3fd6-866b-c7036d8714e3",
+        "name": "Hyundai A-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "round": {
+        "number": 16,
+        "name": "Round 16",
+        "abbr": "R16",
+        "start_date": "2020-01-24T06:15:00+00:00",
+        "end_date": "2020-01-26T07:00:00+00:00"
+      },
+      "match": {
+        "id": 2024024,
+        "uuid": "39d43ef1-f552-3652-b1f4-4e1b280112de",
+        "last_updated": "2020-01-25T10:30:03+00:00",
+        "created": "2019-08-08T02:00:06+00:00",
+        "round_number": 16,
+        "title": "Melbourne City FC vs Perth Glory, Hyundai A-League, Round 16, 25th Jan 2020",
+        "status": "FullTime",
+        "start_date": "2020-01-25T08:30:00+00:00",
+        "coverage_level": 1,
+        "timing": 1,
+        "time_accuracy": 1,
+        "venue": {
+          "id": 6678,
+          "uuid": "0603d3ac-d5f0-3e76-b333-b49571accbe9",
+          "name": "AAMI Park",
+          "shortname": "",
+          "city": "Melbourne",
+          "timezone": "Australia\/Melbourne"
+        },
+        "home_team": {
+          "id": 5664,
+          "uuid": "a932253f-415c-39e8-a702-6a07ff2fb271",
+          "name": "Melbourne City FC",
+          "nickname": "Heart",
+          "abbr": "MCIT",
+          "country": "Australia"
+        },
+        "away_team": {
+          "id": 989,
+          "uuid": "e19791cd-0fe7-3cec-9010-775af544e8df",
+          "name": "Perth Glory",
+          "nickname": "",
+          "abbr": "PTH",
+          "country": "Australia"
+        },
+        "buy_tickets": "https:\/\/premier.ticketek.com.au\/shows\/show.aspx?sh=MCITY1620",
+        "hashtag": "",
+        "restricted_match_centre": 0,
+        "match_replay_embedcode": "",
+        "match_replay_videoID": 6126540969001,
+        "broadcasters": [
+          {
+            "name": "Match Broadcaster: Fox Sports",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/foxsports%402x.png?itok=WUJ1VN_o",
+            "url": "",
+            "type": "tv",
+            "stream_name": null,
+            "streams": []
+          },
+          {
+            "name": "Match Broadcaster: Telstra Live Stream 2",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+            "url": "",
+            "type": "tv",
+            "stream_name": "6083268147001",
+            "streams": []
+          },
+          {
+            "name": "Radio Broadcaster - Football Nation",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2017-10\/FN-RadioBroadcaster.png?itok=ITDoc8p2",
+            "url": "",
+            "type": "radio",
+            "stream_name": "Football Nation",
+            "streams": [
+              {
+                "url": "http:\/\/stream02.aflnation.com.au:8010\/;stream.nsv",
+                "type": "mp3"
+              }
+            ]
+          }
+        ],
+        "end_date": "2020-01-25T10:30:03+00:00",
+        "match_info": {
+          "period": "FullTime",
+          "time": 96,
+          "winner_id": 0,
+          "home_team": {
+            "score": 0,
+            "shootout_score": 0
+          },
+          "away_team": {
+            "score": 0,
+            "shootout_score": 0
+          }
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 684,
+        "uuid": "21f52d9f-4f2b-3015-baa9-e49dc63872e4",
+        "name": "Westfield W-League",
+        "short_name": "W-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "664e2069-6d55-3be6-80bf-ba06ba0a7ef4",
+        "name": "Westfield W-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "round": {
+        "number": 11,
+        "name": "Round 11",
+        "abbr": "R11",
+        "start_date": "2020-01-23T08:30:00+00:00",
+        "end_date": "2020-01-26T05:00:00+00:00"
+      },
+      "match": {
+        "id": 2032893,
+        "uuid": "0ce50b93-71f3-3faa-9f6f-5c8d53027f77",
+        "last_updated": "2020-01-25T10:23:23+00:00",
+        "created": "2019-10-18T00:51:47+00:00",
+        "round_number": 11,
+        "title": "Adelaide United Women vs Western Sydney Wanderers FC Women, Westfield W-League, Round 11, 25th Jan 2020",
+        "status": "FullTime",
+        "start_date": "2020-01-25T08:30:00+00:00",
+        "coverage_level": 1,
+        "timing": 1,
+        "time_accuracy": 1,
+        "venue": {
+          "id": 2979,
+          "uuid": "1ec1b1c7-6a7a-323e-b909-1e9ad01774c9",
+          "name": "Marden Sports Complex",
+          "shortname": "",
+          "city": "Adelaide",
+          "timezone": "Australia\/Adelaide"
+        },
+        "home_team": {
+          "id": 9406,
+          "uuid": "059e55a7-4bc5-39cf-9933-bf4d830b61e4",
+          "name": "Adelaide United Women",
+          "nickname": "",
+          "abbr": "ADE",
+          "country": "Australia"
+        },
+        "away_team": {
+          "id": 9413,
+          "uuid": "1a87cf72-d37b-3d7d-beaa-bd8fb0d41784",
+          "name": "Western Sydney Wanderers FC Women",
+          "nickname": "",
+          "abbr": "WSW",
+          "country": "Australia"
+        },
+        "buy_tickets": "https:\/\/premier.ticketek.com.au\/shows\/Show.aspx?sh=WL1120",
+        "hashtag": "",
+        "restricted_match_centre": 0,
+        "match_replay_embedcode": "",
+        "match_replay_videoID": null,
+        "broadcasters": [
+          {
+            "name": "Match Broadcaster: Telstra Live Stream 3",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+            "url": "",
+            "type": "tv",
+            "stream_name": "6083266846001",
+            "streams": []
+          }
+        ],
+        "end_date": "2020-01-25T10:23:22+00:00",
+        "match_info": {
+          "period": "FullTime",
+          "time": 96,
+          "winner_id": 9406,
+          "home_team": {
+            "score": 3,
+            "shootout_score": 0
+          },
+          "away_team": {
+            "score": 2,
+            "shootout_score": 0
+          }
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 685,
+        "uuid": "1923a508-d7e4-3bc6-a1ee-99778f22a89e",
+        "name": "Foxtel Y-League",
+        "short_name": "Y-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "bfb6e3b0-c356-3263-8ca8-b46db23d0ab2",
+        "name": "Foxtel Y-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "round": {
+        "number": 10,
+        "name": "Round 10",
+        "abbr": "R10",
+        "start_date": "2020-01-24T23:30:00+00:00",
+        "end_date": "2020-01-26T02:30:00+00:00"
+      },
+      "match": {
+        "id": 2033101,
+        "uuid": "c40d111f-9421-3c02-9ab1-dad53c126abe",
+        "last_updated": "2020-01-25T08:48:52+00:00",
+        "created": "2019-10-25T00:52:03+00:00",
+        "round_number": 10,
+        "title": "Sydney FC Youth vs Canberra United Youth, Foxtel Y-League, Round 10, 25th Jan 2020",
+        "status": "FullTime",
+        "start_date": "2020-01-25T07:00:00+00:00",
+        "coverage_level": 4,
+        "timing": 1,
+        "time_accuracy": 1,
+        "venue": {
+          "id": 10006,
+          "uuid": "5c636ecd-619f-39ee-aa52-8e96d25d30de",
+          "name": "Leichhardt Oval",
+          "shortname": "",
+          "city": "Sydney",
+          "timezone": "Australia\/NSW"
+        },
+        "home_team": {
+          "id": 9422,
+          "uuid": "b69d4d9f-feaa-3f00-96d6-7777a6be3c8c",
+          "name": "Sydney FC Youth",
+          "nickname": "",
+          "abbr": "SFC",
+          "country": "Australia"
+        },
+        "away_team": {
+          "id": 13774,
+          "uuid": "e28faae7-d5be-35b4-b8ba-34b5c66a60a0",
+          "name": "Canberra United Youth",
+          "nickname": "",
+          "abbr": "CAN",
+          "country": "Australia"
+        },
+        "buy_tickets": "",
+        "hashtag": "",
+        "restricted_match_centre": 0,
+        "match_replay_embedcode": "",
+        "match_replay_videoID": null,
+        "end_date": "2020-01-25T08:48:52+00:00",
+        "match_info": {
+          "period": "FullTime",
+          "time": 94,
+          "winner_id": 9422,
+          "home_team": {
+            "score": 7,
+            "shootout_score": 0
+          },
+          "away_team": {
+            "score": 0,
+            "shootout_score": 0
+          }
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 685,
+        "uuid": "1923a508-d7e4-3bc6-a1ee-99778f22a89e",
+        "name": "Foxtel Y-League",
+        "short_name": "Y-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "bfb6e3b0-c356-3263-8ca8-b46db23d0ab2",
+        "name": "Foxtel Y-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "round": {
+        "number": 10,
+        "name": "Round 10",
+        "abbr": "R10",
+        "start_date": "2020-01-24T23:30:00+00:00",
+        "end_date": "2020-01-26T02:30:00+00:00"
+      },
+      "match": {
+        "id": 2033102,
+        "uuid": "ef6d8ae2-e62d-3b33-8900-19feef9c4154",
+        "last_updated": "2020-01-25T08:50:52+00:00",
+        "created": "2019-10-25T00:52:03+00:00",
+        "round_number": 10,
+        "title": "Western Sydney Wanderers FC Youth vs Newcastle Jets Youth, Foxtel Y-League, Round 10, 25th Jan 2020",
+        "status": "FullTime",
+        "start_date": "2020-01-25T07:00:00+00:00",
+        "coverage_level": 4,
+        "timing": 1,
+        "time_accuracy": 1,
+        "venue": {
+          "id": 13562,
+          "uuid": "25fab70e-6ea7-383d-9850-9579b188f599",
+          "name": "Valentine Sports Park (Field 2)",
+          "shortname": "",
+          "city": "Sydney",
+          "timezone": "Australia\/NSW"
+        },
+        "home_team": {
+          "id": 9423,
+          "uuid": "41401625-2b94-3b28-abe6-e65eb77c681f",
+          "name": "Western Sydney Wanderers FC Youth",
+          "nickname": "",
+          "abbr": "WSW",
+          "country": "Australia"
+        },
+        "away_team": {
+          "id": 9420,
+          "uuid": "ed85a1bd-115b-3b73-b8bd-d2965196fd7c",
+          "name": "Newcastle Jets Youth",
+          "nickname": "",
+          "abbr": "NEWJ",
+          "country": "Australia"
+        },
+        "buy_tickets": "",
+        "hashtag": "",
+        "restricted_match_centre": 0,
+        "match_replay_embedcode": "",
+        "match_replay_videoID": null,
+        "end_date": "2020-01-25T08:50:52+00:00",
+        "match_info": {
+          "period": "FullTime",
+          "time": 95,
+          "winner_id": 9423,
+          "home_team": {
+            "score": 6,
+            "shootout_score": 0
+          },
+          "away_team": {
+            "score": 4,
+            "shootout_score": 0
+          }
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 214,
+        "uuid": "425139ff-ded8-3801-a553-be4974137079",
+        "name": "Hyundai A-League",
+        "short_name": "A-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "84b70295-60f9-3fd6-866b-c7036d8714e3",
+        "name": "Hyundai A-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "round": {
+        "number": 16,
+        "name": "Round 16",
+        "abbr": "R16",
+        "start_date": "2020-01-24T06:15:00+00:00",
+        "end_date": "2020-01-26T07:00:00+00:00"
+      },
+      "match": {
+        "id": 2024023,
+        "uuid": "7d4bc647-7d9d-372a-be61-def54368fd7c",
+        "last_updated": "2020-01-25T11:27:53+00:00",
+        "created": "2019-08-08T02:00:06+00:00",
+        "round_number": 16,
+        "title": "Central Coast Mariners vs Brisbane Roar FC, Hyundai A-League, Round 16, 25th Jan 2020",
+        "status": "FullTime",
+        "start_date": "2020-01-25T06:00:00+00:00",
+        "coverage_level": 1,
+        "timing": 1,
+        "time_accuracy": 1,
+        "venue": {
+          "id": 3835,
+          "uuid": "b2e0c870-bbc0-3d09-8201-ebf7114db428",
+          "name": "Central Coast Stadium",
+          "shortname": "",
+          "city": "New South Wales",
+          "timezone": "Australia\/NSW"
+        },
+        "home_team": {
+          "id": 1988,
+          "uuid": "a2586733-d975-3b40-b711-717be474b5a6",
+          "name": "Central Coast Mariners",
+          "nickname": "Mariners",
+          "abbr": "CCM",
+          "country": "Australia"
+        },
+        "away_team": {
+          "id": 2248,
+          "uuid": "8ebde53f-fe48-3a97-8866-c5ff03f830f5",
+          "name": "Brisbane Roar FC",
+          "nickname": "",
+          "abbr": "BRR",
+          "country": "Australia"
+        },
+        "buy_tickets": "https:\/\/premier.ticketek.com.au\/shows\/Show.aspx?sh=CMR1620",
+        "hashtag": "",
+        "restricted_match_centre": 0,
+        "match_replay_embedcode": "",
+        "match_replay_videoID": 6126479048001,
+        "broadcasters": [
+          {
+            "name": "Match Broadcaster: Fox Sports",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/foxsports%402x.png?itok=WUJ1VN_o",
+            "url": "",
+            "type": "tv",
+            "stream_name": null,
+            "streams": []
+          },
+          {
+            "name": "Match Broadcaster: Telstra Live Stream",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+            "url": "",
+            "type": "tv",
+            "stream_name": "6083272973001",
+            "streams": []
+          },
+          {
+            "name": "Match Broadcaster: ABC",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2019-10\/ABC_Broadcast_Fixtures_75x75.png?itok=c6_bHqJh",
+            "url": "",
+            "type": "tv",
+            "stream_name": null,
+            "streams": []
+          }
+        ],
+        "end_date": "2020-01-25T07:57:51+00:00",
+        "match_info": {
+          "period": "FullTime",
+          "time": 95,
+          "winner_id": 2248,
+          "home_team": {
+            "score": 0,
+            "shootout_score": 0
+          },
+          "away_team": {
+            "score": 1,
+            "shootout_score": 0
+          }
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 685,
+        "uuid": "1923a508-d7e4-3bc6-a1ee-99778f22a89e",
+        "name": "Foxtel Y-League",
+        "short_name": "Y-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "bfb6e3b0-c356-3263-8ca8-b46db23d0ab2",
+        "name": "Foxtel Y-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "round": {
+        "number": 10,
+        "name": "Round 10",
+        "abbr": "R10",
+        "start_date": "2020-01-24T23:30:00+00:00",
+        "end_date": "2020-01-26T02:30:00+00:00"
+      },
+      "match": {
+        "id": 2033100,
+        "uuid": "8d3df4d8-199c-3a06-a8b3-5e3007393680",
+        "last_updated": "2020-01-25T01:23:42+00:00",
+        "created": "2019-10-25T00:52:03+00:00",
+        "round_number": 10,
+        "title": "Melbourne Victory Youth vs Adelaide United Youth, Foxtel Y-League, Round 10, 24th Jan 2020",
+        "status": "FullTime",
+        "start_date": "2020-01-24T23:30:00+00:00",
+        "coverage_level": 4,
+        "timing": 1,
+        "time_accuracy": 1,
+        "venue": {
+          "id": 9428,
+          "uuid": "339da5c3-da95-3490-a4e8-fb77c3ad894e",
+          "name": "Epping Stadium",
+          "shortname": "",
+          "city": "Melbourne",
+          "timezone": "Australia\/NSW"
+        },
+        "home_team": {
+          "id": 9419,
+          "uuid": "ef134827-fbfb-35a5-b355-3bee5365c50f",
+          "name": "Melbourne Victory Youth",
+          "nickname": "",
+          "abbr": "MBV",
+          "country": "Australia"
+        },
+        "away_team": {
+          "id": 9414,
+          "uuid": "57fc82d2-6bcf-3e31-9693-1fad6b9f37e6",
+          "name": "Adelaide United Youth",
+          "nickname": "",
+          "abbr": "ADE",
+          "country": "Australia"
+        },
+        "buy_tickets": "",
+        "hashtag": "",
+        "restricted_match_centre": 0,
+        "match_replay_embedcode": "",
+        "match_replay_videoID": null,
+        "end_date": "2020-01-25T01:23:42+00:00",
+        "match_info": {
+          "period": "FullTime",
+          "time": 95,
+          "winner_id": 9419,
+          "home_team": {
+            "score": 4,
+            "shootout_score": 0
+          },
+          "away_team": {
+            "score": 1,
+            "shootout_score": 0
+          }
+        }
+      }
+    },
+    {
+      "competition": {
+        "id": 684,
+        "uuid": "21f52d9f-4f2b-3015-baa9-e49dc63872e4",
+        "name": "Westfield W-League",
+        "short_name": "W-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "664e2069-6d55-3be6-80bf-ba06ba0a7ef4",
+        "name": "Westfield W-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "round": {
+        "number": 11,
+        "name": "Round 11",
+        "abbr": "R11",
+        "start_date": "2020-01-23T08:30:00+00:00",
+        "end_date": "2020-01-26T05:00:00+00:00"
+      },
+      "match": {
+        "id": 2032894,
+        "uuid": "9dc613f0-baa5-30b0-9a55-14e3599ba4b3",
+        "last_updated": "2019-11-17T22:25:11+00:00",
+        "created": "2019-10-18T00:51:47+00:00",
+        "round_number": 11,
+        "title": "Melbourne Victory Women vs Canberra United Women, Westfield W-League, Round 11, 26th Jan 2020",
+        "status": "PreMatch",
+        "start_date": "2020-01-26T05:00:00+00:00",
+        "coverage_level": 1,
+        "timing": 1,
+        "time_accuracy": 1,
+        "venue": {
+          "id": 9429,
+          "uuid": "c41cbced-c5ef-3f01-a8c7-741973f562f9",
+          "name": "Lakeside Stadium",
+          "shortname": "",
+          "city": "Melbourne",
+          "timezone": "Australia\/Melbourne"
+        },
+        "home_team": {
+          "id": 9409,
+          "uuid": "e7603e10-6de5-3a0f-8efb-a99253c2a13e",
+          "name": "Melbourne Victory Women",
+          "nickname": "",
+          "abbr": "MVIC",
+          "country": "Australia"
+        },
+        "away_team": {
+          "id": 9408,
+          "uuid": "e41b05d2-37f1-340a-a983-e59924e01919",
+          "name": "Canberra United Women",
+          "nickname": "",
+          "abbr": "CAN",
+          "country": "Australia"
+        },
+        "buy_tickets": "https:\/\/events.humanitix.com.au\/westfield-w-league-melbourne-victory-vs-canberra-united",
+        "hashtag": "",
+        "restricted_match_centre": 0,
+        "match_replay_embedcode": "",
+        "match_replay_videoID": null,
+        "broadcasters": [
+          {
+            "name": "Match Broadcaster: Fox Sports",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/foxsports%402x.png?itok=WUJ1VN_o",
+            "url": "",
+            "type": "tv",
+            "stream_name": null,
+            "streams": []
+          },
+          {
+            "name": "Match Broadcaster: ABC",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2019-10\/ABC_Broadcast_Fixtures_75x75.png?itok=c6_bHqJh",
+            "url": "",
+            "type": "tv",
+            "stream_name": null,
+            "streams": []
+          },
+          {
+            "name": "Match Broadcaster: Telstra Live Stream",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+            "url": "",
+            "type": "tv",
+            "stream_name": "6083272973001",
+            "streams": []
+          }
+        ]
+      }
+    },
+    {
+      "competition": {
+        "id": 214,
+        "uuid": "425139ff-ded8-3801-a553-be4974137079",
+        "name": "Hyundai A-League",
+        "short_name": "A-League",
+        "active_season": 2019
+      },
+      "season": {
+        "id": 2019,
+        "uuid": "84b70295-60f9-3fd6-866b-c7036d8714e3",
+        "name": "Hyundai A-League 2019\/20",
+        "short_name": "2019\/20"
+      },
+      "round": {
+        "number": 16,
+        "name": "Round 16",
+        "abbr": "R16",
+        "start_date": "2020-01-24T06:15:00+00:00",
+        "end_date": "2020-01-26T07:00:00+00:00"
+      },
+      "match": {
+        "id": 2024026,
+        "uuid": "991aeefa-07ff-39a2-a92e-7ce3c8e01410",
+        "last_updated": "2020-01-22T22:28:37+00:00",
+        "created": "2019-08-08T02:00:06+00:00",
+        "round_number": 16,
+        "title": "Western United FC vs Adelaide United, Hyundai A-League, Round 16, 26th Jan 2020",
+        "status": "PreMatch",
+        "start_date": "2020-01-26T07:00:00+00:00",
+        "coverage_level": 1,
+        "timing": 1,
+        "time_accuracy": 1,
+        "venue": {
+          "id": 14577,
+          "uuid": "298fe81c-bde4-36f7-a4d7-58621c11a8a5",
+          "name": "Whitten Oval",
+          "shortname": "",
+          "city": "Footscray",
+          "timezone": ""
+        },
+        "home_team": {
+          "id": 15834,
+          "uuid": "cd7e06dc-24e0-364b-a649-fd01c845707e",
+          "name": "Western United FC",
+          "nickname": "",
+          "abbr": "WES",
+          "country": "Australia"
+        },
+        "away_team": {
+          "id": 2309,
+          "uuid": "41ea0853-be15-35a2-b3d1-75b0c94153f5",
+          "name": "Adelaide United",
+          "nickname": "",
+          "abbr": "ADE",
+          "country": "Australia"
+        },
+        "buy_tickets": "https:\/\/premier.ticketek.com.au\/shows\/Show.aspx?sh=WESTER1620",
+        "hashtag": "",
+        "restricted_match_centre": 0,
+        "match_replay_embedcode": "",
+        "match_replay_videoID": null,
+        "broadcasters": [
+          {
+            "name": "Match Broadcaster: Fox Sports",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/foxsports%402x.png?itok=WUJ1VN_o",
+            "url": "",
+            "type": "tv",
+            "stream_name": null,
+            "streams": []
+          },
+          {
+            "name": "Match Broadcaster: Telstra Live Stream 2",
+            "logo": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2018-07\/Transparent%20Logo.png?itok=vo0EOnSg",
+            "url": "",
+            "type": "tv",
+            "stream_name": "6083268147001",
+            "streams": []
+          }
+        ]
+      }
+    }
+  ],
+  "featured_promo": {
+    "title": "FEATURED",
+    "items": [
+      {
+        "type": "external",
+        "params": {
+          "url": "https:\/\/ad.doubleclick.net\/ddm\/clk\/453967948;258119761;e"
+        },
+        "image": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2019-10\/WHAM_19_20_960x540.png?itok=sGVmN7Ro",
+          "width": 960,
+          "height": 540,
+          "caption": "Where Heroes Are Made 2019\/20"
+        }
+      }
+    ]
+  },
+  "secondary_promo": {
+    "items": []
+  },
+  "personalised_news": [
+    {
+      "uuid": "fb20d46b-2ef7-4d6d-aabc-b3dc21239f66",
+      "node_id": 247781,
+      "path": "https:\/\/www.myfootball.com.au\/news\/melbourne-city-vs-perth-glory-reaction",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/melbourne-city-vs-perth-glory-reaction?view_mode=webview",
+      "title": "Popovic lauds Perth defence as Glory go 35 days without conceding",
+      "byline": "Jacob Windon",
+      "created_date": "2020-01-25T22:20:26+1100",
+      "modified_date": "2020-01-25T22:21:22+1100",
+      "tags": [
+        "featured",
+        "2019\/20 season",
+        "reaction and interview 2019-20 ",
+        "aleague"
+      ],
+      "source": "aleague",
+      "teaser": "Perth Glory boss Tony Popovic lauded another sterling defensive display from his side after holding Melbourne City to a 0-0 draw on Saturday night.\u00a0\n\nThe reigning Premiers' defence could not be breached for the fourth consecutive game as Perth held City - the Hyundai A-League's second-highest scorers - to a rare blank at AAMI Park.\u00a0",
+      "body": "<p class=\"standfirst\">Perth Glory boss Tony Popovic lauded another sterling defensive display from his side after holding Melbourne City to a 0-0 draw on Saturday night.\u00a0<\/p>\n\n<p class=\"ifresponsive\">The reigning Premiers' defence could not be breached for the fourth consecutive game as Perth held City - the Hyundai A-League's second-highest scorers - to a rare blank at AAMI Park.\u00a0<\/p>\n\n<p class=\"ifresponsive\">Several observers had earmarked the clash between second-placed City and third-placed Glory as a case study in determining which of the two Premiers Plate outsiders held the strongest claim to chase down runaway leaders Sydney FC.<\/p>\n\n<p>And on the basis on the run of play in Melbourne, and the formidable sequence of six shutouts from seven league matches, many would be inclined to tip the men from WA as the Sky Blues' nearest challengers despite a 12 point deficit between the two 2019 Grand Finalists opening up as a result of Saturday's stalemate.\u00a0<\/p>\n\n<p>It has been over 400 minutes of action since Glory last conceded - an ultimately ineffective equalising goal from Newcastle Jets' midfielder Steven Ugarkovic in a game on December 21 Glory would go on to win comfortably, 6-2.<\/p>\n\n<p><strong>READ:\u00a0<\/strong><a href=\"https:\/\/www.a-league.com.au\/news\/melbourne-city-vs-perth-glory-report-goals-video-highlights\">City halt Glory's winning run but settle for frustrating draw<\/a><\/p>\n\n<p><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\"><img alt=\"Watch Hyundai A-League Live and Free on ABC and iView\" src=\"https:\/\/www.a-league.com.au\/sites\/aleague\/files\/2019-10\/Watch-live-and-free-thin-banner.png\" \/><\/a><\/p>\n\n<p>And after securing back to back away clean sheets against Western Sydney Wanderers and City in their last two fixtures, Popovic says Perth's ability to grind out defensive shutouts is 'a real positive' as the AFC Champions League winner seeks to fine-tune his side for another title assault.\u00a0<\/p>\n\n<p>\"We had to really dig deep as a team [against City],\" Popovic told FOX Sports.<\/p>\n\n<p>\"You could see there are a lot of tired bodies out there but we dealt with the crosses well. We didn't give away any chances, we kept their striker relatively quiet.<\/p>\n\n<p>\"The last couple of games for us we've been a little depleted and I'm delighted with the two results we've picked up on the road.<\/p>\n\n<p>\"We take a good point away from home back to Perth.\"<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-embed-code field--type-string-long field--label-hidden field__item\"><p class=\"opta-media-name\">\n  Opta Widget: ALeague \n<\/p>\n<opta-widget widget=\"team_ranking\" competition=\"214\" season=\"2019\" team=\"2309,2248,1988,5664,2237,2319,989,1962,2655,7062,15834\" template=\"normal\" navigation=\"tabs_more\" default_nav=\"1\" show_crests=\"false\" show_ranks=\"true\" visible_categories=\"clean_sheets,goals_conceded\" limit=\"10\" hide_zeroes=\"true\" team_naming=\"full\" show_logo=\"true\" show_title=\"true\" breakpoints=\"400\" sport=\"football\"><\/opta-widget><\/div>\n      \n  <\/div>\n    <\/article><article class=\"embedded-entity\"><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\">  <img src=\"\/sites\/default\/files\/2019-12\/how%20to%20watch%20the%20hyundai%20a-league.png\" alt=\"How to Watch A-League\" title=\"How to Watch A-League\" typeof=\"foaf:Image\" \/><\/a>    <\/article><p><br \/>\nAfter clocking up the travel kilometres in the past two rounds of action, Popovic is relishing the trip back to WA for next Saturday evening's clash with Melbourne Victory, where a fifth clean sheet would be a new club record for the ex-National Soccer League powerhouse.\u00a0<\/p>\n\n<p>More importantly for the Glory taskmaster says, will be the chance to take stock and recover during the build up after a gruelling run of games in which last season's Premiers have underlined why it would be premature to rule them out of the title race despite the handsome advantage Sydney possess.\u00a0<\/p>\n\n<p>\"There are a lot of tired bodies out there from two tough away games,\" Popovic admitted.<\/p>\n\n<p>\"Hopefully we recover some bodies for next week.\"<\/p>\n\n<figure role=\"group\" class=\"caption caption-article embedded-entity\"><article><img alt=\"A-League \" src=\"\/sites\/default\/files\/2020-01\/GettyImages-1201823922%20%281%29.jpg\" title=\"A-League \" typeof=\"foaf:Image\" \/><\/article><figcaption>Socceroos striker Jamie Maclaren was silenced on an off-night for the forwards at AAMI Park<\/figcaption><\/figure><article class=\"embedded-entity\"><a href=\"https:\/\/www.myfootball.com.au\/download-myfootball-live\">  <img src=\"\/sites\/default\/files\/2019-11\/unnamed.jpg\" alt=\"Telstra \" title=\"Telstra \" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3>Round 17<\/h3>\n\n<p>Adelaide United v Melbourne City<br \/>\nSaturday, 1 February 2020<br \/>\nCoopers Stadium<br \/>\nKick-off: 7.00pm local, 7:30pm AEDT<\/p>\n\n<p><a href=\"http:\/\/premier.ticketek.com.au\/shows\/show.aspx?sh=AUFC1720\">Buy Tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/adelaide-united-v-melbourne-city-fc-a-league-01-02-2020\/2024029\">Match Centre<\/a><\/p>\n\n<p><strong>Perth Glory v Melbourne Victory<\/strong><br \/>\nSaturday, 1 February 2020<br \/>\nHBF Park<br \/>\nKick-off: 6.45pm local, 9.45pm AEDT<\/p>\n\n<p><a href=\"https:\/\/www.ticketmaster.com.au\/event\/1300571DCE4D8E6D\">Buy tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024030\">Match centre<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"goto.kayosports.com.au\/c\/1976356\/707839\/9635?sharedid=aleaguewebed\">  <img src=\"\/sites\/default\/files\/2019-11\/MCS1406_FFA_2000x280_0.png\" alt=\"Kayo free trial\" title=\"Kayo free trial\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/GettyImages-1201825188%20%281%29.jpg?itok=xPq1hD6_",
+        "width": 600,
+        "height": 384,
+        "caption": "Tony Popovic "
+      },
+      "main_media_type": "video",
+      "video": {
+        "uuid": "262efcf1-dc00-454a-bb2e-9ab27c29b97d",
+        "video_id": 6126471407001,
+        "account_id": 5472387882001,
+        "name": "Match Highlights | Melbourne City v Perth Glory | Hyundai A-League",
+        "long_description": "",
+        "created_date": "2020-01-25T21:56:11+1100",
+        "modified_date": "2020-01-25T21:56:27+1100",
+        "duration": 242880,
+        "thumbnail": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14824.jpg?itok=qjb5M9Jb",
+          "width": 320,
+          "height": 180
+        },
+        "poster": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14858.jpg?itok=sjSkmcE4",
+          "width": 1200,
+          "height": 675
+        },
+        "poster_small": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14858.jpg?itok=FybWiNp5",
+          "width": 600,
+          "height": 338
+        },
+        "tags": [
+          "2019-20 season",
+          "mcy",
+          "match highlights",
+          "featured",
+          "per",
+          "round 16"
+        ]
+      },
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/GettyImages-1201825188%20%281%29.jpg?itok=RoNjJ9eB",
+        "width": 1200,
+        "height": 768,
+        "caption": "Tony Popovic "
+      },
+      "gallery": []
+    },
+    {
+      "uuid": "59732ae8-e924-4c9a-a19e-51a87a2ba815",
+      "node_id": 247776,
+      "path": "https:\/\/www.myfootball.com.au\/news\/adelaide-united-vs-western-sydney-wanderers-match-report-w-league-highlights-goals-video-score",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/adelaide-united-vs-western-sydney-wanderers-match-report-w-league-highlights-goals-video-score?view_mode=webview",
+      "title": "Wanderers' title hopes dented in stunning loss to Adelaide",
+      "byline": "Samuel Green",
+      "created_date": "2020-01-25T21:32:15+1100",
+      "modified_date": "2020-01-25T21:42:25+1100",
+      "tags": [
+        "featured",
+        "westfield w-league 2019\/20",
+        "2019\/20 season",
+        "match report",
+        "wleague"
+      ],
+      "source": "wleague",
+      "teaser": "Western Sydney Wanderers\u2019 Premiership hopes suffered a severe blow as Adelaide United clung on to\u00a0a shock 3-2 win to climb off the bottom of the ladder.\n\nChelsie Dawber\u2019s opener and a double from Mallory Weber\u00a0set\u00a0the Lady Reds on course for a first victory of the 2019\/20 campaign, but late goals from Sam Staab and an own goal from Lais Araujo made it a nervy finish at the Marden Sports Complex.\u00a0",
+      "body": "<p class=\"standfirst\"><strong><em>Western Sydney Wanderers\u2019 Premiership hopes suffered a severe blow as Adelaide United clung on to\u00a0a shock 3-2 win to climb off the bottom of the ladder.<\/em><\/strong><\/p>\n\n<p>Chelsie Dawber\u2019s opener and a double from Mallory Weber\u00a0set\u00a0the Lady Reds on course for a first victory of the 2019\/20 campaign, but late goals from Sam Staab and an own goal from Lais Araujo made it a nervy finish at the Marden Sports Complex.\u00a0<\/p>\n\n<p>Kristen Hamilton had skied\u00a0an 81st-minute penalty with the score still at 3-0 and Amy Harrison lashed a 95th minute volley over the crossbar as the out-of-sorts Westfield W-League title challengers fell to a second defeat in three games.<\/p>\n\n<p>A sudden slip in form leaves Dean Heffernan\u2019s second-placed side trailing Melbourne City by six points with three games to play \u2013 but the Red and Black remain in the mix to claim their first ever Finals Series berth.<\/p>\n\n<p>The rock bottom side stunned the competition high fliers from the off with their crisp passing and fluid movement as Emily Condon rattled the crossbar on six minutes to leave the visitors rocked \u2013 and that served as a warning sign of what was to follow.<\/p>\n\n<p>In their first match without Irish midfielder Denise O\u2019Sullivan following the end of her guest player contract, Western Sydney failed to stamp their mark on the game as Dawber\u2019s 17th-minute strike and Weber\u2019s late first-half double left Wanderers reeling at the interval.<\/p>\n\n<p>The visitors continued to be carved open in the second half but some desperate defending kept Western Sydney from further embarrassment until their late rally, but it was not enough to deny Adelaide one of the\u00a0upsets of the 2019\/20 season.<\/p>\n\n<p><a href=\"https:\/\/www.w-league.com.au\/news\/every-westfield-w-league-201920-season-match-watch-live-and-free\"><img alt=\"Watch live and free\" src=\"https:\/\/www.w-league.com.au\/sites\/wleague\/files\/2019-12\/thumbnail_WWL_2019_20_Banner_2000x280_Broadcast_TMP.png\" \/><\/a><\/p>\n\n<p><strong>REPORT:\u00a0<\/strong><a href=\"https:\/\/www.w-league.com.au\/news\/newcastle-jets-vs-perth-glory-report\">Glory earn first win of the season in six-goal thriller<\/a><br \/><strong>REACTION:\u00a0<\/strong><a href=\"https:\/\/www.w-league.com.au\/news\/its-a-dream-come-true-lowry-announces-herself-westfield-w-league-stage\">Lowry announces herself on Westfield W-League stage<\/a><\/p>\n\n<p>They may have started the day as winless cellar dwellers, but the Lady Reds opened in confident fashion with American attacker Weber racing through on goal and drawing a rash foul from back-up goalkeeper Newbon, who received a yellow card on her second Westfield W-League start in relief of the injured United States custodian Abby Smith after two minutes.<\/p>\n\n<p>There were more nervous moments for Western Sydney in the sixth minute when Weber stole the ball from Alex Huynh and Condon crashed a shot against the top of the visitors\u2019 crossbar, but the Golden-clad Wanderers finally threatened on 15 minutes when stand-in right-back Amy Harrison found Kirsten Hamilton and her driven delivery flashed past both Courtnee Vine and the home goal.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126453456001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nMoments later, the visitors had fallen behind when Huynh lost possession again deep in her own territory and Dawber made no mistake from 20 yards to fire Adelaide in front.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126453688001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nWhen Laura Johns cut through the middle on 39 minutes and found Condon on the right, the Lady Reds sent shockwaves through their opponents as Weber tapped in a precision cross from close range.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126458417001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nSix minutes later, a minute into first-half stoppage time, Weber showed her lightning-quick pace once again to chase down Charlotte Grant\u2019s long pass and add a composed finish to send Wanderers into the sheds three goals down.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126459945001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nIt was almost four within five minutes of the restart but an offside flag denied Weber a treble after a goal-mouth scramble, before\u00a0Huynh came to the rescue with a last-gasp tackle to prevent\u00a0Dawber scoring a second and Newbon made herself big\u00a0to take hat-trick honours away from\u00a0Weber as she ran clear\u00a0on goal.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514572001\/default_default\/index.html?videoId=6126472049001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nWanderers toiled and were\u00a0handed a chance for some redemption when\u00a0Hamilton was tripped by\u00a0Matilda McNamara in the box. The American forward launched her 81st-minute spot-kick high into the night's sky.<\/p>\n\n<p>Her compatriot Staab made amends in the 88th minute when she headed in Ella Mastrantonio's delivery to grab one\u00a0back, and Western Sydney bundled in another goal on\u00a093 minutes when Lais turned Kyra Cooney-Cross' corner into her own net. A final chance fell to Harrison but the Wanderers captain could not control her volley.<\/p>\n\n<p>Adelaide\u00a0were the competition's lowest scorers at the start of play with six goals in eight games. By the full-time whistle, the Lady Reds had halted a four-match losing run against Western Sydney and overtaken the\u00a0Newcastle Jets to move up to eighth place in the Westfield W-League ladder.<\/p>\n\n<p><strong>SUNDAY\u00a0PREVIEW:\u00a0<a href=\"https:\/\/www.w-league.com.au\/news\/melbourne-victory-v-canberra-united-match-preview\">Melbourne Victory v Canberra United<\/a><\/strong><\/p>\n\n<p><img alt=\"How to watch\" src=\"https:\/\/www.w-league.com.au\/sites\/wleague\/files\/2019-12\/thumbnail_HOW-TO-WATCH-WWL-THIN-BANNER.png\" \/><\/p>\n\n<h3>Round 12<\/h3>\n\n<p><strong>Sydney FC v Western Sydney Wanderers<\/strong><br \/>\nSaturday, 15 February 2020<br \/>\nCromer Park<br \/>\nKick-off: 4pm AEDT<\/p>\n\n<p><a href=\"https:\/\/www.eventopia.co\/event\/Round-12-Sydney-FC-v-Western-Sydney-Wanderers\/397322\">Match Centre<br \/>\nTickets<\/a><\/p>\n\n<p><strong>Canberra United v Adelaide United<\/strong><br \/>\nSunday, 6 February 2020<br \/>\nMcKellar Park<br \/>\nKick-off: 4pm AEDT<\/p>\n\n<p><a href=\"https:\/\/www.w-league.com.au\/match\/canberra-united-women-v-adelaide-united-women-w-league-16-02-2020\/2032898\">Match Centre<\/a><br \/><a href=\"https:\/\/sa2.seatadvisor.com\/sabo\/servlets\/TicketRequest?&amp;presenter=AUABCTIK&amp;event=WWL12R12\">Tickets<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/account.footballnetwork.com.au\/register\">  <img src=\"\/sites\/default\/files\/2019-10\/create-football-account.png\" alt=\"Create a Football Account Thin Banner\" title=\"Create a Football Account Thin Banner\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/Dawber%20250120.jpg?itok=1A1nI07B",
+        "width": 600,
+        "height": 360,
+        "caption": "Chelsie Dawber"
+      },
+      "main_media_type": "news",
+      "video": null,
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/Dawber%20250120.jpg?itok=RruSo92r",
+        "width": 1200,
+        "height": 720,
+        "caption": "Chelsie Dawber"
+      },
+      "gallery": []
+    },
+    {
+      "uuid": "25bfc402-f526-4e38-a3dc-6b70984a986d",
+      "node_id": 247771,
+      "path": "https:\/\/www.myfootball.com.au\/news\/melbourne-city-vs-perth-glory-report-goals-video-highlights",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/melbourne-city-vs-perth-glory-report-goals-video-highlights?view_mode=webview",
+      "title": "City halt Glory's winning run but settle for frustrating draw ",
+      "byline": "a-league.com.au",
+      "created_date": "2020-01-25T19:31:31+1100",
+      "modified_date": "2020-01-25T22:21:53+1100",
+      "tags": [
+        "2019\/20 season",
+        "featured",
+        "match report 2019\/20",
+        "aleague"
+      ],
+      "source": "aleague",
+      "teaser": "Melbourne City and Perth Glory both lost further ground on runaway Hyundai A-League leaders Sydney FC after a 0-0 draw on Saturday evening.\u00a0\n\nBoth sides traded blows throughout a tense and even contest but neither City or the visiting reigning Premiers were able to muster a breakthrough moment and stake a claim as the Sky Blues' nearest Premiership contenders.",
+      "body": "<p class=\"standfirst\">Melbourne City and Perth Glory both lost further ground on runaway Hyundai A-League leaders Sydney FC after a 0-0 draw on Saturday evening.\u00a0<\/p>\n\n<p class=\"ifresponsive\">Both sides traded blows throughout a tense and even contest but neither City or the visiting reigning Premiers were able to muster a breakthrough moment and stake a claim as the Sky Blues' nearest Premiership contenders.<\/p>\n\n<p class=\"ifresponsive\">Instead, the goalless stalemate sees Sydney 10 points clear of Erick Mombaerts' City in second, while Glory remain 12 points behind the team who beat them in the Hyundai A-League Grand Final 2019 last May.<\/p>\n\n<p class=\"ifresponsive\">Glory had won a club record six matches in a row prior to the contest at AAMI Park but found it difficult to break down a City defence reinforced with the addition of on-loan Celtic youngster Jack Hendry.<\/p>\n\n<p class=\"ifresponsive\">Former City talisman Bruno Fornaroli came close to haunting his former employers throughout, while opposite number Jamie Maclaren will lament a huge early chance wasted on a night where both defences prevailed \u2013 Perth registering their sixth clean sheet in seven matches.\u00a0<\/p>\n\n<p><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024024\">Head here for the Match Centre<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\">  <img src=\"\/sites\/default\/files\/2019-11\/Watch%20live%20and%20free_0.png\" alt=\"Watch Live and Free\" title=\"Watch Live and Free\" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3>Key moments<\/h3>\n\n<p><strong>Maclaren misses glorious chance to open after Kim error<\/strong><\/p>\n\n<p>Perth got away with a big early scare when Kim Soo-Beom's botched clearance fell to the feet of Jamie Maclaren. Incredibly, the 13-goal City marksman could only direct a tame effort into the arms of Glory 'keeper Liam Reddy.\u00a0<\/p>\n\n<p>Reddy was called into action again 10 minutes later. A wonderful move from City saw Maclaren teed up Adrian Luna, and the Perth shot-stopper \u2013 who had kept five clean sheets in six prior to kick off \u2013 lept acrobatically to his right.\u00a0<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514571001\/default_default\/index.html?videoId=6126453687001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/><strong>Fornaroli and Castro cannot find the breakthrough for Perth<\/strong><\/p>\n\n<p>Bruno Fornaroli will want this attempt again.\u00a0The ex-City talisman's diminutive frame emerged amid Perth's tall timber to get on the end of Neil Kilkenny's corner but the headed finish from the Uruguayan was wayward.<\/p>\n\n<p>Diego Castro perhaps should have done better with the best chance Glory constructed in the opening stanza. Kim and Chianese were involved, with the latter dropping the ball off for the onrushing Spaniard who directed his effort into the midriff of City gloveman Dean Bouzanis.\u00a0<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514571001\/default_default\/index.html?videoId=6126453687001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p><br \/>\nCity piled on the pressure early in the second half but Erick Mombaerts' side dodged a bullet when Josh Brillante was penalised for bringing down Fornaroli, with the Video Assistant Referee overturning the decision because the Perth frontman was offside in the lead up.\u00a0<\/p>\n\n<p>Fornaroli was next to threaten, wriggling away from the City defence after a cheap turnover and forced a sharp stop from Bouzanis, and the hosts drew a huge sigh of relief when the resulting corner kick deflected off Curtis Good and onto the post.\u00a0<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514571001\/default_default\/index.html?videoId=6126469277001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><h3>Ways to watch<\/h3>\n\n<p><a href=\"https:\/\/www.telstra.com.au\/tv-movies-music\/sports-offer#myfootball\">Download the MyFootball Live App now<\/a><br \/><a href=\"https:\/\/kayosports.com.au\/\">Sign up for Kayo Sports<\/a><br \/><a href=\"https:\/\/www.foxtel.com.au\/channel-packs\/sport-pack.html\">Get Foxtel<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.a-league.com.au\/become-a-junior-fox-sports-presenter\">  <img src=\"\/sites\/default\/files\/2020-01\/Kid_Commentator_2000x280_1.png\" alt=\"Kid_Commentator\" title=\"Kid_Commentator\" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3>Round 17<\/h3>\n\n<p>Adelaide United v Melbourne City<br \/>\nSaturday, 1 February 2020<br \/>\nCoopers Stadium<br \/>\nKick-off: 7.00pm local, 7:30pm AEDT<\/p>\n\n<p><a href=\"http:\/\/premier.ticketek.com.au\/shows\/show.aspx?sh=AUFC1720\">Buy Tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/adelaide-united-v-melbourne-city-fc-a-league-01-02-2020\/2024029\">Match Centre<\/a><\/p>\n\n<p><strong>Perth Glory v Melbourne Victory<\/strong><br \/>\nSaturday, 1 February 2020<br \/>\nHBF Park<br \/>\nKick-off: 6.45pm local, 9.45pm AEDT<\/p>\n\n<p><a href=\"https:\/\/www.ticketmaster.com.au\/event\/1300571DCE4D8E6D\">Buy tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024030\">Match centre<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"\/\/kayosports.com.au\/?marketing=multi-1&amp;amp;extcamp=ffaaleague-prt-ffa-bnr-acq-ptr-ftb&amp;amp;channel=ffa&amp;amp;campaign=launch&amp;amp;voucher=LAU\">  <img src=\"\/sites\/default\/files\/2019-11\/Kayo.png\" alt=\"Kayo Sports\" title=\"Kayo Sports\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/GettyImages-1201816699%20%281%29.jpg?itok=4EyrZb0c",
+        "width": 600,
+        "height": 386,
+        "caption": "A-League "
+      },
+      "main_media_type": "video",
+      "video": {
+        "uuid": "262efcf1-dc00-454a-bb2e-9ab27c29b97d",
+        "video_id": 6126471407001,
+        "account_id": 5472387882001,
+        "name": "Match Highlights | Melbourne City v Perth Glory | Hyundai A-League",
+        "long_description": "",
+        "created_date": "2020-01-25T21:56:11+1100",
+        "modified_date": "2020-01-25T21:56:27+1100",
+        "duration": 242880,
+        "thumbnail": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14824.jpg?itok=qjb5M9Jb",
+          "width": 320,
+          "height": 180
+        },
+        "poster": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14858.jpg?itok=sjSkmcE4",
+          "width": 1200,
+          "height": 675
+        },
+        "poster_small": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14858.jpg?itok=FybWiNp5",
+          "width": 600,
+          "height": 338
+        },
+        "tags": [
+          "2019-20 season",
+          "mcy",
+          "match highlights",
+          "featured",
+          "per",
+          "round 16"
+        ]
+      },
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/GettyImages-1201816699%20%281%29.jpg?itok=CKrkz2Cg",
+        "width": 1200,
+        "height": 773,
+        "caption": "A-League "
+      },
+      "gallery": []
+    },
+    {
+      "uuid": "da83949c-eb2c-40b9-ac2d-4325f7e5a828",
+      "node_id": 247766,
+      "path": "https:\/\/www.myfootball.com.au\/news\/central-coast-mariners-vs-brisbane-roar-reaction",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/central-coast-mariners-vs-brisbane-roar-reaction?view_mode=webview",
+      "title": "Brown says Brisbane are finding their groove under Fowler ",
+      "byline": "www.a-league.com.au",
+      "created_date": "2020-01-25T19:25:13+1100",
+      "modified_date": "2020-01-25T19:32:50+1100",
+      "tags": [
+        "featured",
+        "2019\/20 season",
+        "reaction and interview 2019-20 ",
+        "aleague"
+      ],
+      "source": "aleague",
+      "teaser": "Corey Brown is relishing the chance to work alongside Robbie Fowler and believes Saturday\u2019s 1-0 win over Central Coast Mariners is evidence the tide is turning for Brisbane Roar under the Premier League legend.\n\nBrown \u2013 who was playing his second match back in the colours of Brisbane following his mid-season departure from Melbourne Victory \u2013 provided the match-winning moment for Roar after seeing his 86th minute effort take a deflection off Mariners defender Lewis Miller and wrongfoot \u2018keeper Mark Birighitti.",
+      "body": "<p class=\"standfirst\">Corey Brown is relishing the chance to work alongside Robbie Fowler and believes Saturday\u2019s 1-0 win over Central Coast Mariners is evidence the tide is turning for Brisbane Roar under the Premier League legend.<\/p>\n\n<p class=\"ifresponsive\">Brown \u2013 who was playing his second match back in the colours of Brisbane following his mid-season departure from Melbourne Victory \u2013 provided the match-winning moment for Roar after seeing his 86th minute effort take a deflection off Mariners defender Lewis Miller and wrongfoot \u2018keeper Mark Birighitti.<\/p>\n\n<p class=\"ifresponsive\">It ensures the Roar leapfrog Adelaide United into sixth on the Hyundai A-League ladder, where they will remain until the Reds travel to fifth-place Western United on Sunday evening.<\/p>\n\n<p>After a trying start to the campaign for ex-Liverpool striker Fowler, Brisbane have mustered a five-match unbeaten run and have won three of their last four fixtures.<\/p>\n\n<p>\u201cIt was a really important win and hopefully we keep climbing,\u201d Brown told FOX Sports.<\/p>\n\n<p><strong>READ:\u00a0<\/strong><a href=\"https:\/\/www.a-league.com.au\/news\/central-coast-mariners-vs-brisbane-roar-report-goals-highlights-video\">Brisbane enter top six as late own goal sinks Mariners<\/a><\/p>\n\n<p><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\"><img alt=\"Watch Hyundai A-League Live and Free on ABC and iView\" src=\"https:\/\/www.a-league.com.au\/sites\/aleague\/files\/2019-10\/Watch-live-and-free-thin-banner.png\" \/><\/a><\/p>\n\n<p>\u201cWe always go out to win the game and you saw the desperation a few times where we were blocking shots on the line.<\/p>\n\n<p>\u201cIf you bring that desperation into the game, defending and attacking, you are going to win more games than you lose.\u201d<\/p>\n\n<p>\u201cThe first day I walked into his office and I sat down and it sort of hit me - it\u2019s God,\u201d Brown said of his chance to work under Fowler.<\/p>\n\n<p>\u201cIt\u2019s really good and we\u2019re seeing the results now.\u201d<\/p>\n\n<p>Brown struggled for minutes and results at Melbourne Victory earlier in the season, winning just three starts under former coach Marco Kurz.<\/p>\n\n<article class=\"embedded-entity\"><div>\n      \n            <div class=\"field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item\"><div class=\"video-embed-field-provider-brightcove video-embed-field-responsive-video\"><iframe width=\"854\" height=\"480\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" src=\"\/\/players.brightcove.net\/5519514571001\/default_default\/index.html?videoId=6126448636001\"><\/iframe>\n<\/div>\n<\/div>\n      \n  <\/div>\n    <\/article><p>\u00a0<\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.a-league.com.au\/news\/how-watch-hyundai-a-league-201920\">  <img src=\"\/sites\/default\/files\/2019-12\/how%20to%20watch%20the%20hyundai%20a-league.png\" alt=\"How to Watch A-League\" title=\"How to Watch A-League\" typeof=\"foaf:Image\" \/><\/a>    <\/article><p><br \/>\nSince joining Brisbane on January 17, with whom the fullback started his Hyundai A-League career in 2011, Brown has played full matches and helped Roar keep back to back clean sheets in 1-0 triumphs over high-flying Wellington Phoenix and the Mariners.<\/p>\n\n<p>\u201cI\u2019ve still got a little bit to go in terms of match fitness. That\u2019ll come as I play more games,\u201d said Brown.<\/p>\n\n<p>\u201cI\u2019ve kept myself in decent shape. We work hard at Melbourne Victory when I was there and when I wasn\u2019t playing, I was working hard.<\/p>\n\n<p>\u201cI was able to come into the team pretty well so hopefully I can keep getting fitter the more games I play.\u201d<\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.myfootball.com.au\/download-myfootball-live\">  <img src=\"\/sites\/default\/files\/2019-11\/unnamed.jpg\" alt=\"Telstra \" title=\"Telstra \" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3>Round 17<\/h3>\n\n<p><strong>Sydney FC v Brisbane Roar<\/strong><br \/>\nFriday, 31 January 2020<br \/>\nNetstrata Jubilee Stadium<br \/>\nKick off: 6.30pm AEDT<\/p>\n\n<p><a href=\"https:\/\/premier.ticketek.com.au\/shows\/Show.aspx?sh=SYDFC1720\">Buy tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024027\">Match centre<\/a><\/p>\n\n<p><strong>Central Coast Mariners v Western Sydney Wanderers<\/strong><br \/>\nSunday, 2 February 2020<br \/>\nCentral Coast Stadium<br \/>\nKick off: 3.00pm AEDT<\/p>\n\n<p><a href=\"https:\/\/premier.ticketek.com.au\/shows\/Show.aspx?sh=CMR1720\">Buy tickets<\/a><br \/><a href=\"https:\/\/www.a-league.com.au\/match\/id\/2024031\">Match centre<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"goto.kayosports.com.au\/c\/1976356\/707839\/9635?sharedid=aleaguewebed\">  <img src=\"\/sites\/default\/files\/2019-11\/MCS1406_FFA_2000x280_0.png\" alt=\"Kayo free trial\" title=\"Kayo free trial\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/GettyImages-1201804688%20%281%29.jpg?itok=-8xXbpP7",
+        "width": 600,
+        "height": 365,
+        "caption": "A-League "
+      },
+      "main_media_type": "video",
+      "video": {
+        "uuid": "979c5779-3898-4e6c-b6ac-cbaaaeb41bd8",
+        "video_id": 6126451553001,
+        "account_id": 5472387882001,
+        "name": "Match Highlights | Central Coast Mariners v Brisbane Roar | Hyundai A-League",
+        "long_description": "",
+        "created_date": "2020-01-25T19:25:29+1100",
+        "modified_date": "2020-01-25T19:25:29+1100",
+        "duration": 272384,
+        "thumbnail": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14795.jpg?itok=L4P6m0hd",
+          "width": 320,
+          "height": 180
+        },
+        "poster": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14829.jpg?itok=QNJk3r-M",
+          "width": 1200,
+          "height": 674
+        },
+        "poster_small": {
+          "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14829.jpg?itok=swX4_ZOr",
+          "width": 600,
+          "height": 337
+        },
+        "tags": [
+          "2019-20 season",
+          "bri",
+          "ccm",
+          "featured",
+          "match highlights",
+          "round 16"
+        ]
+      },
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/Brown%20250120.jpg?itok=dFKPqLAW",
+        "width": 1200,
+        "height": 720,
+        "caption": "Corey Brown"
+      },
+      "gallery": []
+    },
+    {
+      "uuid": "173033fc-2cbd-4241-a6e2-09eba4665609",
+      "node_id": 247761,
+      "path": "https:\/\/www.myfootball.com.au\/news\/gallery-inside-westfield-matildas-training-ahead-china-challenge-0",
+      "webview_url": "https:\/\/www.myfootball.com.au\/news\/gallery-inside-westfield-matildas-training-ahead-china-challenge-0?view_mode=webview",
+      "title": "Gallery: Inside Westfield Matildas training ahead of China challenge",
+      "byline": "Matildas.com.au",
+      "created_date": "2020-01-25T15:54:19+1100",
+      "modified_date": "2020-01-25T15:56:53+1100",
+      "tags": [
+        "featured",
+        "olympic qualifiers 2020",
+        "matildas"
+      ],
+      "source": "matildas",
+      "teaser": "The Westfield Matildas were mixing it up in camp in Sydney this week to prepare for next month\u2019s 2020 AFC Women's Olympic Qualifying Tournament.\n\nBack together for the first time since November\u2019s friendlies against Chile, coach Ante Milicic has put his side through a couple of intense sessions to get them ready for the upcoming trip to China.\n\nAustralia need to finish in the top two of their group when they take on Chinese Taipei, Thailand and the host nation from February 3-9 in Nanjing.",
+      "body": "<p class=\"standfirst\">The Westfield Matildas were mixing it up in camp in Sydney this week to prepare for next month\u2019s 2020 AFC Women's Olympic Qualifying Tournament.<\/p>\n\n<p class=\"MsoNoSpacing\">Back together for the first time since November\u2019s friendlies against Chile, coach Ante Milicic has put his side through a couple of intense sessions to get them ready for the upcoming trip to China.<\/p>\n\n<p class=\"MsoNoSpacing\">Australia need to finish in the top two of their group when they take on Chinese Taipei, Thailand and the host nation from February 3-9 in Nanjing.<\/p>\n\n<p class=\"MsoNoSpacing\">Enjoy some behind-the-scenes shots of the Matildas training on the pitch and in the gym \u2013 and enjoying a high tea with supporters \u2013 ahead of a huge few weeks for the national team.<\/p>\n\n<p class=\"MsoNoSpacing\"><strong>MORE: <\/strong><a href=\"https:\/\/www.matildas.com.au\/news\/european-moves-will-only-benefit-westfield-matildas-says-milicic\">European moves will only benefit Westfield Matildas, says Milicic<\/a><br \/><strong>ULTIMATE\u00a0GUIDE:<\/strong>\u00a0<a href=\"https:\/\/www.matildas.com.au\/news\/ultimate-guide-2020-afc-womens-olympic-qualifiers\">2020 AFC Women\u2019s Olympic Qualifiers<\/a><\/p>\n\n<article class=\"embedded-entity\"><div class=\"article-banner-gallery js-video-exclusive-handler \">\n\t\t<div class=\"article-banner-gallery__inner o-block o-block--corset o-block--flush\">\n\t\t\t<a href=\"#\" class=\"open-fullscreen js-lightbox-trigger\"><\/a>\n                <div class=\"image-gallery\">\n        <div class=\"image-gallery__inner js-image-gallery\">\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3917.jpg?itok=PIHeKyVt\" alt=\"\" title=\"Jenna McCormick is all smiles in the gym\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/200121-mat_d3_training_-3899_1.jpg?itok=KcvESWkZ\" alt=\"\" title=\"Alanna Kennedy always goes at full tilt\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3873.jpg?itok=lJjt_pjx\" alt=\"\" title=\"Laura Brock does some heavy lifting\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3881.jpg?itok=SMFHGReL\" alt=\"\" title=\"Caitlin Foord spreads her wings in the gym\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2627.jpg?itok=Hv8J39ts\" alt=\"\" title=\"The Westfield Matildas take to the training pitch\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2987.jpg?itok=zFYJ6U3D\" alt=\"\" title=\"Katrina Gorry working on that touch and pace\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3080.jpg?itok=UxKjNbll\" alt=\"\" title=\"Mackenzie Arnold looking for the quick release\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3514.jpg?itok=pTxgyp4j\" alt=\"\" title=\"Karly Roestbakken with eyes on the ball\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2879.jpg?itok=XtZsuMwJ\" alt=\"\" title=\"Tameka Yallop keeping her marker at arm's length\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3785.jpg?itok=kOTHFs3M\" alt=\"\" title=\"Thumbs up from Emily van Egmond and Caitlin Foord\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2101.jpg?itok=ZGwb3WMC\" alt=\"\" title=\"A spot of high tea for Teagan Micah\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2179.jpg?itok=U4EXhNYi\" alt=\"\" title=\"Tameka Yallop is not tempted by the sweet treats on offer\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2216.jpg?itok=2wGVzUsD\" alt=\"\" title=\"Lydia Williams and Hayley Raso making time for a fan\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2187.jpg?itok=0eYbWMC1\" alt=\"\" title=\"Always happy to satisfy the autograph requests \" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2203.jpg?itok=fT2-WF7t\" alt=\"\" title=\"All smiles for Jenna McCormick and Lydia Williams with supporters.\" \/><\/div>\n                    <\/div>\n        <div class=\"image-gallery__caption\">\n            <p><\/p>\n            <span><\/span>\n        <\/div>\n    <\/div>\n\n\t\t<\/div>\n\t\t<div class=\"article-banner-gallery__lightbox\">\n\t\t\t<div class=\"article-banner-gallery__lightbox-bg\"><\/div>\n                <div class=\"image-gallery\">\n        <div class=\"image-gallery__inner js-image-gallery\">\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3917.jpg?itok=PIHeKyVt\" alt=\"\" title=\"Jenna McCormick is all smiles in the gym\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/200121-mat_d3_training_-3899_1.jpg?itok=KcvESWkZ\" alt=\"\" title=\"Alanna Kennedy always goes at full tilt\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3873.jpg?itok=lJjt_pjx\" alt=\"\" title=\"Laura Brock does some heavy lifting\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20D3%20Training%20-3881.jpg?itok=SMFHGReL\" alt=\"\" title=\"Caitlin Foord spreads her wings in the gym\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2627.jpg?itok=Hv8J39ts\" alt=\"\" title=\"The Westfield Matildas take to the training pitch\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2987.jpg?itok=zFYJ6U3D\" alt=\"\" title=\"Katrina Gorry working on that touch and pace\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3080.jpg?itok=UxKjNbll\" alt=\"\" title=\"Mackenzie Arnold looking for the quick release\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3514.jpg?itok=pTxgyp4j\" alt=\"\" title=\"Karly Roestbakken with eyes on the ball\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2879.jpg?itok=XtZsuMwJ\" alt=\"\" title=\"Tameka Yallop keeping her marker at arm's length\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-3785.jpg?itok=kOTHFs3M\" alt=\"\" title=\"Thumbs up from Emily van Egmond and Caitlin Foord\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2101.jpg?itok=ZGwb3WMC\" alt=\"\" title=\"A spot of high tea for Teagan Micah\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2179.jpg?itok=U4EXhNYi\" alt=\"\" title=\"Tameka Yallop is not tempted by the sweet treats on offer\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2216.jpg?itok=2wGVzUsD\" alt=\"\" title=\"Lydia Williams and Hayley Raso making time for a fan\" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2187.jpg?itok=0eYbWMC1\" alt=\"\" title=\"Always happy to satisfy the autograph requests \" \/><\/div>\n                            <div class=\"image-gallery__item\">\n                    <img src=\"https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200121-MAT%20High%20Tea-2203.jpg?itok=fT2-WF7t\" alt=\"\" title=\"All smiles for Jenna McCormick and Lydia Williams with supporters.\" \/><\/div>\n                    <\/div>\n        <div class=\"image-gallery__caption\">\n            <p><\/p>\n            <span><\/span>\n        <\/div>\n    <\/div>\n\n\t\t\t<a href=\"#\" class=\"exit-fullscreen\"><\/a>\n\t\t<\/div>\n\t<\/div>\n\n\n    <\/article><p class=\"MsoNoSpacing\">\u00a0<\/p>\n\n<article class=\"embedded-entity\"><a href=\"https:\/\/www.matildas.com.au\/official-tour-partner\">  <img src=\"\/sites\/default\/files\/2019-12\/GGArmy_matildas_olympic.png\" alt=\"GGArmy_matildas_olympic\" title=\"GGArmy_matildas_olympic\" typeof=\"foaf:Image\" \/><\/a>    <\/article><h3><strong><strong>Upcoming Matches \u2013 Westfield Matildas<\/strong><\/strong><\/h3>\n\n<p><strong>Westfield Matildas v Chinese Taipei<\/strong><br \/>\nDate: Monday, 3 February 2020<br \/>\nVenue: Five Rings Sports Centre, Wuhan, China<br \/>\nKick-off: 4.00pm (local); 7.00pm (AEDT)<br \/><br \/><strong>Thailand v Westfield Matildas<\/strong><br \/>\nDate: Thursday, 6 February 2020<br \/>\nVenue: Five Rings Sports Centre, Wuhan, China<br \/>\nKick-off: 4.00pm (local); 7.00pm (AEDT)<br \/><br \/><strong>Westfield Matildas v China PR<\/strong><br \/>\nDate: Sunday, 9 February 2020<br \/>\nVenue: Five Rings Sports Centre, Wuhan, China<br \/>\nKick-off: 7.30pm (local); 10.30pm (AEDT)\u00a0\u00a0<br \/><br \/><em>Ticketing &amp; broadcast information to be advised.<\/em><\/p>\n\n<p><strong>ULTIMATE GUIDE:<\/strong>\u00a0<a href=\"https:\/\/www.matildas.com.au\/news\/ultimate-guide-westfield-matildas-olympic-games-qualifiers\">Westfield Matildas at Tokyo 2020 Olympic Games qualifiers<\/a><br \/><strong>CALENDAR:\u00a0<\/strong><a href=\"https:\/\/www.matildas.com.au\/news\/your-westfield-matildas-2020-guide-key-dates-and-more\">Your Westfield Matildas 2020 guide - key dates and more<\/a><\/p>\n\n<article class=\"embedded-entity\"><a href=\"http:\/\/bit.ly\/MyFootballLive\">  <img src=\"\/sites\/default\/files\/2019-12\/MatsTelstraLive.jpg\" alt=\"Matildas Telstra Live Pass\" title=\"Matildas Telstra Live Pass\" typeof=\"foaf:Image\" \/><\/a>    <\/article>",
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2627.jpg?itok=_jvHxLLP",
+        "width": 600,
+        "height": 400,
+        "caption": "Westfield Matildas training camp in Sydney"
+      },
+      "main_media_type": "news",
+      "video": null,
+      "image": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/2020-01\/200122-MAT%20D3%20Training%20-2627.jpg?itok=Hv8J39ts",
+        "width": 1200,
+        "height": 800,
+        "caption": "Westfield Matildas training camp in Sydney"
+      },
+      "gallery": []
+    }
+  ],
+  "personalised_video": [
+    {
+      "uuid": "eef9e635-54a1-4316-a2f4-24c0a8970897",
+      "video_id": 6125750801001,
+      "account_id": 5472387882001,
+      "name": "Carlos Salvachua: it's not enough to be the best",
+      "long_description": "",
+      "created_date": "2020-01-23T16:41:03+1100",
+      "modified_date": "2020-01-23T16:42:11+1100",
+      "duration": 120789,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14715.jpg?itok=E58D7liQ",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14750.jpg?itok=8mvmszLf",
+        "width": 1200,
+        "height": 675
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14750.jpg?itok=7IGh6GjZ",
+        "width": 600,
+        "height": 338
+      },
+      "tags": [
+        "featured",
+        "hyundai a-league",
+        "mel",
+        "season 2019-20",
+        "aleague",
+        "match preview"
+      ]
+    },
+    {
+      "uuid": "8262fc74-2fdd-48d3-a8a6-946b34d8e67f",
+      "video_id": 6125419439001,
+      "account_id": 5472387882001,
+      "name": "TEAMMATES with Fornaroli and Castro: He's old but he thinks he's still young",
+      "long_description": "",
+      "created_date": "2020-01-22T15:56:50+1100",
+      "modified_date": "2020-01-23T16:38:39+1100",
+      "duration": 138837,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14701.jpg?itok=nBSHa4ls",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14735.jpg?itok=9qnAF1Xm",
+        "width": 1200,
+        "height": 675
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14735.jpg?itok=Knx-bFhz",
+        "width": 600,
+        "height": 338
+      },
+      "tags": [
+        "featured",
+        "per",
+        "season 2019-20",
+        "teammates",
+        "aleague"
+      ]
+    },
+    {
+      "uuid": "b0c7cfa9-3119-4d8e-ad2b-c9d662418ef1",
+      "video_id": 6125110799001,
+      "account_id": 5472387882001,
+      "name": "IN CASE YOU MISSED IT ROUND 15 | Hyundai A-League",
+      "long_description": "",
+      "created_date": "2020-01-21T15:44:40+1100",
+      "modified_date": "2020-01-23T16:38:50+1100",
+      "duration": 60075,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14689.jpg?itok=zupXDCFn",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14724.jpg?itok=kRFgJAEl",
+        "width": 1200,
+        "height": 675
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14724.jpg?itok=7aKZ8dYA",
+        "width": 600,
+        "height": 338
+      },
+      "tags": [
+        "2019-20 season",
+        "adl",
+        "bri",
+        "ccm",
+        "mcy",
+        "wel",
+        "wsw",
+        "wun",
+        "featured",
+        "mvc",
+        "new",
+        "per",
+        "round 13",
+        "syd",
+        "aleague"
+      ]
+    },
+    {
+      "uuid": "1f136baa-f475-42b4-baa6-ed59d9b728f5",
+      "video_id": 6124725742001,
+      "account_id": 5472387882001,
+      "name": "All The Goals | Round 15 | Hyundai A-League",
+      "long_description": "",
+      "created_date": "2020-01-19T21:58:16+1100",
+      "modified_date": "2020-01-23T16:39:31+1100",
+      "duration": 218155,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14679.jpg?itok=31cLAxUU",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14714.jpg?itok=X5PinV4B",
+        "width": 1200,
+        "height": 674
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14714.jpg?itok=BMJOZTEy",
+        "width": 600,
+        "height": 337
+      },
+      "tags": [
+        "2019-20 season",
+        "adl",
+        "bri",
+        "ccm",
+        "every goal",
+        "mcy",
+        "wel",
+        "wsw",
+        "wun",
+        "mvc",
+        "new",
+        "per",
+        "round 15",
+        "aleague",
+        "match highlights"
+      ]
+    },
+    {
+      "uuid": "9cef514f-5a1e-4145-a71c-13d102360479",
+      "video_id": 6124725889001,
+      "account_id": 5472387882001,
+      "name": "Sunday Goals Wrap | Hyundai A-League",
+      "long_description": "",
+      "created_date": "2020-01-19T21:23:46+1100",
+      "modified_date": "2020-01-22T14:43:27+1100",
+      "duration": 101760,
+      "thumbnail": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/thumbnails\/image_14675.jpg?itok=IDrJXRhl",
+        "width": 320,
+        "height": 180
+      },
+      "poster": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_1200x\/public\/brightcove\/videos\/images\/posters\/image_14710.jpg?itok=FRHYTXx1",
+        "width": 1200,
+        "height": 675
+      },
+      "poster_small": {
+        "url": "https:\/\/www.myfootball.com.au\/sites\/default\/files\/styles\/image_600x\/public\/brightcove\/videos\/images\/posters\/image_14710.jpg?itok=sTB_VbP9",
+        "width": 600,
+        "height": 338
+      },
+      "tags": [
+        "2019-20 season",
+        "ccm",
+        "sunday goals",
+        "wsw",
+        "wun",
+        "per",
+        "round 15",
+        "a-league",
+        "match highlights"
+      ]
+    }
+  ],
+  "timestamp": "2020-01-26T04:40:52+00:00"
+}

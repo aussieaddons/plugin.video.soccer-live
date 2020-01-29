@@ -1,0 +1,11 @@
+{
+  "pai": "uuid",
+  "productId": "com.ffa.subscription.weekly",
+  "productDescription": "FFA weekly subscription",
+  "partner": "FFA",
+  "startTimestamp": 1580289800000,
+  "endTimestamp": 1580376200000,
+  "status": "GRACE",
+  "paymentMethod": "GOOGLE_PLAY",
+  "receipt": "abcde.longb64"
+}
