@@ -4,11 +4,11 @@ from aussieaddonscommon import utils
 
 from resources.lib import comm
 
+import xbmcaddon
+
 import xbmcgui
 
 import xbmcplugin
-
-import xbmcaddon
 
 _url = sys.argv[0]
 _handle = int(sys.argv[1])

@@ -2,8 +2,6 @@ from __future__ import absolute_import, unicode_literals
 
 from collections import OrderedDict
 
-from future.moves.urllib.parse import parse_qsl, quote_plus, unquote_plus
-
 import testtools
 
 import resources.lib.classes as classes

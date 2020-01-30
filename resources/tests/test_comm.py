@@ -2,12 +2,6 @@ from __future__ import absolute_import, unicode_literals
 
 import io
 import os
-import re
-
-try:
-    import mock
-except ImportError:
-    import unittest.mock as mock
 
 import responses
 
@@ -16,7 +10,6 @@ import testtools
 import resources.lib.classes as classes
 import resources.lib.comm as comm
 import resources.lib.config as config
-from resources.tests.fakes import fakes
 
 
 class CommTests(testtools.TestCase):
@@ -65,7 +58,8 @@ class CommTests(testtools.TestCase):
 
     @responses.activate
     def test_list_matches_non_team(self):
-        responses.add(responses.GET, config.MATCHES_URL.format('c214/s2019/r9/fixture'),
+        responses.add(responses.GET,
+                      config.MATCHES_URL.format('c214/s2019/r9/fixture'),
                       body=self.MATCHES_FIXTURE_JSON, status=200)
         observed = comm.list_matches({'id': '214', 'active_season': '2019',
                                       'rnd': '9'})

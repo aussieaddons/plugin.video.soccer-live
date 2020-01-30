@@ -11,9 +11,9 @@ from future.moves.urllib.parse import parse_qsl, urlparse
 
 import requests
 
-from aussieaddonscommon.exceptions import AussieAddonsException
 from aussieaddonscommon import session as custom_session
 from aussieaddonscommon import utils
+from aussieaddonscommon.exceptions import AussieAddonsException
 
 from resources.lib import config
 
@@ -89,8 +89,9 @@ class TelstraAuth(object):
                 raise TelstraAuthException(message)
             else:
                 utils.log(json.loads(e.response.text).get('exception'))
-                raise TelstraAuthException('Unknown error. Please check the log '
-                                           'for more information.')
+                raise TelstraAuthException(
+                    'Unknown error. Please check the log '
+                    'for more information.')
 
     def get_paid_token(self):
         self.session = custom_session.Session(force_tlsv1=False)
@@ -135,7 +136,6 @@ class TelstraAuth(object):
         except AttributeError as e:
             utils.log('SPC login response: {0}'.format(spc_resp.text))
             raise e
-
 
     def set_identity_path_token(self):
         self.code_verifier = self.get_code_verifier()
@@ -337,7 +337,8 @@ class TelstraAuth(object):
         self.session.close()
         self.prog_dialog.update(100, 'Finished!')
         self.prog_dialog.close()
-        return json.dumps({'pai': str(self.userid), 'bearer': self.access_token})
+        return json.dumps(
+            {'pai': str(self.userid), 'bearer': self.access_token})
 
     # Mobile
     def set_mobile_id(self):
@@ -382,9 +383,9 @@ class TelstraAuth(object):
 
         self.prog_dialog.update(83, 'Confirming activation')
         self.confirm_activation()
-
-
         self.session.close()
+
         self.prog_dialog.update(100, 'Finished!')
         self.prog_dialog.close()
-        return json.dumps({'pai': str(self.userid), 'bearer': self.access_token})
+        return json.dumps(
+            {'pai': str(self.userid), 'bearer': self.access_token})

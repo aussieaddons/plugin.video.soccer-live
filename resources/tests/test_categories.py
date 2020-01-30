@@ -27,7 +27,8 @@ class MenusTests(testtools.TestCase):
 
     @mock.patch('xbmcgui.ListItem')
     @mock.patch('sys.argv',
-                ['plugin://plugin.video.soccer-live/', '2', '', 'resume:false'])
+                ['plugin://plugin.video.soccer-live/', '2', '',
+                 'resume:false'])
     def test_list_categories(self, mock_listitem):
         mock_listitem.side_effect = fakes.FakeListItem
         mock_plugin = fakes.FakePlugin()

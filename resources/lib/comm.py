@@ -1,6 +1,6 @@
 import json
 
-from future.moves.urllib.parse import quote_plus, quote
+from future.moves.urllib.parse import quote, quote_plus
 
 from aussieaddonscommon import session, utils
 

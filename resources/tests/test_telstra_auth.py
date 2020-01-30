@@ -68,7 +68,6 @@ class TelstraAuthTests(testtools.TestCase):
                 'rb') as f:
             self.MYID_RESUME_AUTH_RESP_HTML = io.BytesIO(f.read()).read()
 
-
     @mock.patch.object(telstra_auth.TelstraAuth, '_get_aws_userid')
     @responses.activate
     def test_get_paid_token(self, mock_aws_userid):

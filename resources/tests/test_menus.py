@@ -3,7 +3,6 @@ from __future__ import absolute_import, unicode_literals
 import datetime
 import io
 import os
-import re
 import sys
 
 try:
@@ -11,8 +10,7 @@ try:
 except ImportError:
     import unittest.mock as mock
 
-from future.moves.urllib.parse import parse_qsl, unquote_plus, \
-    urlencode, urlparse
+from future.moves.urllib.parse import parse_qsl
 
 import responses
 
@@ -21,7 +19,7 @@ import testtools
 import resources.lib.config as config
 from resources.tests.fakes import fakes
 
-##  https://blog.xelnor.net/python-mocking-datetime/
+#  https://blog.xelnor.net/python-mocking-datetime/
 real_datetime_class = datetime.datetime
 
 
@@ -163,8 +161,6 @@ class MenusTests(testtools.TestCase):
                  'resume:false'])
     @responses.activate
     def test_make_live_list(self, mock_listitem):
-
-
         params = dict(parse_qsl(sys.argv[2][1:]))
         mock_listitem.side_effect = fakes.FakeListItem
         mock_plugin = fakes.FakePlugin()

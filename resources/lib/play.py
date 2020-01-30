@@ -38,9 +38,8 @@ def play_video(params):
         media_auth_token = None
         if v.premium:
             auth = json.loads(stream_auth.get_user_ticket())
-            media_auth_token = stream_auth.get_media_auth_token(auth.get('pai'),
-                                                           auth.get('bearer'),
-                                                           v.video_id)
+            media_auth_token = stream_auth.get_media_auth_token(
+                auth.get('pai'), auth.get('bearer'), v.video_id)
         v.url = comm.get_stream_url(v, media_auth_token)
         if not v.url:
             raise Exception('Unable to find stream for video')
@@ -52,5 +51,4 @@ def play_video(params):
             play_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
         xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
     except Exception:
-        raise
         utils.handle_error('Unable to play video')
