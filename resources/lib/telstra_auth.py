@@ -1,17 +1,21 @@
 import base64
 import binascii
-import config
 import hashlib
 import json
 import os
 import random
 import re
-import urlparse
 import uuid
 
-from future.moves.urllib.parse import parse_qsl, urlparse, urlsplit
+from future.moves.urllib.parse import parse_qsl, urlparse
 
 import requests
+
+from aussieaddonscommon.exceptions import AussieAddonsException
+from aussieaddonscommon import session as custom_session
+from aussieaddonscommon import utils
+
+from resources.lib import config
 
 import xbmcgui
 
@@ -20,10 +24,6 @@ try:
     from warrant.aws_srp import AWSSRP
 except ImportError:
     pass
-
-from aussieaddonscommon.exceptions import AussieAddonsException
-from aussieaddonscommon import session as custom_session
-from aussieaddonscommon import utils
 
 
 class TelstraAuthException(AussieAddonsException):

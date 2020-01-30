@@ -1,8 +1,13 @@
-import xbmcgui
-import xbmcplugin
-import config
 import sys
+
 from aussieaddonscommon import utils
+
+from resources.lib import config
+
+import xbmcgui
+
+import xbmcplugin
+
 
 _handle = int(sys.argv[1])
 _url = sys.argv[0]

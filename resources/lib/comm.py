@@ -1,9 +1,11 @@
-import classes
-import config
 import json
-import urllib
+
+from future.moves.urllib.parse import quote_plus, quote
 
 from aussieaddonscommon import session, utils
+
+from resources.lib import classes
+from resources.lib import config
 
 
 def fetch_url(url, headers=None):
@@ -117,7 +119,7 @@ def list_live(params):
         v = classes.Video()
         v.home = match_data.get('home_team').get('name')
         v.away = match_data.get('away_team').get('name')
-        v.start_date = match_data.get('start_date')
+        v.start_date = quote_plus(match_data.get('start_date'))
         v.status = match_data.get('status')
         if v.status == 'PreMatch' and v.is_near_live():
             v.status = 'Live'
@@ -174,15 +176,15 @@ def get_stream_url(video, embed_token):
     if not embed_token:
         return src
     else:
-        src = sign_live_url(src, embed_token)
+        src = sign_url(src, embed_token)
     return src
 
 
-def sign_live_url(url, embed_token):
-    headers = {'authorization': 'JWT {0}'.format(embed_token)}
+def sign_url(url, media_auth_token):
+    headers = {'authorization': 'JWT {0}'.format(media_auth_token)}
     data = json.loads(
-        fetch_url(config.SIGN_URL.format(urllib.quote(url)), headers=headers))
+        fetch_url(config.SIGN_URL.format(quote(url)), headers=headers))
     if data.get('message') == 'SUCCESS':
-        return data.get('url')
+        return str(data.get('url'))
     else:
         raise Exception('error in signing url')

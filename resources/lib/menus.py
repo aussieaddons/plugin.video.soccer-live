@@ -1,9 +1,14 @@
-import xbmcgui
-import xbmcplugin
-import xbmcaddon
-import comm
 import sys
+
 from aussieaddonscommon import utils
+
+from resources.lib import comm
+
+import xbmcgui
+
+import xbmcplugin
+
+import xbmcaddon
 
 _url = sys.argv[0]
 _handle = int(sys.argv[1])
@@ -119,4 +124,5 @@ def make_live_list(params):
         xbmcplugin.addDirectoryItems(_handle, listing, len(listing))
         xbmcplugin.endOfDirectory(_handle, cacheToDisc=False)
     except Exception:
+        raise
         utils.handle_error('Unable to display matches')

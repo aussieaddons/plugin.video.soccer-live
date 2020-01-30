@@ -1,12 +1,17 @@
-import classes
-import comm
 import json
-import stream_auth
 import sys
-import xbmcaddon
-import xbmcgui
-import xbmcplugin
+
 from aussieaddonscommon import utils
+
+from resources.lib import classes
+from resources.lib import comm
+from resources.lib import stream_auth
+
+import xbmcaddon
+
+import xbmcgui
+
+import xbmcplugin
 
 addon = xbmcaddon.Addon()
 _handle = int(sys.argv[1])

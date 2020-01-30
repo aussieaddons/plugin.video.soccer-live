@@ -1,21 +1,21 @@
-import urllib
 import json
-import base64
-import config
-import re
+
 import requests
-import xbmcaddon
-import telstra_auth
 
 from aussieaddonscommon.exceptions import AussieAddonsException
 from aussieaddonscommon import session
 from aussieaddonscommon import utils
 
+from resources.lib import config
+from resources.lib import telstra_auth
+
+import xbmcaddon
+
 try:
     import StorageServer
 except:
     utils.log("script.common.plugin.cache not found!")
-    import storageserverdummy as StorageServer
+    import resources.lib.storageserverdummy as StorageServer
 cache = StorageServer.StorageServer(utils.get_addon_id(), 1)
 sess = session.Session(force_tlsv1=False)
 addon = xbmcaddon.Addon()

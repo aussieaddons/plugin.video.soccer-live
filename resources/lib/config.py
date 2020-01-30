@@ -34,7 +34,7 @@ USER_AGENT = 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; m8 Build/MOB31K)'
 
 USER_AGENT_LONG = 'Mozilla/5.0 (Linux; Android 6.0; HTC One_M8 Build/MRA58K.H15; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/56.0.2924.87 Mobile Safari/537.36'
 
-TELSTRA_AUTH_URL = 'https://tapi.telstra.com/v1/media-stream/auth/token?code={code}&pai={pai}&provider=signed&partnerId=FFA'
+MEDIA_AUTH_URL = 'https://tapi.telstra.com/v1/media-stream/auth/token?code={code}&pai={pai}&provider=signed&partnerId=FFA'
 
 OOYALA_PCODE = 'xoNG0yOk4f4VR8pLKAKNukJ-gdEr'
 
@@ -119,7 +119,7 @@ SPC_URL = 'http://hub.telstra.com.au/sp2018-ffa-app?tpUID={0}&offerId=45d09e09-6
                         
 OFFERS_URL = 'https://tapi.telstra.com/v1/media-products/catalogues/media/offers'
 
-HUB_URL = 'http://hub.telstra.com.au/sp2017-netball-app'
+HUB_URL = 'http://hub.telstra.com.au/sp2018-ffa-app'
 
 MEDIA_ORDER_HEADERS = {'Content-Type': 'application/json', 
                        'Accept': 'application/json, text/plain, */*', 

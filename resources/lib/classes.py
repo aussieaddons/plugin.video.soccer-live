@@ -1,7 +1,6 @@
 import datetime
 import time
 import unicodedata
-import urllib
 from builtins import str
 from collections import OrderedDict
 
@@ -44,7 +43,7 @@ class Category():
 
     def parse_params(self, params):
         for item in params.keys():
-            setattr(self, item, urllib.unquote_plus(params[item]))
+            setattr(self, item, unquote_plus(params[item]))
 
 
 class Video():
@@ -87,27 +86,34 @@ class Video():
         return url
 
     def parse_kodi_url(self, url):
-        params = parse_qsl(url)
+        params = dict(parse_qsl(url))
         self.parse_params(params)
 
     def parse_params(self, params):
         for item in params.keys():
-            setattr(self, item, urllib.unquote_plus(params[item]))
+            setattr(self, item, unquote_plus(params[item]))
+        if self.start_date:  # quote date to preserve '+'
+            setattr(self, 'start_date', quote_plus(self.start_date))
 
     def get_live_title(self):
         if self.home and self.away:
             return '[COLOR green][LIVE NOW][/COLOR] {0} v {1}'.format(
                 self.home, self.away)
 
+    def get_tz_delta(self):
+        delta = ((time.mktime(time.localtime()) -
+                  time.mktime(time.gmtime())) / 3600)
+        if time.localtime().tm_isdst:
+            delta += 1
+        return delta
+
     def get_airtime(self):
         try:
-            delta = ((time.mktime(time.localtime()) -
-                     time.mktime(time.gmtime())) / 3600)
-            if time.localtime().tm_isdst:
-                delta += 1
+            delta = self.get_tz_delta()
             ts_format = "%Y-%m-%dT%H:%M:%S+00:00"
             ts = datetime.datetime.fromtimestamp(
-                time.mktime(time.strptime(self.start_date, ts_format)))
+                time.mktime(time.strptime(
+                    unquote_plus(self.start_date), ts_format)))
             ts += datetime.timedelta(hours=delta)
             return ts.strftime("%A %d %b @ %I:%M %p").replace(' 0', ' ')
         except OverflowError:
@@ -125,7 +131,8 @@ class Video():
             delta += 1
         ts_format = "%Y-%m-%dT%H:%M:%S+00:00"
         start_time = datetime.datetime.fromtimestamp(
-            time.mktime(time.strptime(self.start_date, ts_format)))
+            time.mktime(time.strptime(unquote_plus(self.start_date),
+                                      ts_format)))
         start_time += datetime.timedelta(hours=delta)
         near_time = start_time - datetime.timedelta(minutes=10)
         if datetime.datetime.now() > near_time:

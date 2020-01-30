@@ -105,4 +105,4 @@ class StreamAuthTests(testtools.TestCase):
                               stream_auth.get_media_auth_token,
                               'uuid', 'bearer', 'foo')
             mock_delete.assert_called_with('SOCCERTICKET')
-            self.assertIn('Access Token expired', mock_log.call_args.args[0])
+            self.assertIn('Access Token expired', mock_log.call_args[0][0])

@@ -21,6 +21,29 @@ import testtools
 import resources.lib.config as config
 from resources.tests.fakes import fakes
 
+##  https://blog.xelnor.net/python-mocking-datetime/
+real_datetime_class = datetime.datetime
+
+
+def mock_datetime_now(target, dt):
+    class DatetimeSubclassMeta(type):
+        @classmethod
+        def __instancecheck__(mcs, obj):
+            return isinstance(obj, real_datetime_class)
+
+    class BaseMockedDatetime(real_datetime_class):
+        @classmethod
+        def now(cls, tz=None):
+            return target.replace(tzinfo=tz)
+
+        @classmethod
+        def utcnow(cls):
+            return target
+
+    MockedDatetime = DatetimeSubclassMeta(
+        str('datetime'), (BaseMockedDatetime,), {})
+    return mock.patch.object(dt, 'datetime', MockedDatetime)
+
 
 class MenusTests(testtools.TestCase):
 
@@ -149,13 +172,8 @@ class MenusTests(testtools.TestCase):
                       self.HOME_JSON, status=200)
         with mock.patch.dict('sys.modules', xbmcplugin=mock_plugin):
             import resources.lib.menus as menus
-            dt = 'resources.lib.menus.comm.classes.datetime.datetime'
-            with mock.patch(dt) as mock_date:
-                mock_date.now.return_value = datetime.datetime(2020, 1, 25)
-                mock_date.side_effect = lambda *args, **kw: datetime.datetime(
-                    *args, **kw)
+            with mock_datetime_now(datetime.datetime(2020, 1, 25), datetime):
                 menus.make_live_list(params)
                 self.assertEqual(2, len(mock_plugin.directory))
-                self.assertIn('Upcoming',
-                              mock_plugin.directory[1].get(
-                                  'listitem').getLabel())
+                self.assertIn('Upcoming', mock_plugin.directory[1].get(
+                    'listitem').getLabel())
