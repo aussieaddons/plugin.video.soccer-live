@@ -174,7 +174,7 @@ def get_stream_url(video, embed_token):
         utils.log(data.get('sources'))
         raise Exception('Unable to locate video source.')
     if not embed_token:
-        return src
+        return str(src)
     else:
         src = sign_url(src, embed_token)
     return src

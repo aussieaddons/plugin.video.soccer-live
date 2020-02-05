@@ -34,7 +34,7 @@ class TelstraAuthTests(testtools.TestCase):
             self.OAUTH_JSON = io.BytesIO(f.read()).read()
         with open(os.path.join(cwd, 'fakes/json/SOCCER_TOKEN.json'),
                   'rb') as f:
-            self.NRL_TOKEN_JSON = io.BytesIO(f.read()).read()
+            self.SOCCER_TOKEN_JSON = io.BytesIO(f.read()).read()
         with open(os.path.join(cwd, 'fakes/json/OFFERS_RESP.json'),
                   'rb') as f:
             self.OFFERS_RESP_JSON = io.BytesIO(f.read()).read()
@@ -345,7 +345,7 @@ class TelstraAuthTests(testtools.TestCase):
                       headers={'Set-Cookie': fakes.FAKE_MOBILE_COOKIE},
                       status=200)
         responses.add(responses.POST, config.MOBILE_OAUTH_URL,
-                      body=self.NRL_TOKEN_JSON,
+                      body=self.SOCCER_TOKEN_JSON,
                       status=200)
         responses.add(responses.GET, config.OFFERS_URL,
                       body=self.OFFERS_RESP_JSON,
@@ -384,7 +384,7 @@ class TelstraAuthTests(testtools.TestCase):
                       headers={'Set-Cookie': fakes.FAKE_MOBILE_COOKIE},
                       status=200)
         responses.add(responses.POST, config.MOBILE_OAUTH_URL,
-                      body=self.NRL_TOKEN_JSON,
+                      body=self.SOCCER_TOKEN_JSON,
                       status=200)
         responses.add(responses.GET, config.OFFERS_URL,
                       body=self.OFFERS_FAIL_RESP_JSON,
@@ -402,7 +402,7 @@ class TelstraAuthTests(testtools.TestCase):
                       headers={'Set-Cookie': fakes.FAKE_MOBILE_COOKIE},
                       status=200)
         responses.add(responses.POST, config.MOBILE_OAUTH_URL,
-                      body=self.NRL_TOKEN_JSON,
+                      body=self.SOCCER_TOKEN_JSON,
                       status=200)
         responses.add(responses.GET, config.OFFERS_URL,
                       json={'userMessage': 'No eligible services'},
@@ -420,7 +420,7 @@ class TelstraAuthTests(testtools.TestCase):
                       headers={'Set-Cookie': fakes.FAKE_MOBILE_COOKIE},
                       status=200)
         responses.add(responses.POST, config.MOBILE_OAUTH_URL,
-                      body=self.NRL_TOKEN_JSON,
+                      body=self.SOCCER_TOKEN_JSON,
                       status=200)
         responses.add(responses.GET, config.OFFERS_URL,
                       body=self.OFFERS_RESP_JSON,

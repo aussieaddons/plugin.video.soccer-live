@@ -105,7 +105,7 @@ MYID_HEADERS = {
     'Accept-Language': 'en-AU,en-US;q=0.9',
     'Cache-Control': 'max-age=0',
     'Connection': 'keep-alive',
-    'X-Requested-With': 'com.telstra.nrl'}
+    'X-Requested-With': 'com.ffa.hal'}
 
 SPC_HEADERS = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
                'Accept-Encoding': 'gzip, deflate',

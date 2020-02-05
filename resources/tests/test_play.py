@@ -45,7 +45,7 @@ class PlayTests(testtools.TestCase):
     @mock.patch('resources.lib.stream_auth.cache.get')
     @mock.patch('xbmcgui.ListItem')
     @mock.patch('sys.argv',
-                ['plugin://plugin.video.nrl-live/',
+                ['plugin://plugin.video.soccer-live/',
                  '2',
                  '?action=listreplays&desc=Wellington+Phoenix+vs+Newcastle'
                  '+Jets%2C+Hyundai+A-League%2C+Round+16%2C+24th+Jan+2020'
