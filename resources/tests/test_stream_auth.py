@@ -58,6 +58,8 @@ class StreamAuthTests(testtools.TestCase):
         mock_ticket.return_value = ''
         mock_sub_type.return_value = '0'
         mock_token.return_value = 'foobar456789'
+        observed = stream_auth.get_user_ticket()
+        self.assertEqual('foobar456789', observed)
 
     @mock.patch(
         'resources.lib.stream_auth.telstra_auth.TelstraAuth.get_mobile_token')
