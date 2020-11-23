@@ -21,9 +21,8 @@ def make_replay_list(params):
         matches = comm.list_matches(params)
 
         for m in matches:
-            li = xbmcgui.ListItem(label=m.title,
-                                  iconImage=m.thumb,
-                                  thumbnailImage=m.thumb)
+            li = xbmcgui.ListItem(label=m.title)
+            li.setArt({'icon': m.thumb, 'thumb': m.thumb})
             url = '{0}?action=listreplays{1}'.format(_url, m.make_kodi_url())
             is_folder = False
             li.setProperty('IsPlayable', 'true')
@@ -42,9 +41,8 @@ def make_round_list(params):
         rounds = comm.list_rounds(params)
 
         for r in rounds:
-            li = xbmcgui.ListItem(label=r.title,
-                                  iconImage=r.thumb,
-                                  thumbnailImage=r.thumb)
+            li = xbmcgui.ListItem(label=r.title)
+            li.setArt({'icon': r.thumb, 'thumb': r.thumb})
             url = '{0}?action=listrounds{1}'.format(_url, r.make_kodi_url())
             is_folder = True
             li.setProperty('IsPlayable', 'false')
@@ -63,9 +61,8 @@ def make_comp_list(params):
         comps = comm.list_comps(params)
 
         for c in comps:
-            li = xbmcgui.ListItem(label=c.title,
-                                  iconImage=c.thumb,
-                                  thumbnailImage=c.thumb)
+            li = xbmcgui.ListItem(label=c.title)
+            li.setArt({'icon': c.thumb, 'thumb': c.thumb})
             url = '{0}?action=listcomps{1}'.format(_url, c.make_kodi_url())
             is_folder = True
             li.setProperty('IsPlayable', 'false')
@@ -87,9 +84,8 @@ def make_video_list(params):
         videos = comm.list_videos(params)
 
         for v in videos:
-            li = xbmcgui.ListItem(label=v.title,
-                                  iconImage=v.thumb,
-                                  thumbnailImage=v.thumb)
+            li = xbmcgui.ListItem(label=v.title)
+            li.setArt({'icon': v.thumb, 'thumb': v.thumb})
             url = '{0}?action=listvideos{1}'.format(_url, v.make_kodi_url())
             is_folder = False
             li.setProperty('IsPlayable', 'true')
@@ -111,9 +107,8 @@ def make_live_list(params):
         videos = comm.list_live(params)
 
         for v in videos:
-            li = xbmcgui.ListItem(label=v.title,
-                                  iconImage=v.thumb,
-                                  thumbnailImage=v.thumb)
+            li = xbmcgui.ListItem(label=v.title)
+            li.setArt({'icon': v.thumb, 'thumb': v.thumb})
             url = '{0}?action=listvideos{1}'.format(_url, v.make_kodi_url())
             is_folder = False
             if not v.dummy:
@@ -124,5 +119,4 @@ def make_live_list(params):
         xbmcplugin.addDirectoryItems(_handle, listing, len(listing))
         xbmcplugin.endOfDirectory(_handle, cacheToDisc=False)
     except Exception:
-        raise
         utils.handle_error('Unable to display matches')

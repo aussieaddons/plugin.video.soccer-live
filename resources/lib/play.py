@@ -43,9 +43,8 @@ def play_video(params):
         v.url = comm.get_stream_url(v, media_auth_token)
         if not v.url:
             raise Exception('Unable to find stream for video')
-        play_item = xbmcgui.ListItem(path=v.url,
-                                     iconImage=v.thumb,
-                                     thumbnailImage=v.thumb)
+        play_item = xbmcgui.ListItem(path=v.url)
+        play_item.setArt({'icon': v.thumb, 'thumb': v.thumb})
         if not v.live:
             play_item.setProperty('inputstreamaddon', 'inputstream.adaptive')
             play_item.setProperty('inputstream.adaptive.manifest_type', 'hls')

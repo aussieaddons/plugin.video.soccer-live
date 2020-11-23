@@ -76,8 +76,7 @@ class MenusTests(testtools.TestCase):
             menus.make_comp_list({})
             expected_title = 'Hyundai A-League'
             expected = fakes.FakeListItem(expected_title)
-            expected.setThumbnailImage('example.jpg')
-            expected.setIconImage('example.jpg')
+            expected.setArt({'thumb': 'example.jpg', 'icon': 'example.jpg'})
             expected.setInfo('video', {'plot': expected_title,
                                        'plotoutline': expected_title})
             expected.setProperty('IsPlayable', 'false')
