@@ -47,6 +47,7 @@ def play_video(params):
         play_item.setArt({'icon': v.thumb, 'thumb': v.thumb})
         if not v.live:
             play_item.setProperty('inputstreamaddon', 'inputstream.adaptive')
+            play_item.setProperty('inputstream', 'inputstream.adaptive')
             play_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
         xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
     except Exception:
