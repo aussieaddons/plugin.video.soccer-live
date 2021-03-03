@@ -1,0 +1,73 @@
+# Kodi Media Center language file
+# Addon Name: Soccer Live
+# Addon id: plugin.video.soccer-live
+# Addon Provider: Aussie Add-ons
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#32000"
+msgid "Telstra Live Pass"
+msgstr ""
+
+msgctxt "#32001"
+msgid "Streaming Settings"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Debugging"
+msgstr ""
+
+msgctxt "#32005"
+msgid "Soccer Live"
+msgstr ""
+
+msgctxt "#32010"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#32031"
+msgid "firstrun"
+msgstr ""
+
+msgctxt "#32033"
+msgid "Subscription Type"
+msgstr ""
+
+msgctxt "#32032"
+msgid "Clear Stored Login Token"
+msgstr ""
+
+msgctxt "#32035"
+msgid "Inputstream.adapive settings (video quality)"
+msgstr ""
+
+msgctxt "#32050"
+msgid "Soccer Live Login"
+msgstr ""
+
+msgctxt "#32020"
+msgid "Telstra ID Username"
+msgstr ""
+
+msgctxt "#32030"
+msgid "Telstra ID Password"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Football Account Username"
+msgstr ""
+
+msgctxt "#32022"
+msgid "Football Account Password"
+msgstr ""

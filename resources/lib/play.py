@@ -45,10 +45,10 @@ def play_video(params):
             raise Exception('Unable to find stream for video')
         play_item = xbmcgui.ListItem(path=v.url)
         play_item.setArt({'icon': v.thumb, 'thumb': v.thumb})
-        if not v.live:
-            play_item.setProperty('inputstreamaddon', 'inputstream.adaptive')
-            play_item.setProperty('inputstream', 'inputstream.adaptive')
-            play_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
+
+        play_item.setProperty('inputstreamaddon', 'inputstream.adaptive')
+        play_item.setProperty('inputstream', 'inputstream.adaptive')
+        play_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
         xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
     except Exception:
         utils.handle_error('Unable to play video')
