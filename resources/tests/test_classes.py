@@ -15,7 +15,9 @@ except ImportError:
 
 class ClassesTests(testtools.TestCase):
 
-    def test_make_kodi_url(self):
+    @mock.patch('aussieaddonscommon.utils.get_addon_version')
+    def test_make_kodi_url(self, mock_version):
+        mock_version.return_value = '1.0.0'
         video = classes.Video()
         attrs = OrderedDict(
             sorted(fakes.FAKE_VIDEO_ATTRS.items(), key=lambda x: x[0]))
@@ -23,7 +25,9 @@ class ClassesTests(testtools.TestCase):
             setattr(video, k, v)
         self.assertEqual(fakes.FAKE_VIDEO_URL, video.make_kodi_url())
 
-    def test_parse_kodi_url(self):
+    @mock.patch('aussieaddonscommon.utils.get_addon_version')
+    def test_parse_kodi_url(self, mock_version):
+        mock_version.return_value = '1.0.0'
         video = classes.Video()
         video.parse_kodi_url(fakes.FAKE_VIDEO_URL)
         observed = video.make_kodi_url()
