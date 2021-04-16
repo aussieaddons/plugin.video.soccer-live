@@ -44,7 +44,7 @@ class TelstraAuth(object):
 
     def get_code_verifier(self):
         letters = 'abcdef0123456789'
-        verifier = ''.join(random.choice(letters) for i in range(64))
+        verifier = ''.join(random.choice(letters) for i in range(96))
         return verifier.encode('utf-8')
 
     def get_code_challenge(self, verifier):
@@ -154,10 +154,26 @@ class TelstraAuth(object):
         except AttributeError as e:
             raise e
 
+    def send_username(self):
+
+        myid_auth_resume_data = {
+             'orgName': self.username,
+             'subject': self.username,
+             '$ok': 'clicked',
+             '$adapterIdField': '$adapterId',
+             'client_id': self.sso_client_id}
+        self.session.post(
+            config.MYID_RESUME_AUTHORIZATION_URL.format(
+                self.identify_path_token),
+            data=myid_auth_resume_data)
+
     def set_myid_auth_resume_resp_text(self):
         myid_auth_resume_data = dict(config.MYID_AUTH_RESUME_DATA)
         myid_auth_resume_data.update(
-            {'pf.username': self.username, 'pf.pass': self.password})
+            {'pf.username': self.username,
+             'pf.pass': self.password,
+             'pf.adapterId': 'upAdapter',
+             'client_id': self.sso_client_id})
         myid_auth_resume = self.session.post(
             config.MYID_RESUME_AUTHORIZATION_URL.format(
                 self.identify_path_token),
@@ -307,15 +323,13 @@ class TelstraAuth(object):
         self.set_userid()
         self.set_initial_token()
 
-        # Check entitlements (not sure if needed)
-        self.session.get(config.ENTITLEMENTS_URL)
-
         self.prog_dialog.update(16, 'Getting SSO Client ID')
 
         self.set_sso_client_id()
         self.prog_dialog.update(40,
                                 'Signing in with Telstra ID username/password')
         self.set_identity_path_token()
+        self.send_username()
         self.set_myid_auth_resume_resp_text()
         self.validate_myid_auth()
         self.signon_to_sso_sessions()

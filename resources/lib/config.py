@@ -94,8 +94,7 @@ MYID_AUTH_PARAMS = {
                     '/callback.html',
     'response_type': 'code',
     'scope': 'openid app.oneplace',
-    'code_challenge_method': 'S256',
-    'response_mode': 'query'}
+    'code_challenge_method': 'S256'}
 
 MYID_HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,'
