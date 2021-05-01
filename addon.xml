@@ -13,6 +13,10 @@
     <provides>video</provides>
   </extension>
   <extension library="default.py" point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
     <summary>Soccer Live add-on</summary>
     <description>Soccer Live is an unofficial add-on for Australian soccer content</description>
     <provides>video</provides>
